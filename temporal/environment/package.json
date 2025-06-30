@@ -1,0 +1,65 @@
+{
+	"name": "grace-gray",
+	"displayName": "Grace Gray",
+	"description": "A graceful gray theme.",
+	"version": "1.0.3",
+	"publisher": "SUPERTSY5",
+	"main": "./out/main.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/supertsy5/grace-gray"
+	},
+	"engines": {
+		"vscode": "^1.80.0"
+	},
+	"devDependencies": {
+		"typescript": "^5.1.6",
+		"@types/vscode": "^1.80.0",
+		"@types/node": "^20.4.4"
+	},
+	"categories": [
+		"Themes"
+	],
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Grace Gray",
+				"uiTheme": "vs",
+				"path": "./themes/grace-gray-color-theme.json"
+			}
+		],
+		"commands": [
+			{
+				"command": "graceGray.showStatusBarItems",
+				"title": "Grace Gray: Show Status Bar Item Previews"
+			},
+			{
+				"command": "graceGray.showNotifications",
+				"title": "Grace Gray: Show Notification Previews"
+			},
+			{
+				"command": "graceGray.showProgressNotification",
+				"title": "Grace Gray: Show Progress Notification Preview"
+			},
+			{
+				"command": "graceGray.showProgressInWindow",
+				"title": "Grace Gray: Show Progress Preview in Window"
+			}
+		]
+	},
+	"activationEvents": [
+		"OnCommand: graceGray.showStatusBarItems",
+		"OnCommand: graceGray.showNotifications",
+		"OnCommand: graceGray.showProgressNotification"
+	],
+	"__metadata": {
+		"installedTimestamp": 1750343999753,
+		"targetPlatform": "undefined",
+		"size": 157246
+	}
+}

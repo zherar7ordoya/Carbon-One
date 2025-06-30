@@ -1,0 +1,32 @@
+{
+	"name": "greyforest",
+	"displayName": "GreyForest",
+	"description": "A grey theme with natural colors.",
+	"version": "0.0.7",
+	"publisher": "largerWisp",
+	"icon": "icon.png",
+	"engines": {
+		"vscode": "^1.29.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://largerWisp@dev.azure.com/largerWisp/GreyJungle/_git/GreyJungle"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "GreyJungle",
+				"uiTheme": "vs",
+				"path": "./themes/GreyJungle-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"installedTimestamp": 1750853485593,
+		"targetPlatform": "undefined",
+		"size": 958814
+	}
+}
