@@ -6,15 +6,18 @@
   "engines": {
     "vscode": "^1.101.0"
   },
-  "categories": [
-    "Themes"
-  ],
+  "categories": ["Themes"],
   "contributes": {
     "themes": [
       {
         "label": "CLC Gray (High Contrast)",
         "uiTheme": "vs",
         "path": "./themes/clc-gray-high-contrast-color-theme.json"
+      },
+      {
+        "label": "CLC Gray (Low Contrast)",
+        "uiTheme": "vs",
+        "path": "./themes/clc-gray-low-contrast-color-theme.json"
       }
     ]
   }
