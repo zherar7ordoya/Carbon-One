@@ -3,7 +3,7 @@
 // Flavor: High Contrast Light Theme
 {
   "name": "CLC Gray (High Contrast)",
-  "type": "light",
+  "type": "hc",
   // Environment
   "colors": {
 		"activityBar.activeBackground": "#d8d8e0",

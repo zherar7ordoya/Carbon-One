@@ -1,7 +1,7 @@
 {
-  "name": "clc-gray-color-theme-for-vscode",
+  "name": "clc-gray-color-theme",
   "displayName": "CLC Gray",
-  "description": "Theme for complex lighting conditions",
+  "description": "Gray color theme for complex lighting conditions",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.101.0"
@@ -10,14 +10,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "CLC Gray (High Contrast)",
+        "label": "CLC Gray",
         "uiTheme": "vs",
-        "path": "./themes/clc-gray-high-contrast-color-theme.json"
-      },
-      {
-        "label": "CLC Gray (Low Contrast)",
-        "uiTheme": "vs",
-        "path": "./themes/clc-gray-low-contrast-color-theme.json"
+        "path": "./themes/clc-gray-color-theme.json"
       }
     ]
   }
