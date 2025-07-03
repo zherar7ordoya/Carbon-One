@@ -1,8 +1,8 @@
 {
-  "name": "clc-gray-color-theme",
-  "displayName": "CLC Gray",
-  "description": "Gray color theme for complex lighting conditions",
-  "version": "0.0.1",
+  "name": "gray-clc-color-theme",
+  "displayName": "Gray CLC",
+  "description": "Color theme for complex lighting conditions.",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.101.0"
   },
@@ -10,9 +10,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "CLC Gray",
+        "label": "Gray CLC",
         "uiTheme": "vs",
-        "path": "./themes/clc-gray-color-theme.json"
+        "path": "./themes/gray-clc-color-theme.json"
       }
     ]
   }
