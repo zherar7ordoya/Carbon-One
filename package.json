@@ -1,12 +1,4 @@
 {
-    "files": [
-        "themes",
-        "images",
-        "README.md",
-        "CHANGELOG.md",
-        "LICENSE",
-        "icon.png"
-    ],
     "name": "gray-clc-color-theme",
     "displayName": "Gray CLC",
     "description": "Color theme for complex lighting conditions.",
