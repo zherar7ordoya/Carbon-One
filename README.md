@@ -5,6 +5,7 @@
 **Gray CLC** is a light color theme for Visual Studio Code designed for **maximum clarity** in **complex lighting environments** (e.g., overexposed monitors, shared workspaces, or sunlight conditions). It combines muted backgrounds with high-contrast syntax colors for excellent readability — especially in languages like **C#**, **JavaScript**, and **JSON**.
 
 ![Screenshot](./images/screenshot-csharp.png)
+
 *Example: C# syntax highlighting*
 
 ---
