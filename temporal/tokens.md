@@ -1,22 +1,11 @@
 language	css
 standard token type	Other
-foreground	#000099
+foreground	#448C27
 background	#E1E1E7
-contrast ratio	11.05
-textmate scopes	support.constant.parity.css
-meta.selector.css
+contrast ratio	3.21
+textmate scopes	constant.other.color.rgb-value.hex.css
+meta.property-value.css
+meta.property-list.css
 source.css
-foreground	support.constant
-{ "foreground": "#000099" }
-
-
-language	css
-standard token type	Other
-foreground	#176939
-background	#DDDDDD
-contrast ratio	4.96
-textmate scopes	support.constant.parity.css
-meta.selector.css
-source.css
-foreground	support.constant
-{ "foreground": "#176939", "fontStyle": "" }
+foreground	meta.property-value constant.other
+{ "foreground": "#448C27" }

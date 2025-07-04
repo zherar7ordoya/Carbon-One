@@ -133,7 +133,8 @@
                 "constant.numeric"
             ],
             "settings": {
-                "foreground": "#09885a"
+                //"foreground": "#09885a"
+                "foreground": "#000066"
             }
         },
         {
@@ -175,7 +176,8 @@
             ],
             "settings": {
                 //"foreground": "#800000"
-                "foreground": "#7A3E9D"
+                "foreground": "#7A3E9D",
+                "fontStyle": "bold"
             }
         },
         {
@@ -234,7 +236,8 @@
                 "punctuation.definition.list.begin.markdown"
             ],
             "settings": {
-                "foreground": "#0451a5"
+                //"foreground": "#0451a5"
+                "foreground": "#000066"
             }
         },
         {
@@ -299,7 +302,8 @@
         {
             "scope": "storage.type",
             "settings": {
-                "foreground": "#0000ff"
+                "foreground": "#0000FF",
+                "fontStyle": "bold"
             }
         },
         {
@@ -372,7 +376,8 @@
                 "source.coffee.embedded"
             ],
             "settings": {
-                "foreground": "#ff0000"
+                //"foreground": "#ff0000"
+                "foreground": "#112266"
             }
         },
         {
@@ -554,6 +559,7 @@
             "settings": {
                 //"foreground": "#0451a5"
                 "foreground": "#448C27"
+                //"foreground": "#000099"
             }
         },
         {
@@ -669,8 +675,9 @@
             "name": "Keyword",
             "scope": "keyword",
             "settings": {
-                "fontStyle": " bold",
-                "foreground": "#7311c4"
+                //"fontStyle": " bold",
+                //"foreground": "#7311c4"
+                "foreground": "#0033CC"
             }
         },
         {
@@ -726,8 +733,9 @@
             "name": "Entity inherited-class",
             "scope": "entity.other.inherited-class",
             "settings": {
-                "fontStyle": "italic",
-                "foreground": "#176939"
+                //"fontStyle": "italic",
+                //"foreground": "#176939"
+                "foreground": "#267F99"
             }
         },
         {
@@ -807,8 +815,8 @@
             "name": "Tag name",
             "scope": "entity.name.tag",
             "settings": {
-                "foreground": "#bd4b00",
-                "fontStyle": "bold"
+                "foreground": "#bd4b00"
+                //"fontStyle": "bold"
             }
         },
         {
@@ -830,7 +838,8 @@
             "scope": "meta.selector.css entity.name.tag",
             "settings": {
                 //"foreground": "#1abc9c"
-                "foreground": "#7A3E9D"
+                "foreground": "#7A3E9D",
+                "fontStyle": "bold"
             }
         },
         {
@@ -864,8 +873,8 @@
             "settings": {
                 //"foreground": "#176939",
                 //"fontStyle": " italic"
-                "foreground": "#448C27",
-                "fontStyle": ""
+                //"foreground": "#448C27",
+"foreground": "#000066"
             }
         },
         {
@@ -1095,7 +1104,8 @@
                 "foreground": "#b267e6"
             }
         }
-    ]
+    ],
+	"semanticHighlighting": true
 }
 //
 // End of file
