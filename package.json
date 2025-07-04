@@ -1,19 +1,41 @@
 {
-  "name": "gray-clc-color-theme",
-  "displayName": "Gray CLC",
-  "description": "Color theme for complex lighting conditions.",
-  "version": "1.0.0",
-  "engines": {
-    "vscode": "^1.101.0"
-  },
-  "categories": ["Themes"],
-  "contributes": {
-    "themes": [
-      {
-        "label": "Gray CLC",
-        "uiTheme": "vs",
-        "path": "./themes/Gray-CLC-Color-Theme.json"
-      }
-    ]
-  }
+    "files": [
+        "themes",
+        "images",
+        "README.md",
+        "CHANGELOG.md",
+        "LICENSE",
+        "icon.png"
+    ],
+    "name": "gray-clc-color-theme",
+    "displayName": "Gray CLC",
+    "description": "Color theme for complex lighting conditions.",
+    "version": "1.0.0",
+    "publisher": "GerardoTordoya",
+    "icon": "icon.png",
+    "keywords": [
+        "gray",
+        "light theme",
+        "contrast"
+    ],
+    "engines": {
+        "vscode": "^1.101.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zherar7ordoya/GrayCLC.git"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Gray CLC",
+                "uiTheme": "vs",
+                "path": "./themes/gray-clc-color-theme.json"
+            }
+        ]
+    },
+    "homepage": "https://github.com/zherar7ordoya/GrayCLC#readme"
 }
