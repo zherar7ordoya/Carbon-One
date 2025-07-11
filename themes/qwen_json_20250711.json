@@ -1,11 +1,7 @@
-//
-// Base: GitHub Theme
-//
 {
-    "name": "Gray CLC",
-    "type": "light",
-    "semanticHighlighting": true,
-    "colors": {
+  "name": "HighLight",
+  "type": "light",
+  "colors": {
     "focusBorder": "#00000000",
     "foreground": "#1A1A1A",
     "descriptionForeground": "#555555",
