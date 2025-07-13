@@ -1,0 +1,35 @@
+{
+    "baseBackground": "#DADADA",
+    "baseForeground": "#1A1A1A",
+    "accentColors": {
+        "strongText": "#2A2A2A",
+        "dimmedText": "#6E6E6E",
+        "highlight": "#4A77A8",
+        "focus": "#2D5C90"
+    },
+    "tokenColors": {
+        "keywords": "#004488",
+        "operators": "#0000AA",
+        "typesInterfaces": "#145C85",
+        "classes": "#2A3DA0",
+        "constants": "#8716A1",
+        "functions": "#096B33",
+        "methods": "#0B7B44",
+        "variables": "#1B4399",
+        "properties": "#3B5C9F",
+        "strings": "#8A1C1C",
+        "templateStrings": "#8A3C3C",
+        "numbers": "#103F2F",
+        "booleans": "#802020",
+        "nullUndefined": "#505050",
+        "comments": "#6E6E6E",
+        "decorators": "#6B3E9D",
+        "punctuation": "#2A2A2A",
+        "tags": "#B44444",
+        "regex": "#7B1FA2",
+        "annotations": "#5B80B2",
+        "errors": "#B63A3A",
+        "warnings": "#D28A53",
+        "infos": "#4A77A8"
+    }
+}

@@ -2,6 +2,7 @@
     "name": "Gray CLC",
     "type": "light",
     "semanticHighlighting": true,
+
     "tokenColors": [
         {
             "settings": {
@@ -40,7 +41,9 @@
                 "meta.instance.constructor"
             ],
             "settings": {
-                "foreground": "#0066cc"
+                //"foreground": "#0066cc"
+                "foreground": "#2233aa",
+                "fontStyle": "italic"
             }
         },
         {
@@ -103,6 +106,7 @@
             }
         }
     ],
+
     "colors": {
         "editorGutter.background": "#DADADA",
         "editorLineNumber.foreground": "#46608A",
