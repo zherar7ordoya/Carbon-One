@@ -1,0 +1,19 @@
+div {
+    border-radius: 100%;
+    background: #73AD21;
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+div.a {
+    zoom: normal;
+}
+
+div.b {
+    zoom: 150%;
+}
+
+div.c {
+    zoom: 0.6;
+}
