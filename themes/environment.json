@@ -1,0 +1,48 @@
+{
+    "//": "Paleta armónica basada en gris #E0E0E0 como fondo editor",
+    "base": {
+        "grayEditor": "#E0E0E0",
+        "textPrimary": "#1A1A1A",
+        "textSecondary": "#616161",
+        "borderSoft": "#c7cbd1"
+    },
+    "blues": {
+        "primaryBlue": "#5a86b2",
+        "blueHover": "#4d6e9d",
+        "blueAccent": "#3b6ea5",
+        "blueSoftHighlight": "#8fbce7",
+        "blueTabBackground": "#ccd5f0",
+        "blueSelection": "#d1e4f6"
+    },
+    "grays": {
+        "sideBarBackground": "#f5f7fa",
+        "tabInactiveBackground": "#f0f0f0",
+        "tabBorder": "#cccccc",
+        "lineNumber": "#4d6e9d",
+        "sectionBorder": "#adb4bd",
+        "disabledText": "#aaaaaa"
+    },
+    "accentsWarm": {
+        "badge": "#c7694a",
+        "badgeAlt": "#d28a53",
+        "errorSoft": "#b35b40",
+        "errorHard": "#cd3131"
+    },
+    "accentsCool": {
+        "info": "#75beff",
+        "link": "#0066bf",
+        "linkHover": "#3b8ac4"
+    },
+    "//": "Tabla de transparencias (40% recomendado: 66 en hexadecimal)",
+    "100% (opaco)": "FF",
+    "90%": "E6",
+    "80%": "CC",
+    "70%": "B3",
+    "60%": "99",
+    "50%": "80",
+    "40% (recomendado)": "66",
+    "30%": "4D",
+    "20%": "33",
+    "10%": "1A",
+    "0% (transparente)": "00"
+}
