@@ -1,4 +1,4 @@
-azul real
-variable.language.this.ts
-variable.other.object.property.ts
+lila
+
+keyword.control.import.ts
 

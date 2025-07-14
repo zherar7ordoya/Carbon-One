@@ -2,12 +2,28 @@
     "name": "Gray CLC",
     "type": "light",
     "tokenColors": [
+        // MOSTAZA NORMAL
         {
             "scope": "entity.name.function.ts",
             "settings": {
                 "foreground": "#996600"
             }
         },
+        // VIOLETA NORMAL
+        {
+            "scope": "keyword.control.import.ts",
+            "settings": {
+                "foreground": "#5A007A"
+            }
+        },
+        // GRIS ITALIC
+                {
+            "scope": "comment.line.double-slash.ts",
+            "settings": {
+                "foreground": "#555555"
+            }
+        },
+        // VERDE NORMAL
         {
             "scope": "support.type.primitive.ts",
             "settings": {
