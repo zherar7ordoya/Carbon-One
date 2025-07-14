@@ -1,91 +1,56 @@
 {
     "name": "Gray CLC",
     "type": "light",
-    /*
-    //.*************************************************************************
-    "semanticHighlighting": true,
-    //.*************************************************************************
-    "semanticTokenColors": {
-        "enumMember": {
-            "foreground": "#225544"
-        },
-        "variable.constant": {
-            "foreground": "#1A1A1A"
-        },
-        "variable.defaultLibrary": {
-            "foreground": "#2233AA"
-        },
-        //............................................................... VS2019
-        "*.deprecated": {
-            "strikethrough": true
-        }
-    },
-    */
-    //.*************************************************************************
     "tokenColors": [
-        //........................................................... TYPESCRIPT
         {
-            "name": "Types",
-            "scope": [
-                "storage.type",
-                "support.type"
-            ],
+            "scope": "entity.name.function.ts",
+            "settings": {
+                "foreground": "#996600"
+            }
+        },
+        {
+            "scope": "support.type.primitive.ts",
             "settings": {
                 "foreground": "#006633"
             }
         },
         {
-            "name": "js/ts italic",
-            "scope": "entity.other.attribute-name.js,entity.other.attribute-name.ts,entity.other.attribute-name.jsx,entity.other.attribute-name.tsx,variable.other.readwrite,variable.parameter,variable.language.super",
+            "scope": "storage.type.function.arrow.ts",
             "settings": {
+                "foreground": "#006633"
+            }
+        },
+        // AZUL REAL
+        {
+            "scope": "variable.other.object.ts",
+            "settings": {
+                "foreground": "#0055AA"
+            }
+        },
+        {
+            "scope": "variable.language.this.ts",
+            "settings": {
+                "foreground": "#0055AA"
+            }
+        },{
+            "scope": "variable.other.object.property.ts",
+            "settings": {
+                "foreground": "#0055AA"
+            }
+        },
+        // AZUL REAL + ITALIC
+        {
+            "scope": "variable.other.readwrite.ts",
+            "settings": {
+                "foreground": "#0055AA",
                 "fontStyle": "italic"
             }
         },
         {
-			"name": "Constants",
-			"scope": [
-				"constant",
-				"variable.other.constant",
-				"variable.other.enummember"
-			],
-			"settings": {
-				"foreground": "#0055AA"
-			}
-		},
-                {
-            "name": "This/Self",
-            "scope": "variable.language",
+            "scope": "variable.parameter.ts",
             "settings": {
-                "foreground": "#5A007A"
-            }
-        },
-        //............................................................... VS2019
-        {
-            "name": "Interfaces",
-            "scope": "entity.name.type.interface",
-            "settings": {
-                "foreground": "#006699"
-            }
-        },
-        {
-            "name": "Enums",
-            "scope": "entity.name.type.enum",
-            "settings": {
-                "foreground": "#5a007a"
-            }
-        },
-        {
-            "name": "Structs",
-            "scope": "entity.name.type.struct",
-            "settings": {
-                "foreground": "#333388"
-            }
-        },
-        {
-            "name": "Type Parameters",
-            "scope": "entity.name.type.type-parameter",
-            "settings": {
-                "foreground": "#007766"
+                "foreground": "#0055AA",
+                "fontStyle": "italic"
             }
         },
         {
@@ -97,137 +62,8 @@
             "settings": {
                 "foreground": "#222266"
             }
-        },
-        {
-            "name": "Fields",
-            "scope": "entity.name.variable.field",
-            "settings": {
-                "foreground": "#444444"
-            }
-        },
-        {
-            "name": "Enum Members",
-            "scope": "variable.other.enummember",
-            "settings": {
-                "foreground": "#4c0060"
-            }
-        },
-        {
-            "name": "Object Keys (JS/TS)",
-            "scope": "meta.object-literal.key",
-            "settings": {
-                "foreground": "#1a1a1a"
-            }
-        },
-        {
-            "name": "Function Calls (extra)",
-            "scope": "meta.function-call",
-            "settings": {
-                "foreground": "#005500"
-            }
-        },
-        //................................................................. BASE
-        {
-            "settings": {
-                "foreground": "#2a2a2a"
-            }
-        },
-        {
-            "scope": [
-                "comment",
-                "meta.tag"
-            ],
-            "settings": {
-                "foreground": "#5c5c5c"
-            }
-        },
-        {
-            "scope": [
-                "constant",
-                "support.constant",
-                "meta.property-value",
-                "entity.name.tag",
-                "keyword.other.unit.css"
-            ],
-            "settings": {
-                "foreground": "#6a1e6f"
-            }
-        },
-        {
-            "scope": [
-                "variable",
-                "entity.other.attribute-name",
-                "support.other.namespace",
-                "support.class",
-                "support.type.property-name",
-                "meta.property-name",
-                "meta.instance.constructor"
-            ],
-            "settings": {
-                "foreground": "#2233aa"
-            }
-        },
-        {
-            "scope": [
-                "variable.other.property",
-                "meta.property.object"
-            ],
-            "settings": {
-                "foreground": "#2233AA"
-            }
-        },
-        {
-            "scope": [
-                "keyword.operator",
-                "storage",
-                "keyword",
-                "punctuation.separator",
-                "meta.group.braces.round.function.arguments"
-            ],
-            "settings": {
-                "foreground": "#2233aa"
-            }
-        },
-        {
-            "scope": [
-                "meta.separator",
-                "invalid"
-            ],
-            "settings": {
-                "foreground": "#bbbbbb"
-            }
-        },
-        {
-            "scope": [
-                "entity.other.attribute-name.class",
-                "entity.name.tag.css",
-                "keyword.other",
-                "string.quoted.double",
-                "string.quoted.single",
-                "punctuation.definition.string"
-            ],
-            "settings": {
-                "foreground": "#7a1c1c"
-            }
-        },
-        {
-            "scope": [
-                "variable.function",
-                "entity.name.function",
-                "meta.function-call"
-            ],
-            "settings": {
-                "foreground": "#996600"
-            }
-        },
-        {
-            "scope": "support.function",
-            "settings": {
-                "foreground": "#007700"
-            }
         }
     ],
-    //.*************************************************************************
     "colors": {
         "editorGutter.background": "#DADADA",
         "editorLineNumber.foreground": "#46608A",
