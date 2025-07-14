@@ -1,6 +1,7 @@
 {
     "name": "Gray CLC",
     "type": "light",
+    /*
     //.*************************************************************************
     "semanticHighlighting": true,
     //.*************************************************************************
@@ -19,6 +20,7 @@
             "strikethrough": true
         }
     },
+    */
     //.*************************************************************************
     "tokenColors": [
         //........................................................... TYPESCRIPT
@@ -29,12 +31,12 @@
                 "support.type"
             ],
             "settings": {
-                "foreground": "#007700"
+                "foreground": "#006633"
             }
         },
         {
             "name": "js/ts italic",
-            "scope": "entity.other.attribute-name.js,entity.other.attribute-name.ts,entity.other.attribute-name.jsx,entity.other.attribute-name.tsx,variable.parameter,variable.language.super",
+            "scope": "entity.other.attribute-name.js,entity.other.attribute-name.ts,entity.other.attribute-name.jsx,entity.other.attribute-name.tsx,variable.other.readwrite,variable.parameter,variable.language.super",
             "settings": {
                 "fontStyle": "italic"
             }
@@ -54,8 +56,7 @@
             "name": "This/Self",
             "scope": "variable.language",
             "settings": {
-                "foreground": "#2233AA",
-                "fontStyle": "italic"
+                "foreground": "#5A007A"
             }
         },
         //............................................................... VS2019
