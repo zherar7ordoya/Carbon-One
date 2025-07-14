@@ -1,0 +1,136 @@
+FLECHA: (COLOR) VERDE
+
+language	typescript
+standard token type	Other
+foreground	#007755
+background	#E1E1E7
+contrast ratio	4.28
+textmate scopes	storage.type.function.arrow.ts
+meta.arrow.ts
+meta.object.member.ts
+meta.objectliteral.ts
+meta.block.ts
+meta.method.declaration.ts
+meta.class.ts
+source.ts
+foreground	storage.type
+{ "foreground": "#007755" }
+
+---
+
+MÉTODO: (COLOR) KAKI
+
+language	typescript
+standard token type	Other
+foreground	#996600
+background	#E1E1E7
+contrast ratio	3.79
+semantic token type	method
+modifiers	declaration
+foreground	entity.name.function.member
+entity.name.function
+support.function
+{ "foreground": "#996600" }
+textmate scopes	entity.name.function.ts
+meta.definition.method.ts
+meta.method.declaration.ts
+meta.class.ts
+source.ts
+
+---
+
+NEXT/ERROR: (COLOR) KAKI
+
+
+language	typescript
+standard token type	Other
+foreground	#996600
+background	#E1E1E7
+contrast ratio	3.79
+semantic token type	method
+modifiers	declaration
+foreground	entity.name.function.member
+entity.name.function
+support.function
+{ "foreground": "#996600" }
+textmate scopes	entity.name.function.ts
+meta.object-literal.key.ts
+meta.object.member.ts
+meta.objectliteral.ts
+meta.block.ts
+meta.method.declaration.ts
+meta.class.ts
+source.ts
+
+---
+
+SUBSCRIBE: (COLOR) KAKI
+
+language	typescript
+standard token type	Other
+foreground	#996600
+background	#E1E1E7
+contrast ratio	3.79
+semantic token type	method
+foreground	entity.name.function.member
+entity.name.function
+support.function
+{ "foreground": "#996600" }
+textmate scopes	entity.name.function.ts
+meta.function-call.ts
+meta.block.ts
+meta.method.declaration.ts
+meta.class.ts
+source.ts
+
+---
+
+ID: (ITALICS)
+
+language	typescript
+standard token type	Other
+foreground	#2D6CB2
+background	#E0E0E0
+contrast ratio	4.08
+font style	italic
+semantic token type	parameter
+modifiers	declaration
+foreground	variable.parameter
+variable
+{ "foreground": "#2d6cb2" }
+bold, italic, underline, strikethrough	variable.parameter
+entity.other.attribute-name.js,entity.other.attribute-name.ts,entity.other.attribute-name.jsx,entity.other.attribute-name.tsx,variable.parameter,variable.language.super
+{ "fontStyle": "italic" }
+textmate scopes	variable.parameter.ts
+meta.parameters.ts
+meta.method.declaration.ts
+meta.class.ts
+source.ts
+
+---
+
+DATA: (ITALICS)
+
+
+language	typescript
+standard token type	Other
+foreground	#2D6CB2
+background	#E0E0E0
+contrast ratio	4.08
+font style	italic
+semantic token type	parameter
+modifiers	declaration
+foreground	variable.parameter
+variable
+{ "foreground": "#2d6cb2" }
+bold, italic, underline, strikethrough	variable.parameter
+entity.other.attribute-name.js,entity.other.attribute-name.ts,entity.other.attribute-name.jsx,entity.other.attribute-name.tsx,variable.parameter,variable.language.super
+{ "fontStyle": "italic" }
+textmate scopes	variable.parameter.ts
+meta.arrow.ts
+meta.object.member.ts
+meta.objectliteral.ts
+meta.block.ts
+meta.method.declaration.ts
+meta.class.ts
+source.ts
