@@ -1,20 +1,4 @@
-LILA
-
-language	typescript
-standard token type	Other
-foreground	#006633
-background	#DADADA
-contrast ratio	5.10
-textmate scopes	storage.type.ts
-meta.var.expr.ts
-meta.block.ts
-meta.arrow.ts
-meta.block.ts
-meta.arrow.ts
-source.ts
-foreground	storage.type
-{ "foreground": "#006633" }
-
-
-BORDÓ
+azul real
+variable.language.this.ts
+variable.other.object.property.ts
 
