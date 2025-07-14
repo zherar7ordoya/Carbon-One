@@ -1,27 +1,36 @@
 {
-    "name": "Gray CLC",
+    "$schema": "vscode://schemas/color-theme",
+    "name": "Visual Studio 2019 Light",
     "type": "light",
-    //.*************************************************************************
+    // https://github.com/microsoft/vscode/blob/master/extensions/theme-defaults/themes/light_defaults.json
+    "colors": {
+        "editor.background": "#FFFFFF",
+        "editor.foreground": "#000000",
+        "editor.inactiveSelectionBackground": "#E5EBF1",
+        "editorIndentGuide.background": "#D3D3D3",
+        "editorIndentGuide.activeBackground": "#939393",
+        "editor.selectionHighlightBackground": "#ADD6FF80",
+        "editorSuggestWidget.background": "#F3F3F3",
+        "activityBarBadge.background": "#007ACC",
+        "sideBarTitle.foreground": "#6F6F6F",
+        "list.hoverBackground": "#E8E8E8",
+        "input.placeholderForeground": "#767676",
+        "searchEditor.textInputBorder": "#CECECE",
+        "settings.textInputBorder": "#CECECE",
+        "settings.numberInputBorder": "#CECECE",
+        "statusBarItem.remoteForeground": "#FFF",
+        "statusBarItem.remoteBackground": "#16825D",
+        "sideBarSectionHeader.background": "#0000",
+        "sideBarSectionHeader.border": "#61616130"
+    },
     "semanticHighlighting": true,
-    //.*************************************************************************
     "semanticTokenColors": {
-        "enumMember": {
-            "foreground": "#56b6c2"
-        },
-        "variable.constant": {
-            "foreground": "#d19a66"
-        },
-        "variable.defaultLibrary": {
-            "foreground": "#e5c07b"
-        },
-        //............................................................... VS2019
         "*.deprecated": {
             "strikethrough": true
         }
     },
-    //.*************************************************************************
+    // https://github.com/microsoft/vscode/blob/master/extensions/theme-defaults/themes/light_vs.json
     "tokenColors": [
-        //............................................................... VS2019
         {
             "scope": [
                 "meta.embedded",
@@ -799,188 +808,5 @@
                 "foreground": "#800000"
             }
         },
-        //......................................................................
-        {
-            "settings": {
-                "foreground": "#2a2a2a"
-            }
-        },
-        {
-            "scope": [
-                "comment",
-                "meta.tag"
-            ],
-            "settings": {
-                "foreground": "#5c5c5c"
-            }
-        },
-        {
-            "scope": [
-                "constant",
-                "support.constant",
-                "meta.property-value",
-                "entity.name.tag",
-                "keyword.other.unit.css"
-            ],
-            "settings": {
-                "foreground": "#6a1e6f"
-            }
-        },
-        {
-            "scope": [
-                "variable",
-                "entity.other.attribute-name",
-                "support.other.namespace",
-                "support.class",
-                "support.type.property-name",
-                "meta.property-name",
-                "meta.instance.constructor"
-            ],
-            "settings": {
-                //"foreground": "#0066cc"
-                "foreground": "#2233aa"
-            }
-        },
-        {
-            "scope": [
-                "variable.other.property",
-                "meta.property.object"
-            ],
-            "settings": {
-                "foreground": "#0066cc"
-            }
-        },
-        {
-            "scope": [
-                "keyword.operator",
-                "storage",
-                "keyword",
-                "punctuation.separator",
-                "meta.group.braces.round.function.arguments"
-            ],
-            "settings": {
-                "foreground": "#2233aa"
-            }
-        },
-        {
-            "scope": [
-                "meta.separator",
-                "invalid"
-            ],
-            "settings": {
-                "foreground": "#bbbbbb"
-            }
-        },
-        {
-            "scope": [
-                "entity.other.attribute-name.class",
-                "entity.name.tag.css",
-                "keyword.other",
-                "string.quoted.double",
-                "string.quoted.single",
-                "punctuation.definition.string"
-            ],
-            "settings": {
-                "foreground": "#7a1c1c"
-            }
-        },
-        {
-            "scope": [
-                "variable.function",
-                "entity.name.function",
-                "meta.function-call"
-            ],
-            "settings": {
-                "foreground": "#2a5e2a"
-            }
-        },
-        {
-            "scope": "support.function",
-            "settings": {
-                "foreground": "#007700"
-            }
-        }
-    ],
-    //.*************************************************************************
-    "colors": {
-        "editorGutter.background": "#DADADA",
-        "editorLineNumber.foreground": "#46608A",
-        "editorLineNumber.activeForeground": "#2E4A6C",
-        "titleBar.activeBackground": "#4A77A8",
-        "titleBar.inactiveBackground": "#CAD1D9",
-        "activityBar.background": "#DFE6F0",
-        "activityBarBadge.background": "#B7553C",
-        "activityBar.border": "#BCC3D0",
-        "sideBar.background": "#F2F5F9",
-        "sideBar.foreground": "#3C3C3C",
-        "sideBar.border": "#AAB2BC",
-        "sideBarTitle.foreground": "#46608A",
-        "sideBarSectionHeader.foreground": "#46608A",
-        "statusBar.background": "#46608A",
-        "button.background": "#4A77A8",
-        "button.hoverBackground": "#3E6390",
-        "editor.selectionBackground": "#B3D1ED",
-        "editor.inactiveSelectionBackground": "#DCE4EC88",
-        "editor.selectionHighlightBackground": "#B3D1ED80",
-        "editor.selectionHighlightBorder": "#4A77A8",
-        "focusBorder": "#4A77A8",
-        "selection.background": "#B3D1ED",
-        "peekView.border": "#4A77A8",
-        "list.highlightForeground": "#2D5C90",
-        "list.activeSelectionBackground": "#C7DEEE",
-        "list.inactiveSelectionBackground": "#C7DEEE88",
-        "menu.selectionBackground": "#46608A",
-        "editorGroupHeader.tabsBackground": "#C7D2EC",
-        "editorGroup.border": "#DADADA",
-        "panel.background": "#E5EDF5",
-        "panel.border": "#C0C6CC",
-        "panelTitle.activeForeground": "#46608A",
-        "panelTitle.activeBorder": "#46608A",
-        "input.border": "#C2C2C2",
-        "input.placeholderForeground": "#6F6F6F",
-        "progressBar.background": "#46608A",
-        "terminal.selectionBackground": "#C7DEEE",
-        "breadcrumb.background": "#DADADA",
-        "notificationCenterHeader.background": "#4A77A8",
-        "notificationsInfoIcon.foreground": "#4A77A8",
-        "editor.background": "#dadada",
-        "editor.foreground": "#1A1A1A",
-        "editorCursor.foreground": "#000000",
-        "titleBar.activeForeground": "#ffffff",
-        "titleBar.inactiveForeground": "#4d4d4dcc",
-        "activityBar.foreground": "#000000",
-        "activityBar.inactiveForeground": "#555555",
-        "activityBarBadge.foreground": "#ffffff",
-        "sideBarSectionHeader.background": "#f5f7fa",
-        "statusBar.foreground": "#ffffff",
-        "statusBar.border": "#d9d7d5",
-        "button.foreground": "#ffffff",
-        "list.activeSelectionForeground": "#1A1A1A",
-        "list.hoverBackground": "#dceaf6",
-        "list.hoverForeground": "#1A1A1A",
-        "list.inactiveSelectionForeground": "#1A1A1A",
-        "menu.selectionForeground": "#ffffff",
-        "menu.foreground": "#1A1A1A",
-        "menu.background": "#ffffff",
-        "tab.activeBackground": "#E0E0E0",
-        "tab.activeForeground": "#000000",
-        "tab.inactiveBackground": "#f0f0f0",
-        "tab.inactiveForeground": "#555555",
-        "tab.border": "#cccccc",
-        "badge.background": "#c7694a",
-        "badge.foreground": "#ffffff",
-        "input.background": "#ffffff",
-        "input.foreground": "#1A1A1A",
-        "terminal.foreground": "#1A1A1A",
-        "terminal.background": "#E0E0E0",
-        "terminalCursor.foreground": "#1A1A1A",
-        "panelTitle.inactiveForeground": "#7a7a7a",
-        "breadcrumb.foreground": "#616161cc",
-        "breadcrumb.focusForeground": "#4e4e4e",
-        "notificationCenterHeader.foreground": "#ffffff",
-        "notifications.foreground": "#1A1A1A",
-        "notifications.background": "#f3f3f3",
-        "notificationsErrorIcon.foreground": "#c04444",
-        "notificationsWarningIcon.foreground": "#d28a53"
-    }
+    ]
 }
