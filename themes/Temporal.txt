@@ -1,10 +1,13 @@
-this (subrayado)
+itálica
 
-variable.language.this.ts
-meta.function-call.ts
-meta.block.ts
-meta.method.declaration.ts
-meta.class.ts
-source.ts
-foreground	variable.language
-{ "foreground": "#000099" }
+foreground	#994400
+background	#D6D6DC
+contrast ratio	4.56
+textmate scopes	string.quoted.double.html
+
+foreground	#994400
+background	#D6D6DC
+contrast ratio	4.56
+textmate scopes	string.quoted.single.ts
+
+
