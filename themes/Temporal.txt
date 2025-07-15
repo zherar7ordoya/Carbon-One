@@ -1,4 +1,10 @@
-lila
+this (subrayado)
 
-keyword.control.import.ts
-
+variable.language.this.ts
+meta.function-call.ts
+meta.block.ts
+meta.method.declaration.ts
+meta.class.ts
+source.ts
+foreground	variable.language
+{ "foreground": "#000099" }
