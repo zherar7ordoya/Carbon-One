@@ -1,21 +1,21 @@
-# 🎨 Paleta Alto Contraste para fondo `#DADADA`
+# 🎨 Paleta para fondo `#e1e1e7`
 
-| Nombre del color       | Color HEX  | Descripción sugerida                       |
-|------------------------|------------|--------------------------------------------|
-| Carbón profundo        | `#1A1A1A`  | Color base para texto principal, variables |
-| Azul noche             | `#003366`  | Keywords, tipos, estructuras               |
-| Azul real              | `#0055AA`  | Nombres de clases, interfaces              |
-| Verde bosque oscuro    | `#006633`  | Funciones, métodos, llamadas               |
-| Verde militar          | `#225544`  | Constantes, enums                          |
-| Bordó clásico          | `#8B1A1A`  | Strings, valores literales                 |
-| Marrón oscuro          | `#663300`  | Parámetros, argumentos                     |
-| Lila grisáceo          | `#553C75`  | Tipos genéricos, namespaces                |
-| Mostaza quemada        | `#996600`  | Propiedades, atributos                     |
-| Gris humo medio        | `#555555`  | Comentarios, información secundaria        |
-| Gris niebla suave      | `#767676`  | Puntuaciones, delimitadores, decoradores   |
-| Azul acero claro       | `#4D6E9D`  | Elementos secundarios, selección, tooltips |
-| Violeta sobrio         | `#5A007A`  | Interfaces, anotaciones                    |
-| Celeste grisáceo       | `#B3CDE0`  | Color de fondo para selección              |
-| Rojo vino profundo     | `#9E2A2B`  | Invalid, errores                           |
+| Nombre breve          | Color     | Rol típico en el código | Comentario / Justificación         |
+| --------------------- | --------- | ----------------------- | ---------------------------------- |
+| **Texto base**        | `#000033` | Todo texto no resaltado | Contraste perfecto y sereno        |
+| **Comentario**        | `#558855` | Comentarios             | Verde suave, no vibra              |
+| **Palabras clave**    | `#0033cc` | `if`, `class`, `new`... | Azul sobrio, muy legible           |
+| **Tipo / Clase**      | `#007755` | `int`, `MyClass`, etc.  | Verde azulado, buena distinción    |
+| **Constantes**        | `#0066cc` | `PI`, `Enum.Value`      | Azul brillante, no estridente      |
+| **Variables**         | `#224477` | Variables generales     | Azul medio, distingue sin chocar   |
+| **Funciones**         | `#885500` | Nombres de métodos      | Mostaza profunda, mayor contraste  |
+| **Strings**           | `#aa4400` | Cadenas `"texto"`       | Marrón cálido, resalta sin romper  |
+| **Números**           | `#000066` | Literales `42`, `3.14`  | Azul profundo, sin ambigüedad      |
+| **Puntuación**        | `#333333` | `:`, `,`, `{`, `}`...   | Neutro, sin robar atención         |
+| **HTML Tags/Attrs**   | `#0033cc` | `<div>`, `id=`...       | Mismo azul que keywords            |
+| **Escape secuencias** | `#996600` | `\n`, `\t`              | Color original, mantiene identidad |
+| **Regex / Symbol**    | `#cc6600` | `/regex/`, `@meta`      | Solo si realmente se usa           |
 
-💡 *Sugerencia:* Si necesitás una versión translúcida, agregale dos dígitos hexadecimales al final. Por ejemplo: `#0055AA66` para 40% de opacidad.
+
+💡 Versión translúcida: agregale dos dígitos hexadecimales al final.
+   Por ejemplo: `#0055AA66` para 40% de opacidad.
