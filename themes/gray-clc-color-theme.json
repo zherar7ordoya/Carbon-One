@@ -6,67 +6,67 @@
         {
             "scope": "entity.name.function.ts",
             "settings": {
-                "foreground": "#885500"
+                "foreground": "#996600"
             }
         },
         // VIOLETA NORMAL
         {
             "scope": "keyword.control.import.ts",
             "settings": {
-                "foreground": "#4B367C"
+                "foreground": "#7A3E9D"
             }
         },
         // GRIS ITALIC
         {
             "scope": "comment.line.double-slash.ts",
             "settings": {
-                "foreground": "#5F5F5F"
+                "foreground": "#777777"
             }
         },
         // VERDE NORMAL
         {
             "scope": "support.type.primitive.ts",
             "settings": {
-                "foreground": "#3F5E2E"
+                "foreground": "#007755"
             }
         },
         {
             "scope": "storage.type.function.arrow.ts",
             "settings": {
-                "foreground": "#3F5E2E"
+                "foreground": "#007755"
             }
         },
         // AZUL REAL
         {
             "scope": "variable.other.object.ts",
             "settings": {
-                "foreground": "#1F3B82"
+                "foreground": "#000066"
             }
         },
         {
             "scope": "variable.language.this.ts",
             "settings": {
-                "foreground": "#1F3B82"
+                "foreground": "#000066"
             }
         },
         {
             "scope": "variable.other.object.property.ts",
             "settings": {
-                "foreground": "#1F3B82"
+                "foreground": "#000066"
             }
         },
         // AZUL REAL + ITALIC
         {
             "scope": "variable.other.readwrite.ts",
             "settings": {
-                "foreground": "#1F3B82",
+                "foreground": "#000066",
                 "fontStyle": "italic"
             }
         },
         {
             "scope": "variable.parameter.ts",
             "settings": {
-                "foreground": "#1F3B82",
+                "foreground": "#000066",
                 "fontStyle": "italic"
             }
         },
@@ -152,10 +152,26 @@
   "badge.background": "#c7694a",
   "badge.foreground": "#ffffff",
 
-  "terminal.foreground": "#1A1A1A",
-  "terminal.background": "#e1e1e7",
-  "terminalCursor.foreground": "#1A1A1A",
-  "terminal.selectionBackground": "#c7deee",
+        "terminal.background": "#2B2B2B",
+        "terminal.foreground": "#E6E1DC",
+        "terminalCursor.background": "#E6E1DC",
+        "terminalCursor.foreground": "#E6E1DC",
+        "terminal.ansiBlack": "#2B2B2B",
+        "terminal.ansiBrightBlack": "#5A647E",
+        "terminal.ansiRed": "#AA3731",
+        "terminal.ansiBrightRed": "#DA4939",
+        "terminal.ansiGreen": "#448C27",
+        "terminal.ansiBrightGreen": "#66AA44",
+        "terminal.ansiYellow": "#996600",
+        "terminal.ansiBrightYellow": "#FFCC66",
+        "terminal.ansiBlue": "#0044AA",
+        "terminal.ansiBrightBlue": "#3377DD",
+        "terminal.ansiMagenta": "#7A3E9D",
+        "terminal.ansiBrightMagenta": "#A088CC",
+        "terminal.ansiCyan": "#006666",
+        "terminal.ansiBrightCyan": "#339999",
+        "terminal.ansiWhite": "#E6E1DC",
+        "terminal.ansiBrightWhite": "#F4F1EC",
 
   "breadcrumb.background": "#e1e1e7",
   "breadcrumb.foreground": "#616161cc",

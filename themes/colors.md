@@ -1,21 +1,25 @@
 # 🎨 Paleta para fondo `#e1e1e7`
 
-| Nombre breve          | Color     | Rol típico en el código | Comentario / Justificación         |
-| --------------------- | --------- | ----------------------- | ---------------------------------- |
-| **Texto base**        | `#000033` | Todo texto no resaltado | Contraste perfecto y sereno        |
-| **Comentario**        | `#558855` | Comentarios             | Verde suave, no vibra              |
-| **Palabras clave**    | `#0033cc` | `if`, `class`, `new`... | Azul sobrio, muy legible           |
-| **Tipo / Clase**      | `#007755` | `int`, `MyClass`, etc.  | Verde azulado, buena distinción    |
-| **Constantes**        | `#0066cc` | `PI`, `Enum.Value`      | Azul brillante, no estridente      |
-| **Variables**         | `#224477` | Variables generales     | Azul medio, distingue sin chocar   |
-| **Funciones**         | `#885500` | Nombres de métodos      | Mostaza profunda, mayor contraste  |
-| **Strings**           | `#aa4400` | Cadenas `"texto"`       | Marrón cálido, resalta sin romper  |
-| **Números**           | `#000066` | Literales `42`, `3.14`  | Azul profundo, sin ambigüedad      |
-| **Puntuación**        | `#333333` | `:`, `,`, `{`, `}`...   | Neutro, sin robar atención         |
-| **HTML Tags/Attrs**   | `#0033cc` | `<div>`, `id=`...       | Mismo azul que keywords            |
-| **Escape secuencias** | `#996600` | `\n`, `\t`              | Color original, mantiene identidad |
-| **Regex / Symbol**    | `#cc6600` | `/regex/`, `@meta`      | Solo si realmente se usa           |
-
+| Nombre/Idea       | Color     | Contraste | Estado | Observaciones                       |
+| ----------------- | --------- | --------- | ------ | ----------------------------------- |
+| Texto principal   | `#000033` | 15.39     |   ✅   | Base neutral, excelente legibilidad |
+| Negro suave       | `#333333` | 9.70      |   ✅   | Alternativa elegante y neutra       |
+| Gris medio        | `#434343` | 7.60      |   ✅   | Comentarios o separadores           |
+| Gris claro        | `#777777` | 3.44      |   ⚠️   | Solo para anotaciones tenues        |
+| Azul profundo     | `#000066` | 13.53     |   ✅   | Ideal para números o keywords       |
+| Azul clásico      | `#0033CC` | 6.88      |   ✅   | Saturado pero legible               |
+| Azul cielo oscuro | `#0066CC` | 4.27      |   ✅   | Oscurecido a `#0044AA` (nuevo)      |
+| Azul petróleo     | `#112266` | 11.16     |   ✅   | Profundo, versátil                  |
+| Verde inglés      | `#005000` | 4.78      |   ✅   | Comentarios, muy sobrio             |
+| Verde selva       | `#007755` | 4.28      |   ✅   | Oscurecido a `#005540` (nuevo)      |
+| Verde lima musgo  | `#448C27` | 3.21      |   ✅   | Oscurecido a `#336611`              |
+| Rojo oscuro       | `#660000` | 10.30     |   ✅   | Errores, muy legible                |
+| Rojo ladrillo     | `#AA3731` | 4.89      |   ✅   | Títulos o advertencias              |
+| Mostaza clásico   | `#996600` | 3.79      |   ✅   | Ajustado a `#775500`, equilibrio    |
+| Naranja siena     | `#cc6600` | 2.95      |   ✅   | Oscurecido a `#994400`              |
+| Marrón cobrizo    | `#AB6526` | 3.49      |   ✅   | Ajustado a `#884400`                |
+| Violeta oscuro    | `#7A3E9D` | 5.37      |   ✅   | Funciona bien para tags o énfasis   |
+| Cian profundo     | `#006666` | 5.21      |   ✅   | Para atributos, etc.                |
 
 💡 Versión translúcida: agregale dos dígitos hexadecimales al final.
    Por ejemplo: `#0055AA66` para 40% de opacidad.
