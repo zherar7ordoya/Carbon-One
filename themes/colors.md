@@ -1,27 +1,26 @@
-# 🎨 Paleta para fondo `#E0E0E5`
+# 🎨 Paleta de colores
 
-| Nombre sugerido        | Color Hex | Contraste |
-| ---------------------- | --------- | --------- |
-| Texto base profundo    | `#000022` | 11.2:1    |
-| Negro suave            | `#333333` | 9.3:1     |
-| Gris medio oscuro      | `#4A4A4A` | 8.2:1     |
-| Gris tenue revisado    | `#888888` | 5.9:1     |
-| Azul marino            | `#000066` | 10.5:1    |
-| Azul clásico profundo  | `#0033CC` | 9.8:1     |
-| Azul cielo corregido   | `#0066CC` | 8.6:1     |
-| Azul petróleo          | `#112266` | 8.1:1     |
-| Azul grisáceo          | `#1A1A99` | 8.4:1     |
-| Verde inglés oscuro    | `#005500` | 9.4:1     |
-| Verde bosque profundo  | `#006644` | 8.2:1     |
-| Verde musgo ajustado   | `#5A8822` | 6.9:1     |
-| Cian técnico revisado  | `#0094B6` | 7.2:1     |
-| Violeta presente       | `#8844AA` | 6.7:1     |
-| Rojo sangre            | `#660000` | 9.1:1     |
-| Rojo ladrillo revisado | `#BB4433` | 7.5:1     |
-| Mostaza activo         | `#B48800` | 7.0:1     |
-| Naranja tierra fuerte  | `#AA5500` | 7.3:1     |
-| Marrón cobrizo claro   | `#A06020` | 6.4:1     |
+| COLOR                | HEXA      | WCAG   |
+| -------------------- | --------- | ------ |
+| Editor Background    | #E1E1E7 | 0.0:0  |
+| Editor Foreground    | #000000 | 20.0:1 |
+| Gris Oscuro (claro)  | #555555 | 8.8:1  |
+| Gris Oscuro (oscuro) | #333333 | 13.9:1 |
+| Azul (claro)         | #3A5FCD | 7.3:1  |
+| Azul (oscuro)        | #191970 | 13.8:1 |
+| Verde (claro)        | #228B22 | 8.9:1  |
+| Verde (oscuro)       | #006400 | 13.8:1 |
+| Rojo (claro)         | #B22222 | 6.9:1  |
+| Rojo (oscuro)        | #8B0000 | 11.2:1 |
+| Púrpura (claro)      | #800080 | 7.0:1  |
+| Púrpura (oscuro)     | #4B0082 | 9.6:1  |
+| Naranja (claro)      | #FF8C00 | 5.1:1  |
+| Naranja (oscuro)     | #CD6600 | 7.1:1  |
+| Gris Comentario      | #8E8E99 | 3.1:1  |
+| Verde Comentario     | #8FAD8F | 2.9:1  |
 
-💡 Versión translúcida:
+## 💡 Versión translúcida
+
 Dos dígitos hexadecimales al final.
-Por ejemplo: `#0055AA66` para 40% de opacidad (recomendado).
+Por ejemplo:
+`#0055AA66` para 40% de opacidad (recomendado).

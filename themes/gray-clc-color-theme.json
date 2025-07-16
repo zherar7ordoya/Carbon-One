@@ -84,7 +84,7 @@
             }
         },
         //
-        // Azul clásico profundo
+        // Azul (oscuro)
         //
         {
             "scope": [
@@ -101,7 +101,7 @@
                 "markup.list",
             ],
             "settings": {
-                "foreground": "#0033CC"
+                "foreground": "#191970"
             }
         },
         //
@@ -139,8 +139,7 @@
                 "support.variable"
             ],
             "settings": {
-                //"foreground": "#112266"
-                "foreground": "#660000"
+                "foreground": "#112266",
             }
         },
         //
@@ -154,11 +153,11 @@
                 "punctuation",
             ],
             "settings": {
-                "foreground": "#112266"
+                "foreground": "#112266",
             }
         },
         //
-        // Verde inglés oscuro
+        // Verde musgo ajustado
         //
         {
             "scope": [
@@ -170,8 +169,7 @@
                 "support.class",
             ],
             "settings": {
-                //"foreground": "#0094B6"
-                "foreground": "#005500",
+                "foreground": "#5A8822",
             }
         },
         //
@@ -241,11 +239,11 @@
                 "constant.character.escape",
             ],
             "settings": {
-                "foreground": "#B48800",
+                "foreground": "#FF8C00",
             }
         },
         //
-        // Naranja tierra fuerte
+        // Naranja tierra fuerte $7340
         //
         {
             "scope": [
@@ -337,7 +335,7 @@
             }
         },
         //
-        // Verde inglés oscuro
+        // Verde musgo ajustado
         //
         {
             "scope": [
@@ -348,7 +346,7 @@
                 "markup.italic",
             ],
             "settings": {
-                "foreground": "#005500"
+                "foreground": "#5A8822"
             }
         },
         //
@@ -371,8 +369,8 @@
     // -------------------------------------------------------------------------
     //
     "colors": {
-        "editor.background": "#E0E0E5",
-        "editor.foreground": "#000022",
+        "editor.background": "#E1E1E7",
+        "editor.foreground": "#000000",
         "editorCursor.foreground": "#000000",
         "editor.selectionBackground": "#bcd9f0",
         "editor.inactiveSelectionBackground": "#dfe7f066",
