@@ -10,67 +10,77 @@
         // Itálico, negrita y subrayado
         //
         {
-            "scope": "markup.underline",
+            "scope": [
+                "markup.underline",
+            ],
             "settings": {
                 "fontStyle": "underline"
             }
         },
         {
             "scope": [
-                "markup.italic",
-                "variable.parameter"
-            ],
-            "settings": {
-                "fontStyle": "italic"
-            }
-        },
-        {
-            "scope": [
-                "entity.name.section",
-                "keyword.other.important",
-                "markup.bold",
+                "beginning.punctuation",
+                "entity.name.section.group-title",
+                "entity.name.tag",
+                "keyword.const",
+                "keyword.function",
+                "keyword.import",
+                "keyword.operator.assignment",
+                "keyword.operator.comparison",
+                "keyword.operator.decrement",
+                "keyword.operator.expression",
+                "keyword.operator.increment",
+                "keyword.operator.increment-decrement",
+                "keyword.operator.logical",
+                "keyword.operator.new",
+                "keyword.operator.other",
+                "keyword.other.special-method",
+                "keyword.package",
+                "keyword.type",
+                "keyword.var",
+                "markup.heading",
+                "meta.tag.sgml.doctype.html",
+                "punctuation.separator.key-value",
             ],
             "settings": {
                 "fontStyle": "bold"
             }
         },
-        //
-        // Gris tenue
-        //
         {
             "scope": [
+                "emphasis",
+                "storage",
                 "comment",
-                "punctuation.definition.comment",
-                "comment.block.preprocessor",
-                "comment.documentation",
-                "comment.block.documentation",
+                "entity.other.attribute-name",
+                "entity.other.attribute-name.html",
+                "entity.other.attribute-name.tag.jade",
+                "entity.other.attribute-name.tag.pug",
+                "markup.italic",
+                "variable.language",
             ],
             "settings": {
-                "foreground": "#777777",
                 "fontStyle": "italic"
             }
         },
-        //
-        // Rojo sangre
-        //
         {
             "scope": [
-                "invalid.illegal",
-                "entity.name.exception",
-                "markup.error",
-                "markup.traceback",
+                "entity.other.attribute-name.class",
+                "entity.other.attribute-name.id",
+                "keyword.control",
+                "storage.modifier",
+                "storage.type.class",
+                "storage.type.enum",
+                "storage.type.function",
+                "storage.type.import",
+                "storage.type.interface",
+                "storage.type.js",
+                "storage.type.namespace",
+                "storage.type.property",
+                "storage.type.string.python",
+                "storage.type.ts",
             ],
             "settings": {
-                "foreground": "#660000"
-            }
-        },
-        //
-        // Negro suave
-        //
-        {
-            "scope": "keyword.operator",
-            "settings": {
-                "foreground": "#333333"
+                "fontStyle": "italic bold"
             }
         },
         //
@@ -95,48 +105,6 @@
             }
         },
         //
-        // Cian oscuro
-        //
-        {
-            "scope": [
-                "storage.type",
-                "support.type",
-                "entity.name.type",
-                "entity.name.namespace",
-                "entity.other.inherited-class",
-                "support.class",
-            ],
-            "settings": {
-                "foreground": "#0088A0"
-            }
-        },
-        //
-        // Azul grisáceo
-        //
-        {
-            "scope": [
-                "constant.language",
-                "support.constant",
-                "variable.language"
-            ],
-            "settings": {
-                "foreground": "#000099",
-                "fontStyle": "italic"
-            }
-        },
-        //
-        // Azul petróleo
-        //
-        {
-            "scope": [
-                "variable",
-                "support.variable"
-            ],
-            "settings": {
-                "foreground": "#112266"
-            }
-        },
-        //
         // Azul clásico profundo (repetido)
         //
         {
@@ -150,17 +118,29 @@
             }
         },
         //
-        // Mostaza ajustado
+        // Azul grisáceo
         //
         {
             "scope": [
-                "entity.name.function",
-                "support.function",
-                "constant.character.escape",
+                "constant.language",
+                "support.constant",
+                "variable.language"
             ],
             "settings": {
-                "foreground": "#A57C00",
-                "fontStyle": "underline"
+                "foreground": "#1A1A99",
+            }
+        },
+        //
+        // Azul petróleo
+        //
+        {
+            "scope": [
+                "variable",
+                "support.variable"
+            ],
+            "settings": {
+                //"foreground": "#112266"
+                "foreground": "#660000"
             }
         },
         //
@@ -178,26 +158,50 @@
             }
         },
         //
-        // Naranja tierra fuerte
+        // Verde inglés oscuro
         //
         {
             "scope": [
-                "string",
-                "punctuation.definition.string",
-                "string.regexp",
+                "storage.type",
+                "support.type",
+                "entity.name.type",
+                "entity.name.namespace",
+                "entity.other.inherited-class",
+                "support.class",
             ],
             "settings": {
-                "foreground": "#AA5500",
-                "fontStyle": "italic"
+                //"foreground": "#0094B6"
+                "foreground": "#005500",
             }
         },
         //
-        // Naranja tierra fuerte (repetido)
+        // Gris medio oscuro
         //
         {
-            "scope": "constant.other.symbol",
+            "scope": [
+                "meta.diff.range",
+                "meta.diff.index",
+                "meta.separator",
+                "meta.diff.header.from-file",
+                "meta.diff.header.to-file",
+            ],
             "settings": {
-                "foreground": "#AA5500"
+                "foreground": "#4A4A4A"
+            }
+        },
+        //
+        // Gris tenue
+        //
+        {
+            "scope": [
+                //"comment",
+                "punctuation.definition.comment",
+                "comment.block.preprocessor",
+                "comment.documentation",
+                "comment.block.documentation",
+            ],
+            "settings": {
+                "foreground": "#888888",
             }
         },
         //
@@ -211,19 +215,55 @@
                 "meta.tag.sgml punctuation.definition.tag.html"
             ],
             "settings": {
-                "foreground": "#777777"
+                "foreground": "#888888"
             }
         },
         //
-        // Verde bosque profundo
+        // Gris tenue (repetido)
         //
         {
             "scope": [
-                "meta.tag entity.other.attribute-name",
-                "entity.other.attribute-name.html"
+                "markup.output",
+                "markup.raw",
+                "markup.prompt",
             ],
             "settings": {
-                "foreground": "#005540"
+                "foreground": "#888888"
+            }
+        },
+        //
+        // Mostaza ajustado
+        //
+        {
+            "scope": [
+                "entity.name.function",
+                "support.function",
+                "constant.character.escape",
+            ],
+            "settings": {
+                "foreground": "#B48800",
+            }
+        },
+        //
+        // Naranja tierra fuerte
+        //
+        {
+            "scope": [
+                "string",
+                "punctuation.definition.string",
+                "string.regexp",
+            ],
+            "settings": {
+                "foreground": "#AA5500",
+            }
+        },
+        //
+        // Naranja tierra fuerte (repetido)
+        //
+        {
+            "scope": "constant.other.symbol",
+            "settings": {
+                "foreground": "#AA5500"
             }
         },
         //
@@ -240,34 +280,35 @@
             }
         },
         //
-        // Violeta sobrio
+        // Negro suave
         //
         {
-            "scope": [
-                "meta.selector",
-                "meta.selector entity",
-                "meta.selector entity punctuation",
-                "entity.name.tag.css",
-                "markup.quote",
-            ],
+            "scope": "keyword.operator",
             "settings": {
-                "foreground": "#7A3E9D",
-                "fontStyle": "underline"
+                "foreground": "#333333"
             }
         },
         //
-        // Verde musgo intenso (repetido)
+        // Rojo ladrillo
+        //
+        {
+            "scope": "markup.heading",
+            "settings": {
+                "foreground": "#BB4433"
+            }
+        },
+        //
+        // Rojo sangre
         //
         {
             "scope": [
-                "meta.property-value",
-                "meta.property-value constant.other",
-                "support.constant.property-value",
-                "markup.bold",
-                "markup.italic",
+                "invalid.illegal",
+                "entity.name.exception",
+                "markup.error",
+                "markup.traceback",
             ],
             "settings": {
-                "foreground": "#4A7725"
+                "foreground": "#660000"
             }
         },
         //
@@ -280,44 +321,49 @@
                 "markup.inserted",
             ],
             "settings": {
-                "foreground": "#000033"
+                "foreground": "#000022"
             }
         },
         //
-        // Gris tenue (repetido)
+        // Verde bosque profundo
         //
         {
             "scope": [
-                "markup.output",
-                "markup.raw",
-                "markup.prompt",
+                "meta.tag entity.other.attribute-name",
+                "entity.other.attribute-name.html"
             ],
             "settings": {
-                "foreground": "#777777"
+                "foreground": "#006644"
             }
         },
         //
-        // Rojo ladrillo
-        //
-        {
-            "scope": "markup.heading",
-            "settings": {
-                "foreground": "#AA3731"
-            }
-        },
-        //
-        // Gris medio oscuro
+        // Verde inglés oscuro
         //
         {
             "scope": [
-                "meta.diff.range",
-                "meta.diff.index",
-                "meta.separator",
-                "meta.diff.header.from-file",
-                "meta.diff.header.to-file",
+                "meta.property-value",
+                "meta.property-value constant.other",
+                "support.constant.property-value",
+                "markup.bold",
+                "markup.italic",
             ],
             "settings": {
-                "foreground": "#434343"
+                "foreground": "#005500"
+            }
+        },
+        //
+        // Violeta sobrio
+        //
+        {
+            "scope": [
+                "meta.selector",
+                "meta.selector entity",
+                "meta.selector entity punctuation",
+                "entity.name.tag.css",
+                "markup.quote",
+            ],
+            "settings": {
+                "foreground": "#8844AA",
             }
         },
     ],
@@ -388,7 +434,7 @@
         "terminalCursor.foreground": "#E6E1DC",
         "terminal.ansiBlack": "#2B2B2B",
         "terminal.ansiBrightBlack": "#5A647E",
-        "terminal.ansiRed": "#AA3731",
+        "terminal.ansiRed": "#BB4433",
         "terminal.ansiBrightRed": "#DA4939",
         "terminal.ansiGreen": "#448C27",
         "terminal.ansiBrightGreen": "#66AA44",
@@ -396,7 +442,7 @@
         "terminal.ansiBrightYellow": "#FFCC66",
         "terminal.ansiBlue": "#0044AA",
         "terminal.ansiBrightBlue": "#3377DD",
-        "terminal.ansiMagenta": "#7A3E9D",
+        "terminal.ansiMagenta": "#8844AA",
         "terminal.ansiBrightMagenta": "#A088CC",
         "terminal.ansiCyan": "#006666",
         "terminal.ansiBrightCyan": "#339999",
