@@ -194,7 +194,7 @@
         //
         {
             "scope": [
-                //"comment",
+                "comment",
                 "punctuation.definition.comment",
                 "comment.block.preprocessor",
                 "comment.documentation",
