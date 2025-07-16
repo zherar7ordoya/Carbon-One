@@ -101,7 +101,7 @@
                 "markup.list",
             ],
             "settings": {
-                "foreground": "#191970"
+                "foreground": "#0033CC"
             }
         },
         //
@@ -199,7 +199,7 @@
                 "comment.block.documentation",
             ],
             "settings": {
-                "foreground": "#888888",
+                "foreground": "#008000",
             }
         },
         //
@@ -243,7 +243,7 @@
             }
         },
         //
-        // Naranja tierra fuerte $7340
+        // Naranja tierra fuerte
         //
         {
             "scope": [
@@ -252,7 +252,7 @@
                 "string.regexp",
             ],
             "settings": {
-                "foreground": "#AA5500",
+                "foreground": "#993300",
             }
         },
         //
