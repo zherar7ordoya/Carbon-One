@@ -18,7 +18,25 @@
                 "beginning.punctuation",
                 "entity.name.section.group-title",
                 "entity.name.tag",
+                "markup.heading",
+                "meta.tag.sgml.doctype.html",
+                "punctuation.separator.key-value",
+                "storage.type.function",
+            ],
+            "settings": {
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": [
+                "comment",
+                "emphasis",
+                "entity.other.attribute-name",
+                "entity.other.attribute-name.html",
+                "entity.other.attribute-name.tag.jade",
+                "entity.other.attribute-name.tag.pug",
                 "keyword.const",
+                "keyword.control",
                 "keyword.function",
                 "keyword.import",
                 "keyword.operator.assignment",
@@ -34,24 +52,8 @@
                 "keyword.package",
                 "keyword.type",
                 "keyword.var",
-                "markup.heading",
-                "meta.tag.sgml.doctype.html",
-                "punctuation.separator.key-value",
-            ],
-            "settings": {
-                "fontStyle": "bold"
-            }
-        },
-        {
-            "scope": [
-                "emphasis",
-                "storage",
-                "comment",
-                "entity.other.attribute-name",
-                "entity.other.attribute-name.html",
-                "entity.other.attribute-name.tag.jade",
-                "entity.other.attribute-name.tag.pug",
                 "markup.italic",
+                "storage",
                 "variable.language",
             ],
             "settings": {
@@ -62,11 +64,9 @@
             "scope": [
                 "entity.other.attribute-name.class",
                 "entity.other.attribute-name.id",
-                "keyword.control",
                 "storage.modifier",
                 "storage.type.class",
                 "storage.type.enum",
-                "storage.type.function",
                 "storage.type.import",
                 "storage.type.interface",
                 "storage.type.js",
@@ -85,6 +85,7 @@
                 "markup.changed",
                 "markup.deleted",
                 "markup.inserted",
+                "markup.list",
             ],
             "settings": {
                 "foreground": "#000000"
@@ -126,7 +127,6 @@
                 "meta.property-name",
                 "support.type.property-name",
                 "meta.link",
-                "markup.list",
             ],
             "settings": {
                 "foreground": "#0033CC"
@@ -168,18 +168,9 @@
             }
         },
         // ---------------------------------------------------------------------
-        {
-            "scope": [
-                "comment",
-                "punctuation.definition.comment",
-                "comment.block.preprocessor",
-                "comment.documentation",
-                "comment.block.documentation",
-            ],
-            "settings": {
-                "foreground": "#008000",
-            }
-        },
+        //
+        //"foreground": "#008000"
+        //
         // ---------------------------------------------------------------------
         {
             "scope": [
@@ -247,9 +238,14 @@
         // ---------------------------------------------------------------------
         {
             "scope": [
+                "comment",
+                "comment.block.documentation",
+                "comment.block.preprocessor",
+                "comment.documentation",
                 "markup.output",
-                "markup.raw",
                 "markup.prompt",
+                "markup.raw",
+                "punctuation.definition.comment",
             ],
             "settings": {
                 "foreground": "#777777"
