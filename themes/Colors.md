@@ -38,3 +38,7 @@
 09) #996600 <- COINCIDE
 10) #AA336A
 11) #E6E6E6
+
+## Tentativos: #D8D8D8 = rgba(216, 216, 216, 1)
+
+01) #8800AA

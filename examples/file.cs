@@ -16,11 +16,12 @@ class Pig : IAnimal
 
 class Program 
 {
-  static void Main(string[] args) 
-  {
-    var temporal = args[0]; // Assume the first argument is a path to a temporal file
-    Console.WriteLine($"Using temporal file: {temporal}");
-    Pig myPig = new();  // Create a Pig object
-    myPig.AnimalSound();
-  }
+    readonly int temporal = 0; // Example of a temporal variable
+  static void Main(string[] args)
+    {
+        var temporal = args[0]; // Assume the first argument is a path to a temporal file
+        Console.WriteLine($"Using temporal file: {temporal}");
+        Pig myPig = new();  // Create a Pig object
+        myPig.AnimalSound();
+    }
 }

@@ -36,6 +36,7 @@ function createSquare(sideLength) {
 }
 
 // Get result using arrow function
-const squareArea = () => createSquare(10).area;
+var e = 10;
+const squareArea = e => createSquare(e).area;
 console.log(squareArea()); // 100
 console.log([...square.getSides()]); // [10, 10, 10, 10]
