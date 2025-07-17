@@ -2,13 +2,9 @@
     "name": "Gray CLC",
     "type": "light",
     "semanticHighlighting": true,
-    //
-    // -------------------------------------------------------------------------
-    //
+    // =========================================================================
     "tokenColors": [
-        //
-        // Itálico, negrita y subrayado
-        //
+        // ---------------------------------------------------------------------
         {
             "scope": [
                 "markup.underline",
@@ -83,9 +79,41 @@
                 "fontStyle": "italic bold"
             }
         },
-        //
-        // Azul (oscuro)
-        //
+        // ---------------------------------------------------------------------
+        {
+            "scope": [
+                "markup.changed",
+                "markup.deleted",
+                "markup.inserted",
+            ],
+            "settings": {
+                "foreground": "#000000"
+            }
+        },
+        // ---------------------------------------------------------------------
+        {
+            "scope": [
+                "constant.numeric",
+                "constant.character",
+                "constant",
+                "punctuation",
+            ],
+            "settings": {
+                "foreground": "#000066",
+            }
+        },
+        // ---------------------------------------------------------------------
+        {
+            "scope": [
+                "constant.language",
+                "support.constant",
+                "variable.language"
+            ],
+            "settings": {
+                "foreground": "#000099",
+            }
+        },
+        // ---------------------------------------------------------------------
         {
             "scope": [
                 "keyword",
@@ -104,9 +132,17 @@
                 "foreground": "#0033CC"
             }
         },
-        //
-        // Azul clásico profundo (repetido)
-        //
+        // ---------------------------------------------------------------------
+        {
+            "scope": [
+                "meta.tag entity.other.attribute-name",
+                "entity.other.attribute-name.html"
+            ],
+            "settings": {
+                "foreground": "#006666"
+            }
+        },
+        // ---------------------------------------------------------------------
         {
             "scope": [
                 "constant",
@@ -117,48 +153,7 @@
                 "foreground": "#0066CC"
             }
         },
-        //
-        // Azul grisáceo
-        //
-        {
-            "scope": [
-                "constant.language",
-                "support.constant",
-                "variable.language"
-            ],
-            "settings": {
-                "foreground": "#000099",
-            }
-        },
-        //
-        // Azul petróleo
-        //
-        {
-            "scope": [
-                "variable",
-                "support.variable"
-            ],
-            "settings": {
-                "foreground": "#112266",
-            }
-        },
-        //
-        // Azul petróleo (repetido)
-        //
-        {
-            "scope": [
-                "constant.numeric",
-                "constant.character",
-                "constant",
-                "punctuation",
-            ],
-            "settings": {
-                "foreground": "#000066",
-            }
-        },
-        //
-        // Verde musgo ajustado
-        //
+        // ---------------------------------------------------------------------
         {
             "scope": [
                 "storage.type",
@@ -172,24 +167,7 @@
                 "foreground": "#007755",
             }
         },
-        //
-        // Gris medio oscuro
-        //
-        {
-            "scope": [
-                "meta.diff.range",
-                "meta.diff.index",
-                "meta.separator",
-                "meta.diff.header.from-file",
-                "meta.diff.header.to-file",
-            ],
-            "settings": {
-                "foreground": "#434343"
-            }
-        },
-        //
-        // Gris tenue
-        //
+        // ---------------------------------------------------------------------
         {
             "scope": [
                 "comment",
@@ -202,148 +180,37 @@
                 "foreground": "#008000",
             }
         },
-        //
-        // Gris tenue (repetido)
-        //
+        // ---------------------------------------------------------------------
         {
             "scope": [
-                "meta.tag.sgml.doctype",
-                "meta.tag.sgml.doctype string",
-                "meta.tag.sgml.doctype entity.name.tag",
-                "meta.tag.sgml punctuation.definition.tag.html"
+                "variable",
+                "support.variable"
             ],
             "settings": {
-                "foreground": "#AAAAAA"
+                "foreground": "#112266",
             }
         },
-        //
-        // Gris tenue (repetido)
-        //
-        {
-            "scope": [
-                "markup.output",
-                "markup.raw",
-                "markup.prompt",
-            ],
-            "settings": {
-                "foreground": "#777777"
-            }
-        },
-        //
-        // Mostaza ajustado
-        //
-        {
-            "scope": [
-                "entity.name.function",
-                "support.function",
-                "constant.character.escape",
-            ],
-            "settings": {
-                "foreground": "#996600",
-            }
-        },
-        //
-        // Naranja tierra fuerte
-        //
-        {
-            "scope": [
-                "string",
-                "punctuation.definition.string",
-            ],
-            "settings": {
-                "foreground": "#993300",
-            }
-        },
-        {
-            "scope": [
-                "string.regexp",
-            ],
-            "settings": {
-                "foreground": "#666600"
-            }
-        },
-        //
-        // Naranja tierra fuerte (repetido)
-        //
-        {
-            "scope": "constant.other.symbol",
-            "settings": {
-                "foreground": "#CC6600"
-            }
-        },
-        //
-        // Naranja tierra fuerte (repetido)
-        //
-        {
-            "scope": [
-                "constant.character.entity",
-                "punctuation.definition.entity",
-                "markup.inline.raw",
-            ],
-            "settings": {
-                "foreground": "#AB6526"
-            }
-        },
-        //
-        // Negro suave
-        //
+        // ---------------------------------------------------------------------
         {
             "scope": "keyword.operator",
             "settings": {
                 "foreground": "#333333"
             }
         },
-        //
-        // Rojo ladrillo
-        //
-        {
-            "scope": "markup.heading",
-            "settings": {
-                "foreground": "#AA3731"
-            }
-        },
-        //
-        // Rojo sangre
-        //
+        // ---------------------------------------------------------------------
         {
             "scope": [
-                "invalid.illegal",
-                "entity.name.exception",
-                "markup.error",
-                "markup.traceback",
+                "meta.diff.range",
+                "meta.diff.index",
+                "meta.separator",
+                "meta.diff.header.from-file",
+                "meta.diff.header.to-file",
             ],
             "settings": {
-                "foreground": "#660000"
+                "foreground": "#434343"
             }
         },
-        //
-        // Texto base profundo
-        //
-        {
-            "scope": [
-                "markup.changed",
-                "markup.deleted",
-                "markup.inserted",
-            ],
-            "settings": {
-                "foreground": "#000000"
-            }
-        },
-        //
-        // Verde bosque profundo
-        //
-        {
-            "scope": [
-                "meta.tag entity.other.attribute-name",
-                "entity.other.attribute-name.html"
-            ],
-            "settings": {
-                "foreground": "#006666"
-            }
-        },
-        //
-        // Verde musgo ajustado
-        //
+        // ---------------------------------------------------------------------
         {
             "scope": [
                 "meta.property-value",
@@ -356,9 +223,39 @@
                 "foreground": "#448C27"
             }
         },
-        //
-        // Violeta sobrio
-        //
+        // ---------------------------------------------------------------------
+        {
+            "scope": [
+                "invalid.illegal",
+                "entity.name.exception",
+                "markup.error",
+                "markup.traceback",
+            ],
+            "settings": {
+                "foreground": "#660000"
+            }
+        },
+        // ---------------------------------------------------------------------
+        {
+            "scope": [
+                "string.regexp",
+            ],
+            "settings": {
+                "foreground": "#666600"
+            }
+        },
+        // ---------------------------------------------------------------------
+        {
+            "scope": [
+                "markup.output",
+                "markup.raw",
+                "markup.prompt",
+            ],
+            "settings": {
+                "foreground": "#777777"
+            }
+        },
+        // ---------------------------------------------------------------------
         {
             "scope": [
                 "meta.selector",
@@ -371,10 +268,66 @@
                 "foreground": "#7A3E9D",
             }
         },
+        // ---------------------------------------------------------------------
+        {
+            "scope": [
+                "string",
+                "punctuation.definition.string",
+            ],
+            "settings": {
+                "foreground": "#993300",
+            }
+        },
+        // ---------------------------------------------------------------------
+        {
+            "scope": [
+                "entity.name.function",
+                "support.function",
+                "constant.character.escape",
+            ],
+            "settings": {
+                "foreground": "#996600",
+            }
+        },
+        // ---------------------------------------------------------------------
+        {
+            "scope": "markup.heading",
+            "settings": {
+                "foreground": "#AA3731"
+            }
+        },
+        // ---------------------------------------------------------------------
+        {
+            "scope": [
+                "meta.tag.sgml.doctype",
+                "meta.tag.sgml.doctype string",
+                "meta.tag.sgml.doctype entity.name.tag",
+                "meta.tag.sgml punctuation.definition.tag.html"
+            ],
+            "settings": {
+                "foreground": "#AAAAAA"
+            }
+        },
+        // ---------------------------------------------------------------------
+        {
+            "scope": [
+                "constant.character.entity",
+                "punctuation.definition.entity",
+                "markup.inline.raw",
+            ],
+            "settings": {
+                "foreground": "#AB6526"
+            }
+        },
+        // ---------------------------------------------------------------------
+        {
+            "scope": "constant.other.symbol",
+            "settings": {
+                "foreground": "#CC6600"
+            }
+        },
     ],
-    //
-    // -------------------------------------------------------------------------
-    //
+    // =========================================================================
     "colors": {
         "editor.background": "#E1E1E7",
         "editor.foreground": "#000000",

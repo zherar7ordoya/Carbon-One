@@ -1,3 +1,5 @@
+import { createRequire } from 'module';
+
 class Rectangle {
 
     // Declare properties
@@ -19,8 +21,6 @@ class Rectangle {
     *getSides() {
         yield this.height;
         yield this.width;
-        yield this.height;
-        yield this.width;
     }
 }
 
@@ -31,5 +31,7 @@ function createSquare(sideLength) {
     return new Rectangle(sideLength, sideLength);
 }
 
-console.log(square.area); // 100
+// Get result using arrow function
+const squareArea = () => createSquare(10).area;
+console.log(squareArea()); // 100
 console.log([...square.getSides()]); // [10, 10, 10, 10]
