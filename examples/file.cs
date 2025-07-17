@@ -18,6 +18,8 @@ class Program
 {
   static void Main(string[] args) 
   {
+    var temporal = args[0]; // Assume the first argument is a path to a temporal file
+    Console.WriteLine($"Using temporal file: {temporal}");
     Pig myPig = new();  // Create a Pig object
     myPig.AnimalSound();
   }

@@ -5,10 +5,14 @@ class Rectangle {
     // Declare properties
     height;
     width;
+    temporal;
+    template;
 
     constructor(height, width) {
         this.height = height;
         this.width = width;
+        this.temporal = new createRequire(import.meta.url)('./temporal.js');
+        this.template = `The area of the rectangle is ${this.area}`;
     }
     // Getter
     get area() {

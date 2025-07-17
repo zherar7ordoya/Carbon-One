@@ -1,41 +1,15 @@
-# Paleta alternativa de colores
+# PALETA ORIGINAL Y ALTERNATIVA
 
-| CATEGORÍA      | HEX       | SUGERIDO                                             |
-| -------------- | --------- | ---------------------------------------------------- |
-| Fondo          | #E1E1E7 | Color de fondo del editor                            |
-| Texto General  | #000000 | Color de texto predeterminado                        |
-| -------------- | --------- | ---------------------------------------------------- |
-| Grises         | #333333 | Nombres de variables.                                |
-| Secundarios    | #555555 | Puntuación, operadores genéricos.                    |
-|                | #777777 | Comentarios, texto inactivo.                         |
-| -------------- | --------- | ---------------------------------------------------- |
-| Azules         | #000088 | Espacios de nombres o módulos.                       |
-|                | #0044BB | Nombres de funciones/métodos, Clases.                |
-|                | #2277CC | Tipos de datos primitivos o de librería.             |
-|                | #4499EE | Variables locales o parámetros.                      |
-| -------------- | --------- | ---------------------------------------------------- |
-| Verdes         | #006600 | Cadenas de texto estándar.                           |
-|                | #008800 | Literales numéricos o booleanos.                     |
-|                | #22AA44 | Constantes definidas por el usuario.                 |
-| -------------- | --------- | ---------------------------------------------------- |
-| Rojos/Naranjas | #CC0000 | Errores, o valores como null/undefined.              |
-|                | #AA4400 | Palabras clave de control de flujo (if, for, while). |
-|                | #DD7700 | Operadores lógicos o aritméticos.                    |
-|                | #EEAA00 | Palabras clave de declaración (var, let, const).     |
-| -------------- | --------- | ---------------------------------------------------- |
-| Púrpuras       | #7A3E9D | Decoradores, Atributos.                              |
-|                | #9955CC | Nombres de etiquetas HTML/XML.                       |
-
-## Paleta original para #E1E1E7
+## Original: #E1E1E7 = rgba(225, 225, 231, 1)
 
 01) #000000
 02) #000066
 03) #000099
 04) #0033CC
 05) #006666
-06) #0066CC
+06) #0066CC <- COINCIDE
 07) #007755
-08) #008000 <- (libre)
+08) #008000
 09) #112266
 10) #333333
 11) #434343
@@ -45,8 +19,22 @@
 15) #777777
 16) #7A3E9D
 17) #993300
-18) #996600
+18) #996600 <- COINCIDE
 19) #AA3731
 20) #AAAAAA
 21) #AB6526
 22) #CC6600
+
+## Alternativa: #E1E1E1 = rgba(225, 225, 225, 1)
+
+01) #005050
+02) #0066CC <- COINCIDE
+03) #008080
+04) #323232
+05) #5A8C00
+06) #646464
+07) #663399
+08) #935600
+09) #996600 <- COINCIDE
+10) #AA336A
+11) #E6E6E6

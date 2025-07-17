@@ -17,7 +17,7 @@
             "scope": [
                 "beginning.punctuation",
                 "entity.name.section.group-title",
-                "entity.name.tag",
+                //"entity.name.tag",
                 "markup.heading",
                 "meta.tag.sgml.doctype.html",
                 "punctuation.separator.key-value",
@@ -261,7 +261,8 @@
                 "markup.quote",
             ],
             "settings": {
-                "foreground": "#7A3E9D",
+                //"foreground": "#7A3E9D",
+                "foreground": "#663399",
             }
         },
         // ---------------------------------------------------------------------
@@ -325,7 +326,7 @@
     ],
     // =========================================================================
     "colors": {
-        "editor.background": "#E1E1E7",
+        "editor.background": "#E1E1E1",
         "editor.foreground": "#000000",
         "editorCursor.foreground": "#000000",
         "editor.selectionBackground": "#bcd9f0",
