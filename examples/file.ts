@@ -1,25 +1,32 @@
-import { readFileSync } from 'fs';
-import { join } from 'path';
-
-interface Appliance {
-    brand: string;
-    turnOn(): void;
+interface Shape {
+    createdAt: Date;
+    area(): number;
 }
 
-class WashingMachine implements Appliance {
-    
-    brand: string;
-    temporal: any;
+abstract class AbstractShape implements Shape {
+    createdAt: Date;
 
-    constructor(brand: string) {
-        this.temporal = readFileSync(join(__dirname, 'themes', 'gray-clc-color-theme.json'), 'utf-8'); 
-        this.brand = brand;
+    constructor() {
+        this.createdAt = new Date();
     }
 
-    turnOn(): void {
-        console.log(`${this.brand} washing machine is now on.`);
+    abstract area(): number;
+}
+
+class Rectangle extends AbstractShape {
+    constructor(private width: number, private height: number) {
+        super();
+    }
+
+    area(): number {
+        return this.width * this.height;
     }
 }
 
-const myWasher = new WashingMachine('LG');
-myWasher.turnOn(); // LG washing machine is now on.Conclusion
+function printShapeInfo(shape: Shape): void {
+    const className = shape.constructor.name;
+    console.log(`${className} area: ${shape.area().toFixed(2)}`);
+}
+
+const rect: Shape = new Rectangle(5, 3);
+printShapeInfo(rect);

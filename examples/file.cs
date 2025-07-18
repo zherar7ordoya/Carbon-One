@@ -1,35 +1,72 @@
-// Interface
-interface IAnimal
-{
-    void AnimalSound(); // interface method (does not have a body)
-}
+using System;
+using System.Collections.Generic;
+using MyApp.Utilities; // namespace externo ficticio
 
-// Enumeration
-enum AnimalType
+namespace MyApp
 {
-    Dog,
-    Cat,
-    Pig
-}
-
-// Pig "implements" the IAnimal interface
-class Pig : IAnimal
-{
-    public void AnimalSound()
+    public interface IService
     {
-        // The body of animalSound() is provided here
-        Console.WriteLine("The pig says: wee wee");
+        void Execute();
     }
-}
 
-class Program
-{
-    readonly int temporal = 0; // Example of a temporal variable
-    static void Main(string[] args)
+    public abstract class BaseService : IService
     {
-        var temporal = args[0]; // Assume the first argument is a path to a temporal file
-        Console.WriteLine($"Using temporal file: {temporal}");
-        Pig myPig = new();  // Create a Pig object
-        myPig.AnimalSound();
+        public abstract void Execute();
+    }
+
+    public class MyService<T> : BaseService where T : class, new()
+    {
+        // Campo privado
+        private readonly string _internalName;
+
+        // Propiedad pública
+        public int Counter { get; set; }
+
+        // Constante
+        private const double Pi = 3.14159;
+
+        // Evento
+        public event Action<string>? OnProcessed;
+
+        // Constructor
+        public MyService(string name)
+        {
+            _internalName = name;
+            Counter = 0;
+        }
+
+        // Método override
+        public override void Execute()
+        {
+            Counter++;
+            Log<T>(_internalName);
+            OnProcessed?.Invoke(_internalName);
+        }
+
+        // Método genérico con parámetro
+        private void Log<U>(U item) where U : notnull
+        {
+            Console.WriteLine($"Processed: {item}");
+        }
+
+        // Método estático
+        public static MyStruct DoStaticWork(MyEnum option)
+        {
+            return new MyStruct { Value = (int)option };
+        }
+    }
+
+    // Estructura
+    public struct MyStruct
+    {
+        public int Value;
+    }
+
+    // Enumeración
+    public enum MyEnum
+    {
+        Low,
+        Medium,
+        High
     }
 }
