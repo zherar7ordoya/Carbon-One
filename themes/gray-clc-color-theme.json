@@ -3,34 +3,64 @@
     "type": "light",
     "semanticHighlighting": true,
     "semanticTokenColors": {
-        "class": "#267F99",
-        "comment": "#6E7781",
+        //
+        // ----------------------
+        // contrast ratio	16.83
+        "operator": "#000000",
+        "punctuation": "#000000",
+        //
+        // ---------------------
+        // contrast ratio	6.88
+        "keyword": "#0000FF",
+        "namespace": "#0000FF",
+        //
+        // ----------------------
+        // contrast ratio	12.14
         "constant": "#001080",
-        "controlKeyword": "#AF00DB",
-        "delegate": "#267F99",
-        "enum": "#267F99",
         "enumMember": "#001080",
         "event": "#001080",
         "field": "#001080",
-        "function": "#795E26",
-        "interface": "#008000",
-        "keyword": "#0000FF",
-        "macro": "#6E7781",
-        "method": "#795E26",
-        "namespace": "#0000FF",
-        "number": "#09885A",
-        "operator": "#000000",
         "parameter": "#001080",
-        "preprocessorText": "#6E7781",
         "property": "#001080",
-        "punctuation": "#000000",
+        //
+        // ---------------------
+        // contrast ratio	4.12
+        "interface": "#008000",
+        "typeParameter": "#008000",
+        //
+        // ---------------------
+        // contrast ratio	3.60
+        "number": "#09885A",
+        //
+        // ---------------------
+        // contrast ratio	3.68
+        "class": "#267F99",
+        "delegate": "#267F99",
+        "enum": "#267F99",
         "recordClass": "#267F99",
         "recordStruct": "#267F99",
         "type": "#267F99",
-        "typeParameter": "#008000",
-        "string": "#A31515",
         "struct": "#267F99",
         "variable": "#267F99",
+        //
+        // ---------------------
+        // contrast ratio	3.64
+        "comment": "#6E7781",
+        "macro": "#6E7781",
+        "preprocessorText": "#6E7781",
+        //
+        // ---------------------
+        // contrast ratio	4.89
+        "function": "#795E26",
+        "method": "#795E26",
+        //
+        // ---------------------
+        // contrast ratio	6.29
+        "string": "#A31515",
+        //
+        // ---------------------
+        // contrast ratio	4.37
+        "controlKeyword": "#AF00DB",
     },
     //
     "tokenColors": [
@@ -212,7 +242,7 @@
     ],
     //
     "colors": {
-        "editor.background": "#E1E1E1",
+        "editor.background": "#E6E6E6",
         "editor.foreground": "#000000",
         "editorCursor.foreground": "#000000",
         "editor.selectionBackground": "#c8def3",
