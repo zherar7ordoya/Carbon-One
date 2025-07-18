@@ -1,23 +1,31 @@
 // Interface
-interface IAnimal 
+interface IAnimal
 {
-  void AnimalSound(); // interface method (does not have a body)
+    void AnimalSound(); // interface method (does not have a body)
+}
+
+// Enumeration
+enum AnimalType
+{
+    Dog,
+    Cat,
+    Pig
 }
 
 // Pig "implements" the IAnimal interface
-class Pig : IAnimal 
+class Pig : IAnimal
 {
-  public void AnimalSound() 
-  {
-    // The body of animalSound() is provided here
-    Console.WriteLine("The pig says: wee wee");
-  }
+    public void AnimalSound()
+    {
+        // The body of animalSound() is provided here
+        Console.WriteLine("The pig says: wee wee");
+    }
 }
 
-class Program 
+class Program
 {
     readonly int temporal = 0; // Example of a temporal variable
-  static void Main(string[] args)
+    static void Main(string[] args)
     {
         var temporal = args[0]; // Assume the first argument is a path to a temporal file
         Console.WriteLine($"Using temporal file: {temporal}");
