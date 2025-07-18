@@ -1,72 +1,117 @@
+#define DEBUG
 using System;
 using System.Collections.Generic;
-using MyApp.Utilities; // namespace externo ficticio
+using System.Linq;
+using System.Linq.Expressions;
+using System.Runtime.InteropServices;
+using System.Threading.Tasks;
+using AliasDictionary = System.Collections.Generic.Dictionary<string, int>;
+using static System.Console;
 
-namespace MyApp
+namespace MegaNamespace
 {
-    public interface IService
+    public interface IVolatile
     {
-        void Execute();
+        event Action<string>? OnNotify;
     }
 
-    public abstract class BaseService : IService
+    public readonly struct ImmutableData<T> where T : unmanaged
     {
-        public abstract void Execute();
+        public readonly T Value;
+        public ImmutableData(T value) => Value = value;
     }
 
-    public class MyService<T> : BaseService where T : class, new()
+    public delegate TResult MagicFunc<in T, out TResult>(T input);
+
+    public static class UnsafeUtilities
     {
-        // Campo privado
-        private readonly string _internalName;
+        [DllImport("kernel32.dll")]
+        public static extern void OutputDebugString(string lpOutputString);
 
-        // Propiedad pública
-        public int Counter { get; set; }
-
-        // Constante
-        private const double Pi = 3.14159;
-
-        // Evento
-        public event Action<string>? OnProcessed;
-
-        // Constructor
-        public MyService(string name)
+        public static unsafe void ModifyBuffer(byte* buffer, int length)
         {
-            _internalName = name;
-            Counter = 0;
-        }
-
-        // Método override
-        public override void Execute()
-        {
-            Counter++;
-            Log<T>(_internalName);
-            OnProcessed?.Invoke(_internalName);
-        }
-
-        // Método genérico con parámetro
-        private void Log<U>(U item) where U : notnull
-        {
-            Console.WriteLine($"Processed: {item}");
-        }
-
-        // Método estático
-        public static MyStruct DoStaticWork(MyEnum option)
-        {
-            return new MyStruct { Value = (int)option };
+            for (int i = 0; i < length; i++)
+                buffer[i] = (byte)(buffer[i] ^ 0xFF);
         }
     }
 
-    // Estructura
-    public struct MyStruct
+    public class Hyper<T> where T : class, IVolatile, new()
     {
-        public int Value;
+        public event EventHandler? SomethingHappened;
+        public T Instance { get; } = new();
+        public string this[int index] => $"[{index}]";
+
+        public void Trigger() => SomethingHappened?.Invoke(this, EventArgs.Empty);
     }
 
-    // Enumeración
-    public enum MyEnum
+    public record struct Position(int X, int Y);
+    public record Planet(string Name, double Mass);
+
+    public class EverythingEverywhere
     {
-        Low,
-        Medium,
-        High
+        private readonly List<Planet> _planets = new() { new("Alderaan", 1.0e24), new("Mustafar", 2.0e24) };
+        private const string Banner = "🧠 C# al infinito y más allá";
+
+        public dynamic RunAll()
+        {
+            WriteLine(Banner);
+
+            (int x, int y) = (42, 99);
+            var p = new Position(x, y);
+            object boxed = p;
+            if (boxed is Position { X: var px, Y: var py })
+                WriteLine($"Match: {px}, {py}");
+
+            AliasDictionary counts = new() { ["code"] = 10, ["lines"] = 999 };
+            var total = counts.Values.Sum();
+
+            var task = Task.Run(async () =>
+            {
+                await Task.Delay(100);
+                WriteLine("🌠 Async done.");
+            });
+
+            using var enumerator = _planets.GetEnumerator();
+            while (enumerator.MoveNext())
+                WriteLine(enumerator.Current.Name);
+
+            Expression<Func<int, int>> square = n => n * n;
+            var compiled = square.Compile();
+            WriteLine($"Square(9) = {compiled(9)}");
+
+            return new { total, position = p };
+        }
+
+        public void UseUnsafeStuff()
+        {
+            unsafe
+            {
+                byte* buffer = stackalloc byte[10];
+                for (int i = 0; i < 10; i++) buffer[i] = (byte)i;
+                UnsafeUtilities.ModifyBuffer(buffer, 10);
+                for (int i = 0; i < 10; i++) Write($"{buffer[i]} ");
+                WriteLine();
+            }
+        }
+
+        public void UseArglist()
+        {
+            var typedRef = __makeref(this);
+            var type = __reftype(typedRef);
+            WriteLine($"Type: {type}");
+        }
+    }
+
+    public static class EntryPoint
+    {
+        public static void Main(string[] args)
+        {
+            var engine = new EverythingEverywhere();
+            engine.RunAll();
+            engine.UseUnsafeStuff();
+            engine.UseArglist();
+
+            global::System.Console.WriteLine("🌌 Fin del viaje galáctico");
+        }
     }
 }
