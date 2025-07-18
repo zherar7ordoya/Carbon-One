@@ -3,64 +3,56 @@
     "type": "light",
     "semanticHighlighting": true,
     "semanticTokenColors": {
-        //
-        // ----------------------
-        // contrast ratio	16.83
+
+        // Original: #000000
         "operator": "#000000",
-        "punctuation": "#000000",
-        //
-        // ---------------------
-        // contrast ratio	6.88
-        "keyword": "#0000FF",
-        "namespace": "#0000FF",
-        //
-        // ----------------------
-        // contrast ratio	12.14
-        "constant": "#001080",
-        "enumMember": "#001080",
-        "event": "#001080",
-        "field": "#001080",
-        "parameter": "#001080",
-        "property": "#001080",
-        //
-        // ---------------------
-        // contrast ratio	4.12
-        "interface": "#008000",
-        "typeParameter": "#008000",
-        //
-        // ---------------------
-        // contrast ratio	3.60
-        "number": "#09885A",
-        //
-        // ---------------------
-        // contrast ratio	3.68
-        "class": "#267F99",
-        "delegate": "#267F99",
-        "enum": "#267F99",
-        "recordClass": "#267F99",
-        "recordStruct": "#267F99",
-        "type": "#267F99",
-        "struct": "#267F99",
-        "variable": "#267F99",
-        //
-        // ---------------------
-        // contrast ratio	3.64
-        "comment": "#6E7781",
-        "macro": "#6E7781",
-        "preprocessorText": "#6E7781",
-        //
-        // ---------------------
-        // contrast ratio	4.89
-        "function": "#795E26",
-        "method": "#795E26",
-        //
-        // ---------------------
-        // contrast ratio	6.29
-        "string": "#A31515",
-        //
-        // ---------------------
-        // contrast ratio	4.37
-        "controlKeyword": "#AF00DB",
+        "number": "#000000",
+
+        // Original: #0000FF
+        "keyword": "#0022AA",
+        "namespace": "#0022AA",
+
+        // Original: #001080 [repite, éste debe cambiarse]
+        "constant": "#005577",
+        "enumMember": "#005577",
+        "event": "#005577",
+        "field": "#005577",
+        "parameter": "#005577",
+        "property": "#005577",
+
+        // Original: #008000
+        "interface": "#226600",
+        "typeParameter": "#226600",
+
+        // Original: #09885A
+
+
+        // Original: #267F99
+        "class": "#005577",
+        "delegate": "#005577",
+        "enum": "#005577",
+        "recordClass": "#005577",
+        "recordStruct": "#005577",
+        "type": "#005577",
+        "struct": "#005577",
+        "variable": "#005577",
+
+        // Original: #6E7781
+        "comment": "#555555",
+        "macro": "#555555",
+        "preprocessorText": "#555555",
+        "punctuation": "#555555",
+
+        // Original: #795E26
+        "function": "#804000",
+        "method": "#804000",
+
+        // Original: #A31515
+        "string": "#884400",
+
+        // Original: #AF00DB
+        "controlKeyword": "#660088",
+
     },
     //
     "tokenColors": [
@@ -242,8 +234,8 @@
     ],
     //
     "colors": {
-        "editor.background": "#E6E6E6",
-        "editor.foreground": "#000000",
+        "editor.background": "#E1E1E7",
+        "editor.foreground": "#000033",
         "editorCursor.foreground": "#000000",
         "editor.selectionBackground": "#c8def3",
         "editor.inactiveSelectionBackground": "#dfe7f066",
