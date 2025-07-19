@@ -8,11 +8,6 @@ using System.Threading.Tasks;
 using AliasDictionary = System.Collections.Generic.Dictionary<string, int>;
 using static System.Console;
 
-// Al infinito y más allá
-
-// This file is part of a C# example demonstrating advanced features and concepts.
-// It includes unsafe code, generics, records, dynamic types, and more.
-
 namespace MegaNamespace
 {
     public interface IVolatile
@@ -120,3 +115,5 @@ namespace MegaNamespace
         }
     }
 }
+
+// This file is part of the Gray CLC Color Theme project.
