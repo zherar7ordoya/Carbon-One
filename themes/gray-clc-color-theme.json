@@ -3,64 +3,54 @@
     "type": "light",
     "semanticHighlighting": true,
     "semanticTokenColors": {
-        //
-        // ----------------------
-        // contrast ratio	16.83
-        "operator": "#000000",
-        "punctuation": "#000000",
-        //
-        // ---------------------
-        // contrast ratio	6.88
-        "keyword": "#0000FF",
-        "namespace": "#0000FF",
-        //
-        // ----------------------
-        // contrast ratio	12.14
-        "constant": "#001080",
-        "enumMember": "#001080",
-        "event": "#001080",
-        "field": "#001080",
-        "parameter": "#001080",
-        "property": "#001080",
-        //
-        // ---------------------
-        // contrast ratio	4.12
-        "interface": "#008000",
-        "typeParameter": "#008000",
-        //
-        // ---------------------
-        // contrast ratio	3.60
-        "number": "#09885A",
-        //
-        // ---------------------
-        // contrast ratio	3.68
-        "class": "#267F99",
-        "delegate": "#267F99",
-        "enum": "#267F99",
-        "recordClass": "#267F99",
-        "recordStruct": "#267F99",
-        "type": "#267F99",
-        "struct": "#267F99",
-        "variable": "#267F99",
-        //
-        // ---------------------
-        // contrast ratio	3.64
-        "comment": "#6E7781",
-        "macro": "#6E7781",
-        "preprocessorText": "#6E7781",
-        //
-        // ---------------------
-        // contrast ratio	4.89
-        "function": "#795E26",
-        "method": "#795E26",
-        //
-        // ---------------------
-        // contrast ratio	6.29
-        "string": "#A31515",
-        //
-        // ---------------------
-        // contrast ratio	4.37
-        "controlKeyword": "#AF00DB",
+        // Verdes suaves: tipos
+        "class": "#28867F",
+        "delegate": "#28867F",
+        "recordClass": "#28867F",
+        "type": "#28867F",
+        // Azules cálidos y sobrios: palabras clave, namespaces, macros
+        "keyword": "#3B6BAA",
+        "namespace": "#3B6BAA",
+        "macro": "#3B6BAA",
+        "xmlDocCommentName": "#3B6BAA",
+        // Verde oliva apagado para texto de comentarios XML
+        "xmlDocCommentText": "#5B763B",
+        // Verde más oscuro para comentarios regulares
+        "comment": "#476B3D",
+        // Gris medio para delimitadores XML
+        "xmlDocCommentDelimiter": "#6A6A6A",
+        // Verde pálido más diferenciado para structs
+        "recordStruct": "#5F8F5B",
+        "struct": "#5F8F5B",
+        // Azul claro para variables, eventos, parámetros
+        "event": "#367C9D",
+        "parameter": "#367C9D",
+        "variable": "#367C9D",
+        // Verde pálido para números
+        "number": "#739766",
+        // Tipos especiales con verde hierba más vivo
+        "interface": "#6C9745",
+        "typeParameter": "#6C9745",
+        "enum": "#6C9745",
+        // Rosado lavanda para keywords de control
+        "controlKeyword": "#8F5E8B",
+        // Gris claro, útil como fallback visual o labels
+        "label": "#7F7F7F",
+        // Rojizo suave, clásico para strings y preprocesadores
+        "stringVerbatim": "#A85A44",
+        "preprocessorText": "#A85A44",
+        "string": "#A85A44",
+        // Gris oscuro neutro para lo accesorio: operadores, etc.
+        "operator": "#4C4C4C",
+        "punctuation": "#4C4C4C",
+        "constant": "#4C4C4C",
+        "enumMember": "#4C4C4C",
+        "field": "#4C4C4C",
+        "property": "#4C4C4C",
+        // Amarillo más sobrio y legible para funciones
+        "function": "#AA9830",
+        "method": "#AA9830",
+        "extensionMethod": "#AA9830"
     },
     //
     "tokenColors": [
@@ -242,10 +232,11 @@
     ],
     //
     "colors": {
-        "editor.background": "#DFDED6",
-        "editor.foreground": "#000033",
-        "editorCursor.foreground": "#000000",
-        "editor.selectionBackground": "#c8def3",
+        "editor.background": "#E0DBC7",
+        "editor.foreground": "#171717",
+        "editorCursor.foreground": "#5c00a3",
+        "editor.selectionBackground": "#d7cabf80",
+        "editor.lineHighlightBackground": "#e1d8cd80",
         "editor.inactiveSelectionBackground": "#dfe7f066",
         "editor.selectionHighlightBackground": "#c8def380",
         "editor.selectionHighlightBorder": "#3d6dad",
