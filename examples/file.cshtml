@@ -1,33 +1,33 @@
+@model MyApp.Models.Person
+
 @{
-    var totalMessage = "";
-    if (IsPost)
+    ViewData["Title"] = "Detalle de Persona";
+    var edadActual = DateTime.Now.Year - Model.BirthYear;
+}
+
+<h1>Información personal</h1>
+
+<p>Nombre: <strong>@Model.FullName</strong></p>
+<p>Edad aproximada: <em>@edadActual</em> años</p>
+
+@if (edadActual >= 18)
+{
+    <p><span style="color:green">Es mayor de edad.</span></p>
+}
+else
+{
+    <p><span style="color:orange">Es menor de edad.</span></p>
+}
+
+@functions {
+    private int CalcularEdad(DateTime nacimiento)
     {
-        var num1 = Request["text1"];
-        var num2 = Request["text2"];
-        var total = num1.AsInt() + num2.AsInt();
-        totalMessage = "Total = " + total;
+        return DateTime.Now.Year - nacimiento.Year;
     }
 }
 
-<html>
-
-    <body style="background-color: beige; font-family: Verdana, Arial;">
-        <form action="" method="post">
-            <p>
-                <label for="text1">First Number:</label>
-                <br>
-                    <input type="text" name="text1" />
-                </p>
-                <p>
-                    <label for="text2">Second Number:</label>
-                    <br>
-                        <input type="text" name="text2" />
-                    </p>
-                    <p>
-                        <input type="submit" value=" Add " />
-                    </p>
-                </form>
-                <p>@totalMessage</p>
-            </body>
-
-        </html>
+@section Scripts {
+    <script>
+        console.log("Página cargada para @Model.FullName");
+    </script>
+}
