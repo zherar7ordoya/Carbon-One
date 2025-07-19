@@ -15,7 +15,16 @@ using AliasDictionary = System.Collections.Generic.Dictionary<string, int>;
 
 namespace SemanticTokenTest
 {
-    // Clase que usa un método externo: extern method - para interop nativo
+    // Enviar un mensaje a la terminal de depuración.
+    [Conditional("DEBUG")]
+    public static void DebugMessage(string message)
+    {
+        Debug.WriteLine($"DEBUG: {message}");
+    }
+
+
+    // Decorator - attribute
+    [Conditional("DEBUG")]
     class NativeInterop
     {
         [DllImport("kernel32.dll", SetLastError = true)]
@@ -97,7 +106,7 @@ namespace SemanticTokenTest
             }
             catch (DivideByZeroException ex) when (ex.Message != null) // catch filter
             {
-                WriteLine("No se puede dividir por cero.");
+                Console.WriteLine("No se puede dividir por cero.");
             }
             finally
             {
