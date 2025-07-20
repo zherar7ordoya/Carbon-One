@@ -25,7 +25,7 @@ namespace SemanticTokenTest
 
     // Decorator - attribute
     [Conditional("DEBUG")]
-    class NativeInterop
+    class NativeInterop : ILogger
     {
         [DllImport("kernel32.dll", SetLastError = true)]
         public static extern bool Beep(uint frequency, uint duration);
@@ -34,6 +34,12 @@ namespace SemanticTokenTest
         {
             // Hacer sonar un beep (en Windows)
             Beep(1000, 500); // 1000 Hz por 500 ms
+        }
+
+        public void Log(string message)
+        {
+            /* DIFERENCIAR VARIABLE DE PARÁMETRO */
+            DebugMessage(message);
         }
     }
 
@@ -223,7 +229,10 @@ namespace SemanticTokenTest
                 string.IsNullOrEmpty(s) ? s : char.ToUpper(s[0]) + s[1..];
         }
 
-        // Método con yield - yield
+        /// <summary>
+        ///  Método con yield - yield
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<int> GetSequence()
         {
             yield return 1;
