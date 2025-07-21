@@ -49,6 +49,95 @@
 
 ## Alto contraste: #E6E6E6 =  rgba(230, 230, 230, 1)
 
---------------------------------------------------------------------------------
+----------------------------------------
 
 Fuente: Fira Code
+
+----------------------------------------
+
+## Qwen
+
+01) #003C8F
+02) #00685E
+03) #2B2B2B
+04) #2E5984
+05) #2E5C70
+06) #5E5E5E
+07) #8800AA
+08) #C03000
+
+
+# Respaldo
+
+    "semanticTokenColors": {
+        // =============================
+        /*
+        ROJO CLARO
+        */
+        "decorator": "#C03000",
+        "type": "#C03000",
+        "struct": "#C03000",
+        /*
+        ROJO OSCURO
+        */
+        "string": "#880000",
+        "regexp": "#880000",
+        "stringVerbatim": "#880000",
+        "number": "#880000",
+        "typeParameter": "#880000",
+        /*
+        AZUL CLARO
+        */
+        "xmlDocCommentName": "#2E5984",
+        "xmlDocCommentAttributeName": "#2E5984",
+        /*
+        AZUL MEDIO
+        */
+        "keyword": "#0033CC",
+        "modifier": "#0033CC",
+        /*
+        // AZUL OSCURO
+        */
+        "parameter": "#112266",
+        "label": "#112266",
+        "namespace": "#112266",
+        "controlKeyword": "#112266",
+        "delegate": "#112266",
+        "variable": "#112266",
+        /*
+        VIOLETA
+        */
+        "method": "#8800AA",
+        "function": "#8800AA",
+        "extensionMethod": "#8800AA",
+        /*
+        VERDE CLARO
+        */
+        "operator": "#005800",
+        "class": "#005800",
+        "enum": "#005800",
+        "event": "#005800",
+        /*
+        VERDE OSCURO
+        */
+        "interface": "#00574D",
+        "recordClass": "#00574D",
+        "recordStruct": "#00574D",
+        /*
+        GRIS CLARO
+        */
+        "xmlDocCommentDelimiter": "#5E5E5E",
+        "comment": "#5E5E5E",
+        "punctuation": "#5E5E5E",
+        "preprocessorText": "#5E5E5E",
+        "xmlDocCommentText": "#5E5E5E",
+        /*
+        GRIS OSCURO
+        */
+        "enumMember": "#2B2B2B",
+        "macro": "#2B2B2B",
+        "field": "#2B2B2B",
+        "property": "#2B2B2B",
+        "constant": "#2B2B2B",
+        // =============================
+    },

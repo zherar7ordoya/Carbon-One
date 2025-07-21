@@ -1,275 +1,117 @@
 #define DEBUG
-#undef RELEASE
-
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using System.Text.RegularExpressions;
-using static System.Console;
-using System;
+using System.Linq.Expressions;
 using System.Runtime.InteropServices;
-
-// Alias - alias
+using System.Threading.Tasks;
 using AliasDictionary = System.Collections.Generic.Dictionary<string, int>;
+using static System.Console;
 
-namespace SemanticTokenTest
+namespace MegaNamespace
 {
-    // Enviar un mensaje a la terminal de depuración.
-    [Conditional("DEBUG")]
-    public static void DebugMessage(string message)
+    public interface IVolatile
     {
-        Debug.WriteLine($"DEBUG: {message}");
+        event Action<string>? OnNotify;
     }
 
-
-    // Decorator - attribute
-    [Conditional("DEBUG")]
-    class NativeInterop : ILogger
+    public readonly struct ImmutableData<T> where T : unmanaged
     {
-        [DllImport("kernel32.dll", SetLastError = true)]
-        public static extern bool Beep(uint frequency, uint duration);
+        public readonly T Value;
+        public ImmutableData(T value) => Value = value;
+    }
 
-        public static void PlaySound()
-        {
-            // Hacer sonar un beep (en Windows)
-            Beep(1000, 500); // 1000 Hz por 500 ms
-        }
+    public delegate TResult MagicFunc<in T, out TResult>(T input);
 
-        public void Log(string message)
+    public static class UnsafeUtilities
+    {
+        [DllImport("kernel32.dll")]
+        public static extern void OutputDebugString(string lpOutputString);
+
+        public static unsafe void ModifyBuffer(byte* buffer, int length)
         {
-            /* DIFERENCIAR VARIABLE DE PARÁMETRO */
-            DebugMessage(message);
+            for (int i = 0; i < length; i++)
+                buffer[i] = (byte)(buffer[i] ^ 0xFF);
         }
     }
 
-    /// <summary>
-    /// Esto es un comentario XML para probar <see cref="xmlDocCommentName"/>.
-    /// </summary>
-    public class Program
+    public class Hyper<T> where T : class, IVolatile, new()
     {
-        // Campo de clase - field
-        private int _counter = 0;
+        public event EventHandler? SomethingHappened;
+        public T Instance { get; } = new();
+        public string this[int index] => $"[{index}]";
 
-        // Constante - constant
-        private const string Greeting = "Hello, world!"; // string
-
-        // Propiedad - property
-        public int Counter
-        {
-            get => _counter;
-            set => _counter = value; // parameter 'value'
-        }
-
-        // Método - method
-        public void Run()
-        {
-            // Llamada a método externo
-            NativeInterop.PlaySound();
-
-            // Variable local - variable
-            string message = $"El contador es: {Counter}"; // interpolatedString
-
-            // Número - number
-            double pi = 3.14159;
-            int hexValue = 0x1A;
-            int binaryValue = 0b1010_1010;
-
-            // Operador - operator
-            int sum = 5 + 3;
-
-            // Comentario - comment
-            // Esto es un comentario de línea
-
-            /* 
-             * Esto es un comentario multilínea
-             */
-
-            // Enum - enum, enumMember
-            LogLevel level = LogLevel.Debug;
-
-            // Switch - controlKeyword
-            switch (level)
-            {
-                case LogLevel.Debug:
-                    WriteLine("Debug mode");
-                    break;
-                default:
-                    goto Finish; // label
-            }
-
-            // Bucle - controlKeyword
-            for (int i = 0; i < 5; i++) // parameter 'i'
-            {
-                if (i == 3) continue; // controlKeyword
-                WriteLine(i);
-            }
-
-            // Try-catch - controlKeyword
-            try
-            {
-                int result = 10 / 0;
-            }
-            catch (DivideByZeroException ex) when (ex.Message != null) // catch filter
-            {
-                Console.WriteLine("No se puede dividir por cero.");
-            }
-            finally
-            {
-                WriteLine("Finalizando...");
-            }
-
-            // Lock - controlKeyword
-            object lockObj = new();
-            lock (lockObj)
-            {
-                WriteLine("Bloque sincronizado");
-            }
-
-            // Using - controlKeyword
-            using (var writer = new StringWriter())
-            {
-                writer.WriteLine("Texto");
-            }
-
-            // Llamada a método
-            PrintMessage(message);
-
-            // Expresión lambda - function
-            Func<int, int> square = x => x * x;
-
-            // Interfaz - interface
-            ILogger logger = new ConsoleLogger();
-
-            // Struct - struct
-            Point point = new(10, 20);
-
-            // Record struct - recordStruct
-            var position = new Position(5, 10);
-
-            // Record class - recordClass
-            var user = new User("Alice");
-
-            // Patrón de tipo - controlKeyword
-            if (user is User alice)
-            {
-                WriteLine(alice.Name);
-            }
-
-            // Declaración de alias - alias
-            AliasDictionary dict = new();
-            dict["key"] = 42;
-
-            // Atributo - attribute
-            [Conditional("DEBUG")]
-            void DebugOnlyMethod()
-            {
-                WriteLine("Solo en DEBUG");
-            }
-
-            // fixed - modifier
-            unsafe
-            {
-                int value = 10;
-                fixed (int* ptr = &value)
-                {
-                    *ptr = 20;
-                }
-            }
-
-            // stackalloc - modifier
-            unsafe
-            {
-                int* numbers = stackalloc int[5] { 1, 2, 3, 4, 5 };
-            }
-
-            // sizeof - keyword
-            int size = sizeof(int);
-
-            // typeof - keyword
-            Type type = typeof(string);
-
-            // nameof - keyword
-            string name = nameof(Counter);
-
-            // checked/unchecked - modifier
-            int overflow = checked(int.MaxValue + 1); // throw
-
-            // async/await - modifier
-            var result = GetDataAsync().Result;
-
-            // yield - controlKeyword
-            foreach (var item in GetSequence())
-            {
-                WriteLine(item);
-            }
-
-            // Regex - regexp
-            var match = Regex.Match("abc123", @"\d+");
-
-        // goto - label
-        Finish:
-            WriteLine("Fin del programa.");
-        }
-
-        // Método con parámetro - parameter
-        public void PrintMessage(string msg) => WriteLine(msg);
-
-        // Método estático - method
-        public static async Task<int> GetDataAsync()
-        {
-            await Task.Delay(100);
-            return 42;
-        }
-
-        // Extension method - extensionMethod
-        public static class StringExtensions
-        {
-            public static string ToTitleCase(this string s) =>
-                string.IsNullOrEmpty(s) ? s : char.ToUpper(s[0]) + s[1..];
-        }
-
-        /// <summary>
-        ///  Método con yield - yield
-        /// </summary>
-        /// <returns></returns>
-        public IEnumerable<int> GetSequence()
-        {
-            yield return 1;
-            yield return 2;
-            yield break;
-        }
+        public void Trigger() => SomethingHappened?.Invoke(this, EventArgs.Empty);
     }
 
-    // Enum - enum
-    public enum LogLevel
-    {
-        Info,
-        Warning,
-        Debug
-    }
-
-    // Interface - interface
-    public interface ILogger
-    {
-        void Log(string message);
-    }
-
-    // Struct - struct
-    public struct Point
-    {
-        public int X { get; }
-        public int Y { get; }
-
-        public Point(int x, int y) => (X, Y) = (x, y);
-    }
-
-    // Record struct - recordStruct
     public record struct Position(int X, int Y);
+    public record Planet(string Name, double Mass);
 
-    // Record class - recordClass
-    public record User(string Name);
+    public class EverythingEverywhere
+    {
+        private readonly List<Planet> _planets = new() { new("Alderaan", 1.0e24), new("Mustafar", 2.0e24) };
+        private const string Banner = "🧠 C# al infinito y más allá";
 
-    // Delegate - delegate
-    public delegate void NotifyHandler(string message);
+        public dynamic RunAll()
+        {
+            WriteLine(Banner);
+
+            (int x, int y) = (42, 99);
+            var p = new Position(x, y);
+            object boxed = p;
+            if (boxed is Position { X: var px, Y: var py })
+                WriteLine($"Match: {px}, {py}");
+
+            AliasDictionary counts = new() { ["code"] = 10, ["lines"] = 999 };
+            var total = counts.Values.Sum();
+
+            var task = Task.Run(async () =>
+            {
+                await Task.Delay(100);
+                WriteLine("🌠 Async done.");
+            });
+
+            using var enumerator = _planets.GetEnumerator();
+            while (enumerator.MoveNext())
+                WriteLine(enumerator.Current.Name);
+
+            Expression<Func<int, int>> square = n => n * n;
+            var compiled = square.Compile();
+            WriteLine($"Square(9) = {compiled(9)}");
+
+            return new { total, position = p };
+        }
+
+        public void UseUnsafeStuff()
+        {
+            unsafe
+            {
+                byte* buffer = stackalloc byte[10];
+                for (int i = 0; i < 10; i++) buffer[i] = (byte)i;
+                UnsafeUtilities.ModifyBuffer(buffer, 10);
+                for (int i = 0; i < 10; i++) Write($"{buffer[i]} ");
+                WriteLine();
+            }
+        }
+
+        public void UseArglist()
+        {
+            var typedRef = __makeref(this);
+            var type = __reftype(typedRef);
+            WriteLine($"Type: {type}");
+        }
+    }
+
+    public static class EntryPoint
+    {
+        public static void Main(string[] args)
+        {
+            var engine = new EverythingEverywhere();
+            engine.RunAll();
+            engine.UseUnsafeStuff();
+            engine.UseArglist();
+
+            global::System.Console.WriteLine("🌌 Fin del viaje galáctico");
+        }
+    }
 }
