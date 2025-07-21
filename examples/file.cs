@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using AliasDictionary = System.Collections.Generic.Dictionary<string, int>;
 using static System.Console;
 
+
 namespace MegaNamespace
 {
     public interface IVolatile
@@ -45,6 +46,7 @@ namespace MegaNamespace
     }
 
     public record struct Position(int X, int Y);
+
     public record Planet(string Name, double Mass);
 
     public class EverythingEverywhere
@@ -102,7 +104,15 @@ namespace MegaNamespace
         }
     }
 
-    public static class EntryPoint
+    interface ILogger
+    {
+        void Log(string message) => WriteLine(message);
+    }
+
+    /// <summary>
+    /// Entry point for the application.
+    /// </summary>
+    public static class EntryPoint : ILogger
     {
         public static void Main(string[] args)
         {

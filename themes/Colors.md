@@ -1,143 +1,55 @@
-# PALETA ORIGINAL Y ALTERNATIVA
+# PALETA DE COLORES PARA #EDD1B0
 
-## Original: #E1E1E7 = rgba(225, 225, 231, 1)
+## Original
 
-01) #000000
-02) #000066
-03) #000099
-04) #0033CC
-05) #006666
-06) #0066CC <- COINCIDE
-07) #007755
-08) #008000
-09) #112266
-10) #333333
-11) #434343
-12) #448C27
-13) #660000
-14) #666600
-15) #777777
-16) #7A3E9D
-17) #993300
-18) #996600 <- COINCIDE
-19) #AA3731
-20) #AAAAAA
-21) #AB6526
-22) #CC6600
+| Color          | Hexa      | Ratio  |
+| -------------- | --------- | ------ |
+| Negro          | #000000 | 13.4:1 |
+| Azul oscuro    | #0000AA | 9.2:1  |
+| Azul           | #0000FF | 8.6:1  |
+| Verde oscuro   | #006400 | 9.8:1  |
+| Verde          | #008000 | 5.1:1  |
+| Púrpura oscuro | #4B0082 | 10.6:1 |
+| Verde militar  | #4B5320 | 8.1:1  |
+| Oliva          | #556B2F | 7.3:1  |
+| Ciruela        | #701C1C | 8.9:1  |
+| Mostaza oscuro | #7C4D03 | 7.6:1  |
+| Granate        | #800000 | 9.1:1  |
+| Burgundy       | #800020 | 9.1:1  |
+| Púrpura        | #800080 | 6.1:1  |
+| Verde oliva    | #808000 | 4.7:1  |
+| Gris           | #808080 | 4.4:1  |
+| Magenta oscuro | #8B008B | 9.5:1  |
+| Marrón         | #8B4513 | 7.6:1  |
+| Ocre           | #CC7722 | 5.7:1  |
+| Rojo           | #FF0000 | 6.6:1  |
 
-## Alternativa: #E1E1E1 = rgba(225, 225, 225, 1)
+## Principales
 
-01) #005050
-02) #0066CC <- COINCIDE
-03) #008080
-04) #323232
-05) #5A8C00
-06) #646464
-07) #663399
-08) #935600
-09) #996600 <- COINCIDE
-10) #AA336A
-11) #E6E6E6
+| Color   | Hexa Claro   | CR Claro      | Hexa Oscuro   | CR Oscuro    |
+| ------- | ------------ | ------------- | ------------- | ------------ |
+| Negro   | #333333    | 7.3:1 (AA)    | #000000     | 13.4:1 (AAA) |
+| Azul    | #3366CC    | 5.8:1 (AA)    | #0000AA     | 9.2:1 (AAA)  |
+| Verde   | #66BB66    | 4.0:1 (AA)    | #006400     | 9.8:1 (AAA)  |
+| Púrpura | #9966CC    | 4.2:1 (AA)    | #4B0082     | 10.6:1 (AAA) |
+| Marrón  | #A0522D    | 5.2:1 (AA)    | #8B4513     | 7.6:1 (AAA)  |
+| Gris    | #AAAAAA    | 3.0:1 (No AA) | #555555     | 8.2:1 (AAA)  |
+| Rojo    | #FF6666    | 3.3:1 (No AA) | #8B0000     | 9.3:1 (AAA)  |
+| Oliva   | #AABB44    | 3.5:1 (No AA) | #556B2F     | 7.3:1 (AAA)  |
+| Magenta | #FF66FF    | 3.3:1 (No AA) | #8B008B     | 9.5:1 (AAA)  |
+| Ocre    | #DDAA33    | 4.0:1 (AA)    | #7C4D03     | 7.6:1 (AAA)  |
+| Granate | #CC3333    | 5.5:1 (AA)    | #800000     | 9.1:1 (AAA)  |
+| Borgoña | #A02040    | 6.0:1 (AA)    | #800020     | 9.1:1 (AAA)  |
 
-## Tentativos: #D8D8D8 = rgba(216, 216, 216, 1)
+## Adicionales
 
-01) #8800AA
-02) #0050B4
-03) #0073C8
-04) #008C8C
-05) #289628
-
-## Alto contraste: #E6E6E6 =  rgba(230, 230, 230, 1)
-
-----------------------------------------
-
-Fuente: Fira Code
-
-----------------------------------------
-
-## Qwen
-
-01) #003C8F
-02) #00685E
-03) #2B2B2B
-04) #2E5984
-05) #2E5C70
-06) #5E5E5E
-07) #8800AA
-08) #C03000
-
-
-# Respaldo
-
-    "semanticTokenColors": {
-        // =============================
-        /*
-        ROJO CLARO
-        */
-        "decorator": "#C03000",
-        "type": "#C03000",
-        "struct": "#C03000",
-        /*
-        ROJO OSCURO
-        */
-        "string": "#880000",
-        "regexp": "#880000",
-        "stringVerbatim": "#880000",
-        "number": "#880000",
-        "typeParameter": "#880000",
-        /*
-        AZUL CLARO
-        */
-        "xmlDocCommentName": "#2E5984",
-        "xmlDocCommentAttributeName": "#2E5984",
-        /*
-        AZUL MEDIO
-        */
-        "keyword": "#0033CC",
-        "modifier": "#0033CC",
-        /*
-        // AZUL OSCURO
-        */
-        "parameter": "#112266",
-        "label": "#112266",
-        "namespace": "#112266",
-        "controlKeyword": "#112266",
-        "delegate": "#112266",
-        "variable": "#112266",
-        /*
-        VIOLETA
-        */
-        "method": "#8800AA",
-        "function": "#8800AA",
-        "extensionMethod": "#8800AA",
-        /*
-        VERDE CLARO
-        */
-        "operator": "#005800",
-        "class": "#005800",
-        "enum": "#005800",
-        "event": "#005800",
-        /*
-        VERDE OSCURO
-        */
-        "interface": "#00574D",
-        "recordClass": "#00574D",
-        "recordStruct": "#00574D",
-        /*
-        GRIS CLARO
-        */
-        "xmlDocCommentDelimiter": "#5E5E5E",
-        "comment": "#5E5E5E",
-        "punctuation": "#5E5E5E",
-        "preprocessorText": "#5E5E5E",
-        "xmlDocCommentText": "#5E5E5E",
-        /*
-        GRIS OSCURO
-        */
-        "enumMember": "#2B2B2B",
-        "macro": "#2B2B2B",
-        "field": "#2B2B2B",
-        "property": "#2B2B2B",
-        "constant": "#2B2B2B",
-        // =============================
-    },
+| Color          | Hexa      | Ratio   |
+| -------------- | --------- | ------- |
+| boolean        | #C03000 |         |
+| null           | #880000 |         |
+| attribute      | #8800AA |         |
+| linenumber     | #777777 |         |
+| selection      | #D5D5D5 |         |
+| highlight      | #FFFACD |         |
+| warning        | #FFA500 |         |
+| Azul           | #0B5EB4 | 05.68   |

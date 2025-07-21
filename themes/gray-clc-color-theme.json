@@ -35,7 +35,8 @@
         "xmlDocCommentAttributeName": "#1E4A7C",
 
         // AZUL MEDIO
-        "keyword": "#0033CC",
+        "keyword": "#0000FF",
+
         "modifier": "#0033CC",
 
         // AZUL OSCURO
@@ -43,7 +44,8 @@
         "label": "#112266",
         "namespace": "#112266",
         "delegate": "#112266",
-        "variable": "#0074C1",
+
+        "variable": "#0000AA",
 
         // VIOLETA
         "method": "#74461F",
@@ -51,18 +53,22 @@
         "extensionMethod": "#74461F",
 
 
-        "controlKeyword": "#8800AA",
+        //"controlKeyword": "#8800AA",
+        "controlKeyword": "#4B0082",
 
 
         // VERDE CLARO
         "operator": "#006600",
-        "class": "#006600",
         "enum": "#006600",
         "event": "#006600",
         "recordClass": "#006600",
+
+        //"class": "#006600",
+        "class": "#006400",
         
         // VERDE OSCURO
-        "interface": "#004B73",
+        "interface": "#66BB66",
+
         "struct": "#004B73",
         "recordStruct": "#004B73",
 
@@ -81,16 +87,7 @@
 
 
         
-        // COLORES ADICIONALES SUGERIDOS
-        "boolean": "#C03000",
-        "null": "#880000",
-        "attribute": "#8800AA",
-        "linenumber": "#777777",
-        "selection": "#D5D5D5",
-        "highlight": "#FFFACD",
-        "error": "#FF0000",
-        "warning": "#FFA500"
-        
+      
 
 
 
@@ -276,8 +273,10 @@
 
 
   "colors": {
-    "editor.background": "#EDD1B0",
-    "editor.foreground": "#333333",
+    //"editor.background": "#EDD1B0",
+    //"editor.foreground": "#333333",
+    "editor.background": "#F2E3CC",
+    "editor.foreground": "#000000",
 
     /* 
       === INTERFAZ (UI) ===
