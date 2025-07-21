@@ -1,127 +1,145 @@
-#define DEBUG
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
+global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Text;
+global using System.Text.RegularExpressions;
+global using static System.Math;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
-using System.Threading.Tasks;
-using AliasDictionary = System.Collections.Generic.Dictionary<string, int>;
-using static System.Console;
+using SysAlias = System;
 
-
-namespace MegaNamespace
+/// <summary>
+/// Comprehensive semantic highlighting test class.
+/// Tests types, keywords, constructs, APIs, unsafe, dynamic, lambdas, generics, interpolated strings, pattern matching, and more.
+/// </summary>
+public sealed partial class ColorizationShowcase<T> : ITestable, IDisposable where T : struct
 {
-    public interface IVolatile
+    // Fields
+    private readonly string _name;
+    private int _counter = 0;
+    private const int MaxCount = 100;
+    private static readonly Regex _regex = new(@"^\d{2,3}$");
+
+    // Events & Delegates
+    public delegate TResult Transformer<TInput, TResult>(TInput input);
+    public event Action<string>? OnNotify;
+
+    // Required Property (init-only)
+    public required string Description { get; init; }
+
+    // Indexer
+    public int this[int index] => _data[index];
+
+    // Unsafe buffer
+    private unsafe fixed int _unsafeBuffer[10];
+
+    // Static constructor
+    static ColorizationShowcase() => Console.WriteLine("Static initialized");
+
+    // Constructor
+    public ColorizationShowcase(string name) => _name = name;
+
+    // Generic method with dynamic and nullable
+    public TResult? Process<TResult>(dynamic input, Func<dynamic, TResult> processor) where TResult : class
     {
-        event Action<string>? OnNotify;
+        if (input is null) return null;
+        return processor(input);
     }
 
-    public readonly struct ImmutableData<T> where T : unmanaged
+    // Yield return + switch + pattern matching
+    public IEnumerable<string> Describe(object? item)
     {
-        public readonly T Value;
-        public ImmutableData(T value) => Value = value;
-    }
-
-    public delegate TResult MagicFunc<in T, out TResult>(T input);
-
-    public static class UnsafeUtilities
-    {
-        [DllImport("kernel32.dll")]
-        public static extern void OutputDebugString(string lpOutputString);
-
-        public static unsafe void ModifyBuffer(byte* buffer, int length)
+        switch (item)
         {
-            for (int i = 0; i < length; i++)
-                buffer[i] = (byte)(buffer[i] ^ 0xFF);
+            case int i when i > 0: yield return $"Positive integer: {i}"; break;
+            case string s: yield return $"String of length {s.Length}"; break;
+            case null: yield return "Null value"; break;
+            default: yield return $"Unknown type: {item?.GetType().Name}"; break;
         }
     }
 
-    public class Hyper<T> where T : class, IVolatile, new()
+    // Using regex, exception filters and unsafe code
+    public unsafe void RunDemo()
     {
-        public event EventHandler? SomethingHappened;
-        public T Instance { get; } = new();
-        public string this[int index] => $"[{index}]";
+        Span<byte> span = stackalloc byte[10];
+        for (int i = 0; i < span.Length; i++) span[i] = (byte)(i * 2);
 
-        public void Trigger() => SomethingHappened?.Invoke(this, EventArgs.Empty);
-    }
-
-    public record struct Position(int X, int Y);
-
-    public record Planet(string Name, double Mass);
-
-    public class EverythingEverywhere
-    {
-        private readonly List<Planet> _planets = new() { new("Alderaan", 1.0e24), new("Mustafar", 2.0e24) };
-        private const string Banner = "🧠 C# al infinito y más allá";
-
-        public dynamic RunAll()
+        try
         {
-            WriteLine(Banner);
-
-            (int x, int y) = (42, 99);
-            var p = new Position(x, y);
-            object boxed = p;
-            if (boxed is Position { X: var px, Y: var py })
-                WriteLine($"Match: {px}, {py}");
-
-            AliasDictionary counts = new() { ["code"] = 10, ["lines"] = 999 };
-            var total = counts.Values.Sum();
-
-            var task = Task.Run(async () =>
+            if (_regex.IsMatch("123"))
             {
-                await Task.Delay(100);
-                WriteLine("🌠 Async done.");
-            });
-
-            using var enumerator = _planets.GetEnumerator();
-            while (enumerator.MoveNext())
-                WriteLine(enumerator.Current.Name);
-
-            Expression<Func<int, int>> square = n => n * n;
-            var compiled = square.Compile();
-            WriteLine($"Square(9) = {compiled(9)}");
-
-            return new { total, position = p };
-        }
-
-        public void UseUnsafeStuff()
-        {
-            unsafe
-            {
-                byte* buffer = stackalloc byte[10];
-                for (int i = 0; i < 10; i++) buffer[i] = (byte)i;
-                UnsafeUtilities.ModifyBuffer(buffer, 10);
-                for (int i = 0; i < 10; i++) Write($"{buffer[i]} ");
-                WriteLine();
+                OnNotify?.Invoke($"Regex matched at {DateTime.Now:HH:mm}");
             }
         }
-
-        public void UseArglist()
+        catch (ArgumentException ex) when (ex.Message.Contains("regex"))
         {
-            var typedRef = __makeref(this);
-            var type = __reftype(typedRef);
-            WriteLine($"Type: {type}");
+            Console.WriteLine($"Regex error: {ex.Message}");
         }
+
+        fixed (int* p = _unsafeBuffer)
+        {
+            for (int i = 0; i < 10; i++) p[i] = i * i;
+        }
+
+        Console.WriteLine($"Counter: {_counter++}");
     }
 
-    interface ILogger
-    {
-        void Log(string message) => WriteLine(message);
-    }
+    // Lambda expression and LINQ
+    public List<string> TransformList(List<int> input)
+        => input.Where(x => x % 2 == 0).Select(x => $"Even: {x}").ToList();
 
-    /// <summary>
-    /// Entry point for the application.
-    /// </summary>
-    public static class EntryPoint : ILogger
+    // Interpolated strings and null-coalescing
+    public string Format(string? msg) => $"[{_name.ToUpper()}] {msg ?? "<no message>"}";
+
+    // Dispose pattern
+    public void Dispose() => GC.SuppressFinalize(this);
+}
+
+// Record types (mutable & immutable)
+public readonly record struct Point(int X, int Y);
+public record class Person(string Name, int Age);
+
+// Interface
+public interface ITestable
+{
+    void RunDemo();
+}
+
+// Enum + Flags
+[Flags]
+public enum FileAccess
+{
+    None = 0,
+    Read = 1,
+    Write = 2,
+    Execute = 4,
+    All = Read | Write | Execute
+}
+
+// Top-level statement simulation
+internal static class EntryPoint
+{
+    public static void Main()
     {
-        public static void Main(string[] args)
+        var tester = new ColorizationShowcase<Point>("Test")
         {
-            var engine = new EverythingEverywhere();
-            engine.RunAll();
-            engine.UseUnsafeStuff();
-            engine.UseArglist();
+            Description = "Full semantic colorization test"
+        };
 
-            global::System.Console.WriteLine("🌌 Fin del viaje galáctico");
+        tester.OnNotify += msg => Console.WriteLine(msg);
+        tester.RunDemo();
+
+        foreach (var info in tester.Describe(42))
+        {
+            Console.WriteLine(info);
         }
+
+        var result = tester.Process("data", d => d.ToUpperInvariant());
+        Console.WriteLine($"Processed: {result}");
+
+        var evens = tester.TransformList(new() { 1, 2, 3, 4, 5, 6 });
+        evens.ForEach(Console.WriteLine);
+
+        tester.Dispose();
     }
 }

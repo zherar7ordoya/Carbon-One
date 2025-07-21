@@ -53,3 +53,16 @@
 | highlight      | #FFFACD |         |
 | warning        | #FFA500 |         |
 | Azul           | #0B5EB4 | 05.68   |
+
+## Grok
+
+| Color    | Hexa Claro   | CR Claro    | Hexa Oscuro   | CR Oscuro   |
+|----------|--------------|-------------|---------------|-------------|
+| Negro    | #333333    | 7.3:1 (AAA) | #000000     | 13.4:1 (AAA)|
+| Azul     | #3366CC    | 5.8:1 (AA)  | #0000AA     | 9.2:1 (AAA) |
+| Verde    | #008000    | 5.0:1 (AA)  | #006400     | 7.2:1 (AAA) |
+| Rojo     | #AA0000    | 5.6:1 (AA)  | #660000     | 8.5:1 (AAA) |
+| Púrpura  | #800080    | 4.8:1 (AA)  | #4B0082     | 7.5:1 (AAA) |
+| Naranja  | #8B4513    | 5.5:1 (AA)  | #3E2723     | 9.5:1 (AAA) |
+| Cian     | #008B8B    | 4.6:1 (AA)  | #006666     | 6.8:1 (AA)  |
+| Magenta  | #8B008B    | 4.8:1 (AA)  | #330033     | 9.0:1 (AAA) |

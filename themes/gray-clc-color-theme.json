@@ -9,65 +9,77 @@
 
 "semanticTokenColors": {
 
-// GRIS CLARO (mejorado)
+
+        "keyword": "#0033CC",
+        "modifier": "#0033CC",
+
+        "parameter": "#0000AA",
+        "label": "#0000AA",
+        "namespace": "#0000AA",
+        "delegate": "#0000AA",
+        "variable": "#0000AA",
+
+        "controlKeyword": "#8B008B",
+        "typeParameter": "#8B008B",
+
+        "method": "#008B8B",
+        "function": "#008B8B",
+        "extensionMethod": "#008B8B",
         
-        "comment": "#A85F00",
-        "preprocessorText": "#A85F00",
-        "xmlDocCommentText": "#A85F00",
+        
+
+
+        "operator": "#006400",
+        "enum": "#006400",
+        "event": "#006400",
+        "recordClass": "#006400",
+        "class": "#006400",
+
+        "property": "#006400",
+
+        "comment": "#555555",
+        "preprocessorText": "#555555",
+        "xmlDocCommentText": "#555555",
+
+
+        "string": "#880000",
+        "regexp": "#880000",
+        "stringVerbatim": "#880000",
+        
+        "number": "#000000",
+
+
+        /* ************************** */
+
+
+        
 
 
 
-        // ROJO CLARO
-        "decorator": "#C03000",
-        "type": "#C03000",
+      
         
 
 
         // ROJO OSCURO
-        "string": "#880000",
-        "regexp": "#880000",
-        "stringVerbatim": "#880000",
-        "number": "#880000",
-        "typeParameter": "#880000",
 
         // AZUL CLARO (mejorado)
         "xmlDocCommentName": "#1E4A7C",
         "xmlDocCommentAttributeName": "#1E4A7C",
 
-        // AZUL MEDIO
-        "keyword": "#0000FF",
-
-        "modifier": "#0033CC",
-
-        // AZUL OSCURO
-        "parameter": "#112266",
-        "label": "#112266",
-        "namespace": "#112266",
-        "delegate": "#112266",
-
-        "variable": "#0000AA",
-
-        // VIOLETA
-        "method": "#74461F",
-        "function": "#74461F",
-        "extensionMethod": "#74461F",
 
 
-        //"controlKeyword": "#8800AA",
-        "controlKeyword": "#4B0082",
+
+      
+      
 
 
-        // VERDE CLARO
-        "operator": "#006600",
-        "enum": "#006600",
-        "event": "#006600",
-        "recordClass": "#006600",
+        
 
-        //"class": "#006600",
-        "class": "#006400",
+
+
         
         // VERDE OSCURO
-        "interface": "#66BB66",
+        "interface": "#1E4A7C",
 
         "struct": "#004B73",
         "recordStruct": "#004B73",
@@ -81,7 +93,7 @@
         "enumMember": "#2B2B2B",
         "macro": "#2B2B2B",
         "field": "#2B2B2B",
-        "property": "#2B2B2B",
+
         "constant": "#2B2B2B",
         
 
@@ -89,8 +101,8 @@
         
       
 
-
-
+        "decorator": "#FF0000",
+        "type": "#FF0000",
     },
     //
     "tokenColors": [
