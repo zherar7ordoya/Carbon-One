@@ -10,49 +10,51 @@
 "semanticTokenColors": {
 
 
-        "keyword": "#0033CC",
+        
         "modifier": "#0033CC",
 
 
-        "parameter": "#0000AA",
+        
         "label": "#0000AA",
         "namespace": "#0000AA",
         "delegate": "#0000AA",
-        "variable": "#0000AA",
         "typeParameter": "#0000AA",
 
 
         "controlKeyword": "#8B008B",
+        "keyword": "#8B008B",
 
-
-        "operator": "#006400",
+        
         "enum": "#006400",
         "event": "#006400",
         "recordClass": "#006400",
         "class": "#006400",
         "property": "#006400",
-
+        "string": "#006400",
 
         "method": "#076678",
         "function": "#076678",
         "extensionMethod": "#076678",
-
+        "operator": "#076678",
 
         "comment": "#555555",
         "preprocessorText": "#555555",
         "xmlDocCommentText": "#555555",
 
 
-        "string": "#880000",
+        
         "regexp": "#880000",
         "stringVerbatim": "#880000",
-        
+        "number": "#880000",
 
-        "number": "#000000",
+        
         "enumMember": "#000000",
         "macro": "#000000",
         "field": "#000000",
         "constant": "#000000",
+
+        "parameter": "#000000",
+        "variable": "#000000",
 
         /* ************************** */
 

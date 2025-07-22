@@ -39,11 +39,19 @@ public sealed partial class ColorizationShowcase<T> : ITestable, IDisposable whe
     // Constructor
     public ColorizationShowcase(string name) => _name = name;
 
-    // Generic method with dynamic and nullable
-    public TResult? Process<TResult>(dynamic input, Func<dynamic, TResult> processor) where TResult : class
+    // An exceptionally useful method
+    public string Process(string param)
     {
-        if (input is null) return null;
-        return processor(input);
+        var text = "string";
+
+        for (var i = 0; i < param.Length; i++)
+        {
+            text += i;
+        }
+
+        var boolean = false;
+
+        return text;
     }
 
     // Yield return + switch + pattern matching
@@ -61,6 +69,7 @@ public sealed partial class ColorizationShowcase<T> : ITestable, IDisposable whe
     // Using regex, exception filters and unsafe code
     public unsafe void RunDemo()
     {
+        var stopwatch = new Stopwatch();
         Span<byte> span = stackalloc byte[10];
         for (int i = 0; i < span.Length; i++) span[i] = (byte)(i * 2);
 
@@ -135,7 +144,7 @@ internal static class EntryPoint
         }
 
         var result = tester.Process("data", d => d.ToUpperInvariant());
-        Console.WriteLine($"Processed: {result}");
+        Console.WriteLine($"Processed: {result.text}, IsValid: {result.isValid}");
 
         var evens = tester.TransformList(new() { 1, 2, 3, 4, 5, 6 });
         evens.ForEach(Console.WriteLine);
