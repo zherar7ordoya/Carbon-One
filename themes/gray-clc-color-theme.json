@@ -88,10 +88,11 @@
         // =============================
         {
             "scope": [
-                "support.type.primitive",
+                //"support.type.primitive",
                 "storage.type.property",
                 "keyword.operator",
                 "support.type.builtin",
+                "punctuation.separator.key-value",
             ],
             "settings": {
                 "foreground": "#0184BC"
@@ -103,6 +104,11 @@
                 "variable.parameter",
                 "variable.other",
                 "punctuation",
+                "meta.brace.square",
+                "meta.brace.round",
+                "keyword.control.as",
+                "punctuation.accessor",
+                "support.type.primitive",
             ],
             "settings": {
                 "foreground": "#383A42"
@@ -124,6 +130,8 @@
                 "string",
                 "punctuation.definition.string.begin",
                 "punctuation.definition.string.template.begin",
+                "punctuation.definition.string.template.end",
+                "punctuation.definition.string.end",
             ],
             "settings": {
                 "foreground": "#50A14F"
@@ -134,6 +142,10 @@
             "scope": [
                 "constant.numeric.decimal",
                 "constant.language.null",
+                "variable.other.constant.property",
+                "variable.other.constant",
+                "constant.language.boolean.false",
+                "constant.language.boolean.true",
             ],
             "settings": {
                 "foreground": "#986801"
@@ -161,6 +173,11 @@
                 "storage.type.class",
                 "storage.type",
                 "keyword.control.conditional",
+                "keyword.control.trycatch",
+                "keyword.control.loop",
+                "keyword.control.switch",
+                "keyword.operator.expression.of",
+                "keyword.operator.new",
             ],
             "settings": {
                 "foreground": "#A626A4"
@@ -184,7 +201,8 @@
         {
             "scope": [
                 "punctuation.definition.template-expression.begin",
-
+                "punctuation.definition.template-expression.end",
+                "punctuation.definition.template-expression.end",
             ],
             "settings": {
                 "foreground": "#CA1243"
@@ -197,6 +215,7 @@
                 "variable.other.enummember",
                 "variable.language.this",
                 "variable.language.super",
+                "support.variable.property",
             ],
             "settings": {
                 "foreground": "#E45649"
