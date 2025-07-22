@@ -13,20 +13,16 @@
         "keyword": "#0033CC",
         "modifier": "#0033CC",
 
+
         "parameter": "#0000AA",
         "label": "#0000AA",
         "namespace": "#0000AA",
         "delegate": "#0000AA",
         "variable": "#0000AA",
+        "typeParameter": "#0000AA",
+
 
         "controlKeyword": "#8B008B",
-        "typeParameter": "#8B008B",
-
-        "method": "#008B8B",
-        "function": "#008B8B",
-        "extensionMethod": "#008B8B",
-        
-        
 
 
         "operator": "#006400",
@@ -34,8 +30,13 @@
         "event": "#006400",
         "recordClass": "#006400",
         "class": "#006400",
-
         "property": "#006400",
+
+
+        "method": "#076678",
+        "function": "#076678",
+        "extensionMethod": "#076678",
+
 
         "comment": "#555555",
         "preprocessorText": "#555555",
@@ -46,8 +47,12 @@
         "regexp": "#880000",
         "stringVerbatim": "#880000",
         
-        "number": "#000000",
 
+        "number": "#000000",
+        "enumMember": "#000000",
+        "macro": "#000000",
+        "field": "#000000",
+        "constant": "#000000",
 
         /* ************************** */
 
@@ -89,15 +94,6 @@
         "xmlDocCommentDelimiter": "#5E5E5E",
         "punctuation": "#5E5E5E",
         
-        // GRIS OSCURO
-        "enumMember": "#2B2B2B",
-        "macro": "#2B2B2B",
-        "field": "#2B2B2B",
-
-        "constant": "#2B2B2B",
-        
-
-
         
       
 
