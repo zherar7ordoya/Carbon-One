@@ -52,47 +52,19 @@
     "tokenColors": [
         // -----------------------------
         {
-            "scope": [],
-            "settings": {
-                "fontStyle": "bold"
-            }
-        },
-        // -----------------------------
-        {
             "scope": ["comment",],
             "settings": {
                 "fontStyle": "italic"
             }
         },
-        // -----------------------------
-        {
-            "scope": [],
-            "settings": {
-                "fontStyle": "italic bold"
-            }
-        },
-        // -----------------------------
-        {
-            "scope": [],
-            "settings": {
-                "fontStyle": "strikethrough"
-            }
-        },
-        // -----------------------------
-        {
-            "scope": [],
-            "settings": {
-                "fontStyle": "underline"
-            }
-        },
         // =============================
         {
             "scope": [
-                //"support.type.primitive",
+                "support.type",
                 "storage.type.property",
                 "keyword.operator",
-                "support.type.builtin",
-                "punctuation.separator.key-value",
+                //"punctuation.separator.key-value",
+                //"punctuation.separator",
             ],
             "settings": {
                 "foreground": "#0184BC"
@@ -103,12 +75,10 @@
             "scope": [
                 "variable.parameter",
                 "variable.other",
-                "punctuation",
+                //"punctuation",
                 "meta.brace.square",
                 "meta.brace.round",
-                "keyword.control.as",
-                "punctuation.accessor",
-                "support.type.primitive",
+                //"punctuation.accessor",
             ],
             "settings": {
                 "foreground": "#383A42"
@@ -128,10 +98,12 @@
             "scope": [
                 "entity.name.type.module",
                 "string",
-                "punctuation.definition.string.begin",
-                "punctuation.definition.string.template.begin",
-                "punctuation.definition.string.template.end",
-                "punctuation.definition.string.end",
+                //"punctuation.definition.string.begin",
+                //"punctuation.definition.string.template.begin",
+                //"punctuation.definition.string.template.end",
+                //"punctuation.definition.string.end",
+                //"punctuation.definition",
+                "punctuation",
             ],
             "settings": {
                 "foreground": "#50A14F"
@@ -155,7 +127,7 @@
         {
             "scope": [
                 "comment",
-                "punctuation.definition.comment",
+                //"punctuation.definition.comment",
             ],
             "settings": {
                 "foreground": "#A0A1A7"
@@ -164,20 +136,9 @@
         // -----------------------------
         {
             "scope": [
-                "storage.type.namespace",
-                "storage.type.function",
-                "storage.type.interface",
-                "keyword.control.flow",
-                "storage.type.enum",
                 "storage.modifier",
-                "storage.type.class",
                 "storage.type",
-                "keyword.control.conditional",
-                "keyword.control.trycatch",
-                "keyword.control.loop",
-                "keyword.control.switch",
-                "keyword.operator.expression.of",
-                "keyword.operator.new",
+                "keyword.control",
             ],
             "settings": {
                 "foreground": "#A626A4"
@@ -191,7 +152,7 @@
                 "entity.name.type",
                 "entity.name.type.class",
                 "entity.other.inherited-class",
-                "support.class.promise",
+                "support.class",
             ],
             "settings": {
                 "foreground": "#C18401"
@@ -200,9 +161,9 @@
         // -----------------------------
         {
             "scope": [
-                "punctuation.definition.template-expression.begin",
-                "punctuation.definition.template-expression.end",
-                "punctuation.definition.template-expression.end",
+                //"punctuation.definition.template-expression.begin",
+                //"punctuation.definition.template-expression.end",
+                //"punctuation.definition.template-expression",
             ],
             "settings": {
                 "foreground": "#CA1243"
@@ -215,13 +176,13 @@
                 "variable.other.enummember",
                 "variable.language.this",
                 "variable.language.super",
-                "support.variable.property",
+                "support.variable",
             ],
             "settings": {
                 "foreground": "#E45649"
             }
         },
-        // -----------------------------
+        // =============================
     ],
     "colors": {
         //"editor.background": "#F2E3CC",
