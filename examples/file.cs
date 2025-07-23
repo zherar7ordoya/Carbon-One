@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
 namespace EmployeeManagementSystem
 {
     using System;
@@ -155,5 +166,180 @@ namespace EmployeeManagementSystem
             }
         }
         #endregion
+    }
+}
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+namespace SemanticHighlighting
+{
+    // type (custom type)
+    using CustomAlias = System.Collections.Generic.List<int>;
+
+    // type.defaultLibrary (built-in types)
+    using System;
+    using System.Threading.Tasks;
+
+    // enum
+    public enum Color
+    {
+        // enumMember
+        Red,
+        Green,
+        Blue
+    }
+
+    // interface
+    public interface IVehicle
+    {
+        // property (readwrite)
+        string Brand { get; set; }
+
+        // property.readonly
+        int Wheels { get; }
+
+        // event
+        event EventHandler Started;
+
+        // method (interface method)
+        void Start();
+    }
+
+    // class
+    public class Car : IVehicle
+    {
+        // variable.readonly (instance, readonly)
+        private readonly string _model = "Sedan";
+
+        // variable.readonly.defaultLibrary (const from system)
+        private const int MaxSpeed = 200;
+
+        // property (readwrite)
+        public string Brand { get; set; }
+
+        // property.readonly
+        public int Wheels => 4;
+
+        // event
+        public event EventHandler Started;
+
+        // constructor (treated as method)
+        public Car(string brand)
+        {
+            Brand = brand;
+        }
+
+        // method
+        public void Start()
+        {
+            // parameter
+            LogMessage("Engine started.");
+
+            // variable (readwrite, local)
+            var status = "Running";
+
+            // function.defaultLibrary (built-in function)
+            Console.WriteLine($"Car {Brand} is {status}");
+
+            // Raise event
+            Started?.Invoke(this, EventArgs.Empty);
+        }
+
+        // function (static method)
+        public static void LogMessage(string message)
+        {
+            // parameter
+            System.Diagnostics.Debug.WriteLine(message);
+        }
+
+        // property (auto, readonly)
+        public DateTime CreatedAt { get; } = DateTime.Now;
+
+        // struct (inside class)
+        public struct EngineInfo
+        {
+            // field (variable)
+            public double Horsepower;
+
+            // property
+            public string Type { get; set; }
+        }
+
+        // variable (readonly, local in method)
+        public void DisplayEngine()
+        {
+            // variable.readonly (local readonly)
+            var info = new EngineInfo
+            {
+                Horsepower = 150.0,
+                Type = "V6"
+            };
+
+            // variable (readwrite, local)
+            var output = $"Engine: {info.Horsepower} HP, Type: {info.Type}";
+            Console.WriteLine(output);
+        }
+    }
+
+    // struct
+    public struct Point
+    {
+        // field (variable)
+        public int X;
+        public int Y;
+
+        // method (in struct)
+        public double DistanceToOrigin()
+        {
+            return Math.Sqrt(X * X + Y * Y);
+        }
+    }
+
+    // class.defaultLibrary (inherits from System.Object)
+    public class Logger : IDisposable
+    {
+        // variable (instance)
+        private bool _disposed = false;
+
+        // method (override)
+        public void Dispose()
+        {
+            if (!_disposed)
+            {
+                _disposed = true;
+            }
+        }
+    }
+
+    // macro (preprocessor directive)
+    #region Helper Utilities
+    // This region is not a macro, but preprocessor directives can simulate it
+#if DEBUG
+        // function.defaultLibrary
+        Console.WriteLine("Debug mode enabled.");
+#endif
+    #endregion
+
+    // Main function (entry point)
+    public static class Program
+    {
+        // function
+        public static async Task Main(string[] args)
+        {
+            // variable (readwrite)
+            var car = new Car("Toyota");
+
+            // method call
+            car.Start();
+
+            // variable.readonly.defaultLibrary (literal treated as const-like)
+            const string AppName = "SemanticHighlightingTester";
+
+            // await (uses built-in types)
+            await Task.Delay(1000);
+
+            // Display app name
+            Console.WriteLine($"App: {AppName}");
+        }
     }
 }
