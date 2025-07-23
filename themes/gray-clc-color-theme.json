@@ -3,6 +3,10 @@
     "name": "Gray CLC",
     "type": "light",
     "semanticHighlighting": true,
+    //
+    /* ver https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide */
+//
+
     "semanticTokenColors": {
         "modifier": "#0033CC",
         "label": "#0000AA",
@@ -62,30 +66,46 @@
             "scope": [
                 "support.type",
                 "keyword.operator",
-                "variable.other.readwrite",
+                
+                "entity.name.function",
+                
+
+                "template-expression",
+                "punctuation.definition.template-expression",
+
             ],
             "settings": {
                 "foreground": "#0184BC"
             }
         },
         // -----------------------------
-        {
+        { // <=============================== (NEGRO)
             "scope": [
-                //"variable.parameter",
-                //"meta.brace",
+                "entity.name.namespace",
+                "storage.type.struct",
 
-                //"variable.other.object",
-                //"variable.other.property",
-            ],
+                
+
+                "support.function",
+                "entity.name.function.member",
+                "entity.name.function.preprocessor",
+                "variable.other.readwrite",
+                "entity.name.variable",
+                "variable.other.constant",
+                "support.constant",
+                "variable.parameter",
+                "variable.other.property",
+                "variable.other.constant.property",
+                "variable.other.enummember",
+                "variable.other.event",
+        ],
             "settings": {
                 "foreground": "#383A42"
             }
         },
         // -----------------------------
         {
-            "scope": [
-                "entity.name.function",
-            ],
+            "scope": [],
             "settings": {
                 "foreground": "#4078F2"
             }
@@ -93,9 +113,18 @@
         // -----------------------------
         {
             "scope": [
+                
                 "string",
                 "punctuation.definition.string",
+
                 "entity.name.type",
+                "entity.name.type.class",
+                "entity.name.type.enum",
+                "entity.name.type.interface",
+
+                "entity.other.inherited-class",
+                "support.class",
+
             ],
             "settings": {
                 "foreground": "#50A14F"
@@ -104,7 +133,6 @@
         // -----------------------------
         {
             "scope": [
-                "variable.other.constant",
                 "constant",
             ],
             "settings": {
@@ -115,7 +143,6 @@
         {
             "scope": [
                 "comment",
-                //"punctuation",
                 "punctuation.definition.comment",
             ],
             "settings": {
@@ -125,10 +152,12 @@
         // -----------------------------
         {
             "scope": [
-                //"storage.modifier",
-                //"storage.type",
-                "storage",
+                
                 "keyword.control",
+                "keyword.other",
+                "keyword.type",
+                
+                "storage",
                 "variable.language",
             ],
             "settings": {
@@ -137,21 +166,14 @@
         },
         // -----------------------------
         {
-            "scope": [
-                //"entity.name.type",
-                "entity.other.inherited-class",
-                "support.class",
-            ],
+            "scope": [],
             "settings": {
                 "foreground": "#C18401"
             }
         },
         // -----------------------------
         {
-            "scope": [
-                "template-expression",
-                "punctuation.definition.template-expression",
-            ],
+            "scope": [],
             "settings": {
                 "foreground": "#CA1243"
             }
@@ -160,8 +182,6 @@
         {
             "scope": [
                 "support.variable",
-
-                //"variable.other",                
             ],
             "settings": {
                 "foreground": "#E45649"
