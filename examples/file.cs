@@ -18,9 +18,10 @@ namespace EmployeeManagementSystem
 
     // Atributo personalizado
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
-    public class AuditableAttribute : Attribute
+    public class AuditableAttribute : Attribute // Esto es clase
     {
         public string Description { get; }
+        // Esto es método
         public AuditableAttribute(string description) => Description = description;
     }
 
