@@ -65,7 +65,7 @@
                 "punctuation.definition.interpolation",
             ],
             "settings": {
-                "foreground": "#0000FF"
+                "foreground": "#4078F2"
             }
         },
         // -----------------------------
