@@ -85,7 +85,12 @@ namespace EmployeeManagementSystem
         // Método con expresión lambda
         public Func<int, string> GetIdDescription = id => $"Employee ID: {id}";
 
-        // Método genérico
+        /// <summary>
+        /// Computes the bonus for the employee.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="baseBonus"></param>
+        /// <returns></returns>
         public T ComputeBonus<T>(T baseBonus) where T : struct
         {
             if (Salary.HasValue)
