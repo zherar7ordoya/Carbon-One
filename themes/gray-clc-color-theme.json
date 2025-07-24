@@ -4,7 +4,6 @@
     "type": "light",
     "semanticHighlighting": true,
     //
-    /* ver https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide */
     //
     "semanticTokenColors": {
         "modifier": "#0033CC",
@@ -53,22 +52,39 @@
     },
     //
     "tokenColors": [
-        // =============================
+        /*
+        Paleta de colores:
+        - Azules:  #4078F2
+        - Verde:   #008000
+        - Gris:    #808080
+        - Púrpura: #A626A4
+        - Naranja: #C18401
+        - Bordó:   #A31515
+
+        Fondos:
+        - Peach:  RGB(237, 221, 110) #EDD1B0; 14.35:1. 
+        - Orange: RGB(216, 211, 214) #EDDD6E; 15.17:1. 
+        - Yellow: RGB(248, 253, 137) #F8FD89; 19.4:1. 
+
+        Texto predeterminado:
+        - Negro:   #000000
+        */
+        // === COLOR: Azul -------------
         {
             "scope": [
-                "support.type",
-                "keyword.operator",
                 "entity.name.function",
-                "variable.other.object.property",
-                "template-expression",
-                "punctuation.definition.template-expression",
+                "keyword.operator",
                 "punctuation.definition.interpolation",
+                "punctuation.definition.string",
+                "punctuation.definition.template-expression",
+                "storage.type.function",
+                "template-expression",
             ],
             "settings": {
                 "foreground": "#4078F2"
             }
         },
-        // -----------------------------
+        // === COLOR: Negro ------------
         {
             "scope": [
                 "entity.name.function.member",
@@ -84,6 +100,7 @@
                 "variable.other.enummember",
                 "variable.other.event",
                 "variable.other.object",
+                "variable.other.object.property",
                 "variable.other.property",
                 "variable.other.readwrite",
                 "variable.parameter",
@@ -92,63 +109,48 @@
                 "foreground": "#000000"
             }
         },
-        // -----------------------------
-        /*
-        {
-            "scope": [],
-            "settings": {
-                "foreground": "#4078F2"
-            }
-        },
-        */
-        // -----------------------------
+        // === COLOR: Verde ------------
         {
             "scope": [
-                "punctuation.definition.string",
                 "string",
             ],
             "settings": {
                 "foreground": "#008000"
             }
         },
-        // -----------------------------
-        /*
-        {
-            /*
-            "scope": [],
-            "settings": {
-                "foreground": "#986801"
-            }
-        },
-        */
-        // -----------------------------
+        // === COLOR: Gris -------------
+       
         {
             "scope": [
                 "comment",
+                "entity.name.tag.localname",
                 "keyword.preprocessor.endregion",
                 "keyword.preprocessor.region",
                 "punctuation.definition.comment",
+                
             ],
             "settings": {
                 "foreground": "#808080"
             }
         },
-        // -----------------------------
+        // === COLOR: Púrpura ----------
         {
             "scope": [
                 "keyword.control",
+                "keyword.operator.expression",
                 "keyword.other",
                 "keyword.type",
                 "keyword.preprocessor",
                 "storage",
                 "storage.type.struct",
+                "support.type",
                 "variable.language",
             ],
             "settings": {
-                "foreground": "#AF00DB"
+                "foreground": "#A626A4"
             }
         },
-        // -----------------------------
+        // === COLOR: Naranja ----------
         {
             "scope": [
                 "entity.name.type",
@@ -159,12 +161,13 @@
                 "support.class",
             ],
             "settings": {
-                "foreground": "#C18401"  // <== (!)
+                "foreground": "#C18401"
             }
         },
-        // -----------------------------
+        // === COLOR: Bordó ------------
         {
             "scope": [
+                
                 "constant",
                 "entity.other.attribute-name.localname",
                 "support.variable",
@@ -173,15 +176,6 @@
                 "foreground": "#A31515"
             }
         },
-        // -----------------------------
-        /*
-        {
-            "scope": [],
-            "settings": {
-                "foreground": "#E45649"
-            }
-        },
-        */
         // =============================
     ],
     "colors": {
