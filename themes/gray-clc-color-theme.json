@@ -65,7 +65,7 @@
                 "punctuation.definition.interpolation",
             ],
             "settings": {
-                "foreground": "#0184BC"
+                "foreground": "#0000FF"
             }
         },
         // -----------------------------
@@ -76,8 +76,9 @@
                 "entity.name.namespace",
                 "entity.name.variable",
                 "punctuation",
-                "support.function",
+                "punctuation.separator.hash",
                 "support.constant",
+                "support.function",
                 "variable.other.constant",
                 "variable.other.constant.property",
                 "variable.other.enummember",
@@ -92,35 +93,34 @@
             }
         },
         // -----------------------------
+        /*
         {
             "scope": [],
             "settings": {
                 "foreground": "#4078F2"
             }
         },
+        */
         // -----------------------------
         {
             "scope": [
-                "entity.name.type.enum",
-                "entity.name.type.interface",
-                "entity.other.inherited-class",
                 "punctuation.definition.string",
                 "string",
-                "support.class",
             ],
             "settings": {
-                "foreground": "#50A14F"
+                "foreground": "#008000"
             }
         },
         // -----------------------------
+        /*
         {
-            "scope": [
-                "constant",
-            ],
+            /*
+            "scope": [],
             "settings": {
                 "foreground": "#986801"
             }
         },
+        */
         // -----------------------------
         {
             "scope": [
@@ -130,7 +130,7 @@
                 "punctuation.definition.comment",
             ],
             "settings": {
-                "foreground": "#A0A1A7"
+                "foreground": "#808080"
             }
         },
         // -----------------------------
@@ -145,7 +145,7 @@
                 "variable.language",
             ],
             "settings": {
-                "foreground": "#A626A4"
+                "foreground": "#AF00DB"
             }
         },
         // -----------------------------
@@ -153,30 +153,35 @@
             "scope": [
                 "entity.name.type",
                 "entity.name.type.class",
-           ],
-            "settings": {
-                "foreground": "#C18401"
-            }
-        },
-        // -----------------------------
-        {
-            "scope": [
-                "punctuation.separator.hash",
-                "entity.other.attribute-name.localname",
+                "entity.name.type.enum",
+                "entity.name.type.interface",
+                "entity.other.inherited-class",
+                "support.class",
             ],
             "settings": {
-                "foreground": "#CA1243"
+                "foreground": "#C18401"  // <== (!)
             }
         },
         // -----------------------------
         {
             "scope": [
+                "constant",
+                "entity.other.attribute-name.localname",
                 "support.variable",
             ],
+            "settings": {
+                "foreground": "#A31515"
+            }
+        },
+        // -----------------------------
+        /*
+        {
+            "scope": [],
             "settings": {
                 "foreground": "#E45649"
             }
         },
+        */
         // =============================
     ],
     "colors": {

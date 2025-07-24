@@ -124,7 +124,7 @@ namespace EmployeeManagementSystem
     // Clase principal para pruebas
     public class Program
     {
-        #region Main Program
+        #region Main Program "Prinzo"
         public static async Task Main()
         {
             try
