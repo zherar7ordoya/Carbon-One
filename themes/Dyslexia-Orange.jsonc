@@ -81,7 +81,7 @@
             ],
             "settings": {
                 //"foreground": "#0055DD",
-                "foreground": "#0044CC",
+                "foreground": "#0055DD"
             }
         },
         // === COLOR: Negro ------------
@@ -99,7 +99,7 @@
                 "variable.parameter",
             ],
             "settings": {
-                "foreground": "#000000",
+                "foreground": "#000000"
             }
         },
         // === COLOR: Verde ------------
@@ -118,7 +118,7 @@
             ],
             "settings": {
                 //"foreground": "#008000",
-                "foreground": "#007000",
+                "foreground": "#007700"
                 
             }
         },
@@ -133,7 +133,7 @@
             ],
             "settings": {
                 //"foreground": "#757575",
-                "foreground": "#626262",
+                "foreground": "#626262"
 
             }
         },
@@ -151,7 +151,7 @@
                 "variable.language",
             ],
             "settings": {
-                "foreground": "#9900CC",
+                "foreground": "#A000D9"
             }
         },
         // === COLOR: Naranja ----------
@@ -163,7 +163,7 @@
                 
             ],
             "settings": {
-                "foreground": "#7D4E00",
+                "foreground": "#8B5A00"
             }
         },
         // === COLOR: Rojo -------------
@@ -175,7 +175,7 @@
             ],
             "settings": {
                 //"foreground": "#DC143C", 
-                "foreground": "#CC0000",
+                "foreground": "#C00000"
             }
         },
         // =============================
