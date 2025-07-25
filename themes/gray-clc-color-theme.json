@@ -50,25 +50,24 @@
         "decorator": "#FF0000",
         "type": "#FF0000",
     },
-    //
+    /*
+    Paleta de colores:
+    - Azul:    #4078F2
+    - Verde:   #008000
+    - Gris:    #808080
+    - Púrpura: #A626A4
+    - Naranja: #C18401
+    - Bordó:   #A31515
+
+    Fondos:
+    - Peach:  RGB(237, 221, 110) #EDD1B0; 14.35:1. 
+    - Orange: RGB(216, 211, 214) #EDDD6E; 15.17:1. 
+    - Yellow: RGB(248, 253, 137) #F8FD89; 19.4:1. 
+
+    Texto predeterminado:
+    - Negro:   #000000
+    */
     "tokenColors": [
-        /*
-        Paleta de colores:
-        - Azules:  #4078F2
-        - Verde:   #008000
-        - Gris:    #808080
-        - Púrpura: #A626A4
-        - Naranja: #C18401
-        - Bordó:   #A31515
-
-        Fondos:
-        - Peach:  RGB(237, 221, 110) #EDD1B0; 14.35:1. 
-        - Orange: RGB(216, 211, 214) #EDDD6E; 15.17:1. 
-        - Yellow: RGB(248, 253, 137) #F8FD89; 19.4:1. 
-
-        Texto predeterminado:
-        - Negro:   #000000
-        */
         // === COLOR: Azul -------------
         {
             "scope": [
@@ -81,7 +80,9 @@
                 "template-expression",
             ],
             "settings": {
-                "foreground": "#4078F2"
+                //"foreground": "#4078F2"
+                "foreground": "#0056B3"
+                //"foreground": "#1E4B99"
             }
         },
         // === COLOR: Negro ------------
@@ -115,11 +116,12 @@
                 "string",
             ],
             "settings": {
-                "foreground": "#008000"
+                //"foreground": "#008000"
+                "foreground": "#006600"
+                //"foreground": "#004400"
             }
         },
         // === COLOR: Gris -------------
-       
         {
             "scope": [
                 "comment",
@@ -127,10 +129,11 @@
                 "keyword.preprocessor.endregion",
                 "keyword.preprocessor.region",
                 "punctuation.definition.comment",
-                
             ],
             "settings": {
-                "foreground": "#808080"
+                //"foreground": "#808080"
+                "foreground": "#4D4D4D"
+                //"foreground": "#404040"
             }
         },
         // === COLOR: Púrpura ----------
@@ -147,7 +150,10 @@
                 "variable.language",
             ],
             "settings": {
-                "foreground": "#A626A4"
+                //"foreground": "#A626A4"
+                "foreground": "#8B008B"
+                //"foreground": "#800080"
+                //"foreground": "#6B1869"
             }
         },
         // === COLOR: Naranja ----------
@@ -161,26 +167,47 @@
                 "support.class",
             ],
             "settings": {
-                "foreground": "#C18401"
+                //"foreground": "#C18401"
+                //"foreground": "#C45500"
+                //"foreground": "#B45F04"
+                "foreground": "#7D4E00"
             }
         },
         // === COLOR: Bordó ------------
         {
             "scope": [
-                
                 "constant",
                 "entity.other.attribute-name.localname",
                 "support.variable",
             ],
             "settings": {
-                "foreground": "#A31515"
+                //"foreground": "#A31515"
+                "foreground": "#8B0000"
+                //"foreground": "#B22222"
+                //"foreground": "#6A0D0D"
             }
         },
         // =============================
     ],
+    /*
+    Paleta de colores:
+    - Azul:    #4078F2
+    - Verde:   #008000
+    - Gris:    #808080
+    - Púrpura: #A626A4
+    - Naranja: #C18401
+    - Bordó:   #A31515
+
+    Fondos:
+    - Peach:  RGB(237, 221, 110) #EDD1B0; 14.35:1. 
+    - Orange: RGB(216, 211, 214) #EDDD6E; 15.17:1. 
+    - Yellow: RGB(248, 253, 137) #F8FD89; 19.4:1. 
+
+    Texto predeterminado:
+    - Negro:   #000000
+    */    
     "colors": {
-        //"editor.background": "#F2E3CC",
-        "editor.background": "#FAFAFA",
+        "editor.background": "#EDDD6E",
         "editor.foreground": "#000000",
         // =============================
         "activityBar.background": "#d9e1ec",
