@@ -80,9 +80,8 @@
                 "template-expression",
             ],
             "settings": {
-                //"foreground": "#4078F2"
-                //"foreground": "#0056B3"
-                "foreground": "#0055DD"
+                //"foreground": "#0055DD",
+                "foreground": "#0044CC",
             }
         },
         // === COLOR: Negro ------------
@@ -100,7 +99,7 @@
                 "variable.parameter",
             ],
             "settings": {
-                "foreground": "#000000"
+                "foreground": "#000000",
             }
         },
         // === COLOR: Verde ------------
@@ -118,8 +117,8 @@
 
             ],
             "settings": {
-                //"foreground": "#008000"
-                "foreground": "#008000"
+                //"foreground": "#008000",
+                "foreground": "#007000",
                 
             }
         },
@@ -133,8 +132,9 @@
                 "punctuation.definition.comment",
             ],
             "settings": {
-                //"foreground": "#808080"
-                "foreground": "#757575"
+                //"foreground": "#757575",
+                "foreground": "#626262",
+
             }
         },
         // === COLOR: Púrpura ----------
@@ -151,13 +151,7 @@
                 "variable.language",
             ],
             "settings": {
-                /*
-                - Púrpura opción 1: #9900CC  (más saturado, matiz más intenso)
-                - Púrpura opción 2: #A000D9  (más brillante, menos oscuro)
-                - Púrpura opción 3: #8A00C4  (matiz más azulado, más vibrante)
-                - Púrpura opción 4: #9D00B8  (más rojizo, contraste con el azul más azul)
-                */
-                "foreground": "#9900CC"
+                "foreground": "#9900CC",
             }
         },
         // === COLOR: Naranja ----------
@@ -169,10 +163,7 @@
                 
             ],
             "settings": {
-                //"foreground": "#C18401"
-                //"foreground": "#C45500"
-                //"foreground": "#B45F04"
-                "foreground": "#7D4E00"
+                "foreground": "#7D4E00",
             }
         },
         // === COLOR: Rojo -------------
@@ -183,9 +174,8 @@
 
             ],
             "settings": {
-                //"foreground": "#A31515"
-                //"foreground": "#8B0000"
-                "foreground": "#DC143C", 
+                //"foreground": "#DC143C", 
+                "foreground": "#CC0000",
             }
         },
         // =============================
