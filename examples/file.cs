@@ -1,132 +1,90 @@
+#define USE_CUSTOM
+
 using System;
+using System.Collections.Generic;
 
-namespace ColorTestApp
+namespace ColorStressTest
 {
-    public enum UserRole
+    public interface IProcessor
     {
-        Admin,
-        Guest,
-        User
+        void Execute();
     }
 
-    public interface IUser
+    public interface ICustom : IProcessor { }
+
+    public enum Mode
     {
-        string Name { get; }
-        UserRole Role { get; }
-        void Login();
+        Basic,
+        Advanced
     }
 
-    public readonly struct UserData
+    public struct Config
     {
-        public readonly int Id;
-        public readonly string Email;
+        public const string DefaultPath = "/usr/bin";
+        public static readonly int Timeout = 5000;
 
-        public UserData(int id, string email)
+        public Mode CurrentMode;
+        public string Path;
+
+        public Config(Mode mode)
         {
-            Id = id;
-            Email = email;
+            CurrentMode = mode;
+            Path = DefaultPath;
         }
     }
 
-    public class BaseUser : IUser
+    public class ProcessorBase : IProcessor
     {
-        public string Name { get; private set; }
-        public UserRole Role { get; private set; }
-
-        public BaseUser(string name, UserRole role)
-        {
-            Name = name;
-            Role = role;
-        }
-
-        public virtual void Login()
-        {
-            Console.WriteLine($"{Name} has logged in as {Role}");
-        }
-    }
-
-    public class AdminUser : BaseUser
-    {
-        public AdminUser(string name) : base(name, UserRole.Admin) { }
-
-        public void AccessAdminPanel() =>
-            Console.WriteLine($"{Name} accessing admin panel...");
-    }
-
-    public record OperationResult<T>(bool Success, T Result);
-
-    public class Processor<T>
-    {
-        public OperationResult<T> Process(Func<T> task)
-        {
-            try
-            {
-                var result = task();
-                return new OperationResult<T>(true, result);
-            }
-            catch
-            {
-                return new OperationResult<T>(false, default!);
-            }
-        }
-    }
-
-    public delegate void UserCallback(IUser user);
-
-    public class Program
-    {
-        public static void Main()
-        {
-            IUser user = new AdminUser("Alice");
-            user.Login();
-
-            Processor<int> processor = new Processor<int>();
-            var result = processor.Process(() => 42);
-            Console.WriteLine($"Success: {result.Success}, Value: {result.Result}");
-
-            UserCallback callback = u => Console.WriteLine($"Callback for {u.Name}");
-            callback(user);
-        }
-
-        // *********************************************************************
-
-
-
         /// <summary>
-        /// 
+        /// Executes the processor with an optional path.
+        /// If no path is provided, it uses the default path defined in Config.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="source"></param>
-        /// <param name="predicate"></param>
-        /// <param name="orderBy"></param>
-        /// <param name="page"></param>
-        /// <param name="pageSize"></param>
-        /// <param name="useCache"></param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
-        public List<T> ExecuteQuery<T>(
-            IEnumerable<T> source,
-            Func<T, bool> predicate,
-            Func<IEnumerable<T>, IOrderedEnumerable<T>> orderBy,
-            int page,
-            int pageSize,
-            bool useCache = false)
+        /// <param name="path"></param>
+        public virtual void Execute(string path = Config.DefaultPath)
         {
-            if (source == null) throw new ArgumentNullException(nameof(source));
-            if (predicate == null) throw new ArgumentNullException(nameof(predicate));
-            if (page < 1) throw new ArgumentOutOfRangeException(nameof(page));
-            if (pageSize < 1) throw new ArgumentOutOfRangeException(nameof(pageSize));
+            Console.WriteLine($"Executing with path: {path}");
+        }
+    }
 
-            IEnumerable<T> query = source.Where(predicate);
+    public class AdvancedProcessor : ProcessorBase, ICustom
+    {
+        private const int value = 42;
+        public override void Execute()
+        {
+            Console.WriteLine($"Executing with value: {value}");
+        }
+    }
 
-            if (orderBy != null)
-                query = orderBy(query);
+    public static class ProcessorFactory
+    {
+        public static IProcessor Create(Mode mode)
+        {
+            switch (mode)
+            {
+                case Mode.Basic:
+                    return new ProcessorBase();
+                case Mode.Advanced:
+                    return new AdvancedProcessor();
+                default:
+                    throw new InvalidOperationException();
+            }
+        }
+    }
 
-            return query
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize)
-                .ToList();
+    public class App
+    {
+        private static readonly string[] options = { "basic", "advanced" };
+
+        public static void Main(string[] args)
+        {
+#if USE_CUSTOM
+            Mode selectedMode = Mode.Advanced;
+#else
+            Mode selectedMode = Mode.Basic;
+#endif
+            Config config = new Config(selectedMode);
+            IProcessor processor = ProcessorFactory.Create(config.CurrentMode);
+            processor.Execute();
         }
     }
 }

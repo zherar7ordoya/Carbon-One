@@ -1,68 +1,25 @@
-enum UserRole {
-    Admin,
-    Guest,
-    User
-}
+const CONSTANT_VALUE = 100;
 
-interface IUser {
-    name: string;
-    role: UserRole;
-    login(): void;
-}
+interface IColorizable {}
 
-type UserData = Readonly<{
-    id: number;
-    email: string;
-}>;
+enum ColorEnum { Red, Green, Blue }
 
-class BaseUser implements IUser {
-    constructor(public name: string, public role: UserRole) {}
+type ColorType = string | number;
 
-    login(): void {
-        console.log(`${this.name} has logged in as ${UserRole[this.role]}`);
-    }
-}
+class BaseClass {}
 
-class AdminUser extends BaseUser {
-    constructor(name: string) {
-        super(name, UserRole.Admin);
+class DerivedClass extends BaseClass implements IColorizable {
+    static supportVariable: string = "Test";
+
+    color: ColorEnum;
+
+    constructor(color: ColorEnum) {
+        super();
+        this.color = color;
     }
 
-    accessAdminPanel(): void {
-        console.log(`${this.name} accessing admin panel...`);
+    public static main(): void {
+        let instance: DerivedClass = new DerivedClass(ColorEnum.Green);
+        console.log(typeof instance);
     }
 }
-
-type OperationResult<T> = {
-    success: boolean;
-    result: T;
-};
-
-class Processor<T> {
-    process(task: () => T): OperationResult<T> {
-        try {
-            const result = task();
-            return { success: true, result };
-        } catch {
-            return { success: false, result: undefined as any };
-        }
-    }
-}
-
-type UserCallback = (user: IUser) => void;
-
-function main(): void {
-    const user: IUser = new AdminUser("Alice");
-    user.login();
-
-    const processor = new Processor<number>();
-    const result = processor.process(() => 42);
-    console.log(`Success: ${result.success}, Value: ${result.result}`);
-
-    const callback: UserCallback = user => {
-        console.log(`Callback for ${user.name}`);
-    };
-    callback(user);
-}
-
-main();
