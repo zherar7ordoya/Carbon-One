@@ -1,0 +1,79 @@
+{
+    "name": "Gray CLC",
+    "type": "light",
+    "semanticHighlighting": true,
+    "semanticTokenColors": {},
+    "tokenColors": [],
+    /*
+    Background colors:
+    - *Peach:  RGB(237, 221, 110) #EDD1B0; 14.35:1. 
+    -  Orange: RGB(216, 211, 214) #EDDD6E; 15.17:1. 
+    -  Yellow: RGB(248, 253, 137) #F8FD89; 19.4:1. 
+
+    Foreground color:
+    - Black:   #000000
+    */
+    "colors": {
+        // === Environment: Peach ======
+        "editor.background": "#EDD1B0",
+        "editor.foreground": "#000000",
+        // Activity Bar - tonos más cálidos para Peach
+        "activityBar.background": "#E5C9A5",
+        "activityBar.activeBackground": "#D8BC95",
+        "activityBar.foreground": "#5D4037",
+        "activityBar.inactiveForeground": "#8D7868",
+        "activityBar.border": "#D6C4A1",
+        // Sidebar - adaptado a Peach
+        "sideBar.background": "#EED9B8",
+        "sideBar.foreground": "#5D4037",
+        "sideBar.border": "#D6C4A1",
+        "sideBarSectionHeader.background": "#E5C9A5",
+        "sideBarSectionHeader.foreground": "#5D4037",
+        "sideBarTitle.foreground": "#5D4037",
+        // Panel - continuidad cálida
+        "panel.background": "#E5C9A5",
+        "panel.border": "#D6C4A1",
+        "panelTitle.activeBorder": "#8D6E63",
+        "panelTitle.activeForeground": "#5D4037",
+        "panelTitle.inactiveForeground": "#8D7868",
+        // Menús
+        "menu.background": "#F2E1C7",
+        "menu.foreground": "#5D4037",
+        "menu.selectionBackground": "#D8BC95",
+        "menu.selectionForeground": "#5D4037",
+        // Title Bar
+        "titleBar.activeBackground": "#E5C9A5",
+        "titleBar.activeForeground": "#5D4037",
+        "titleBar.inactiveBackground": "#EED9B8",
+        "titleBar.inactiveForeground": "#8D7868",
+        "titleBar.border": "#D6C4A1",
+        // Tabs
+        "tab.activeBackground": "#F7E5CC",
+        "tab.activeForeground": "#5D4037",
+        "tab.border": "#D6C4A1",
+        "tab.hoverBackground": "#EED9B8",
+        "tab.hoverForeground": "#5D4037",
+        "tab.inactiveBackground": "#E5C9A5",
+        "tab.inactiveForeground": "#8D7868",
+        // Status Bar - manteniendo el azul para contraste funcional
+        "statusBar.background": "#4A6FA6",
+        "statusBar.foreground": "#FFFFFF",
+        "statusBar.border": "#3A5A80",
+        // Botones y controles
+        "button.background": "#8D6E63",
+        "button.foreground": "#FFFFFF",
+        "button.hoverBackground": "#A1887F",
+        // Inputs
+        "input.background": "#F7E5CC",
+        "input.foreground": "#5D4037",
+        "input.border": "#D6C4A1",
+        // Listas
+        "list.activeSelectionBackground": "#8D6E63",
+        "list.activeSelectionForeground": "#FFFFFF",
+        "list.hoverBackground": "#F2E1C7",
+        // Otros elementos
+        "focusBorder": "#8D6E63",
+        "scrollbarSlider.background": "#8D786880",
+        "scrollbarSlider.hoverBackground": "#8D7868AA"
+    }
+}
