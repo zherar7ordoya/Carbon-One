@@ -26,17 +26,17 @@
         - #E45649
         */
         //
+        "operator": "#0184BC",
+        "punctuation": "#0184BC",
         "xmlDocCommentAttributeQuotes": "#0184BC",
         //
         "constant": "#383A42",
         "enumMember": "#383A42",
         "event": "#383A42",
-        "field": "#383A42",
         "label": "#383A42",
         "macro": "#383A42",
-        "operator": "#383A42",
-        "property": "#383A42",
-        "punctuation": "#383A42",
+        "variable": "#383A42",
+        
         //
         "extensionMethod": "#4078F2",
         "function": "#4078F2",
@@ -66,8 +66,10 @@
         "recordStruct": "#C18401",
         "struct": "#C18401",
         "typeParameter": "#C18401",
-        "variable": "#C18401",
+        
         //
+        "field": "#E45649",
+        "property": "#E45649",
         "xmlDocCommentName": "#E45649",
         //
     },
@@ -135,7 +137,7 @@
         // base color
         "focusBorder": "#f0f0f000",
         "foreground": "#000000",
-        "editor.background": "#FDF6E3", // <== base color
+        "editor.background": "#FAFAFA", // <== base color
         "editor.foreground": "#383A42",
         "scrollbar.shadow": "#f0f0f0",
         // activity bar
