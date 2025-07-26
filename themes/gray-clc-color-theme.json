@@ -72,7 +72,64 @@
         //
     },
     // =================================
-    "tokenColors": [],
+    "tokenColors": [
+        {
+            "scope": [],
+            "settings": {
+                "foreground": "#0184BC"
+            }
+        },
+        {
+            "scope": [
+                "punctuation.definition.tag",
+            ],
+            "settings": {
+                "foreground": "#383A42"
+            }
+        },
+        {
+            "scope": [],
+            "settings": {
+                "foreground": "#4078F2"
+            }
+        },
+        {
+            "scope": [],
+            "settings": {
+                "foreground": "#50A14F"
+            }
+        },
+        {
+            "scope": [],
+            "settings": {
+                "foreground": "#986801"
+            }
+        },
+        {
+            "scope": [],
+            "settings": {
+                "foreground": "#A0A1A7"
+            }
+        },
+        {
+            "scope": [],
+            "settings": {
+                "foreground": "#A626A4"
+            }
+        },
+        {
+            "scope": [],
+            "settings": {
+                "foreground": "#C18401"
+            }
+        },
+        {
+            "scope": [],
+            "settings": {
+                "foreground": "#E45649"
+            }
+        },
+    ],
     // ========================= #FDF6E3
     "colors": {
         // base color
