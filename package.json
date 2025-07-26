@@ -1,16 +1,14 @@
 {
-    "name": "dyslexia",
-    "displayName": "Dyslexia Color Themes",
-    "description": "A collection of dyslexia-friendly coding themes for better readability in various lighting conditions.",
-    "version": "2.0.0",
-    "publisher": "Gerardo Tordoya",
+    "name": "gray-clc-color-theme",
+    "displayName": "Gray CLC",
+    "description": "Color theme for complex lighting conditions.",
+    "version": "1.0.0",
+    "publisher": "GerardoTordoya",
     "icon": "icon.png",
     "keywords": [
-        "dyslexia",
-        "accessibility",
+        "gray",
         "light theme",
-        "contrast",
-        "readability"
+        "contrast"
     ],
     "engines": {
         "vscode": "^1.101.0"
@@ -25,19 +23,9 @@
     "contributes": {
         "themes": [
             {
-                "label": "Dyslexia Peach",
+                "label": "Gray CLC",
                 "uiTheme": "vs",
-                "path": "./themes/Dyslexia-Peach.jsonc"
-            },
-            {
-                "label": "Dyslexia Orange",
-                "uiTheme": "vs",
-                "path": "./themes/Dyslexia-Orange.jsonc"
-            },
-            {
-                "label": "Dyslexia Yellow",
-                "uiTheme": "vs",
-                "path": "./themes/Dyslexia-Yellow.jsonc"
+                "path": "./themes/gray-clc-color-theme.json"
             }
         ]
     },
