@@ -7,7 +7,7 @@
     // =================================
     "semanticTokenColors": {
         "modifier": "#0033CC",
-        "label": "#0000AA",
+
         
         "delegate": "#0000AA",
         "typeParameter": "#0000AA",
@@ -25,39 +25,60 @@
         "operator": "#076678",
         
         "preprocessorText": "#555555",
-        "xmlDocCommentText": "#555555",
+        
         "regexp": "#880000",
         "stringVerbatim": "#880000",
         "number": "#880000",
         "enumMember": "#000000",
         "macro": "#000000",
-        "field": "#000000",
+
         "constant": "#000000",
-        "parameter": "#000000",
+        
         
 
-        "xmlDocCommentName": "#1E4A7C",
-        "xmlDocCommentAttributeName": "#1E4A7C",
+        
+        
 
         "interface": "#1E4A7C",
         "struct": "#004B73",
         "recordStruct": "#004B73",
 
-        "xmlDocCommentDelimiter": "#5E5E5E",
+        
         "punctuation": "#5E5E5E",
         "decorator": "#FF0000",
         "type": "#FF0000",
 
         // =============================
 
-        "comment": "#A0A1A7",
+
+        "xmlDocCommentAttributeQuotes": "#0184BC",
+
+        "field": "#383A42",
+        "label": "#383A42",
+
+
+
+        "parameter": "#50A14F",
+
         
+
+        "xmlDocCommentAttributeName": "#986801",
+
+
+        "comment": "#A0A1A7",
+        "xmlDocCommentDelimiter": "#A0A1A7",
+        "xmlDocCommentText": "#A0A1A7",
+
+
+        
+
         "keyword": "#A626A4",
 
         "namespace": "#C18401",
         "variable": "#C18401",
 
 
+        "xmlDocCommentName": "#E45649",
 
     },
     // =================================
@@ -67,8 +88,8 @@
     // base color
     "focusBorder": "#f0f0f000",
     "foreground": "#000000",
-    "editor.background": "#FDF6E3",
-    "editor.foreground": "#000000",
+    "editor.background": "#FAFAFA",
+    "editor.foreground": "#383A42",
     "scrollbar.shadow": "#f0f0f0",
     // activity bar
     "activityBar.border": "#f0f0f0",
