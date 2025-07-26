@@ -1,19 +1,5 @@
 # COLORS
 
-| Color    | Hexa      | Contrast |
-| -------- | --------- | -------- |
-| mono-1   | #424038 |          |
-| mono-2   | #777569 |          |
-| mono-3   | #A7A6A0 |          |
-| cyan     | #BC3901 |          |
-| blue     | #F2BA40 |          |
-| purple   | #26A628 |          |
-| green    | #9F4FA1 |          |
-| red-1    | #49D7E4 |          |
-| red-2    | #12CA99 |          |
-| orange-1 | #013198 |          |
-| orange-2 | #013EC1 |          |
-
 | Color                   | Hexa      |
 | ----------------------- | --------- |
 | atom-one-light-accent   | #526FFF |
