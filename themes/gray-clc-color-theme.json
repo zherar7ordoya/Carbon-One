@@ -78,7 +78,7 @@
         // base color
         "focusBorder": "#f0f0f000",
         "foreground": "#000000",
-        "editor.background": "#FAF6DD",
+        "editor.background": "#FDF6E3", // <== base color
         "editor.foreground": "#383A42",
         "scrollbar.shadow": "#f0f0f0",
         // activity bar
