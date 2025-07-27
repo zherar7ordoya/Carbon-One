@@ -36,7 +36,6 @@
         "label": "#383A42",
         "macro": "#383A42",
         "variable": "#383A42",
-        
         //
         "extensionMethod": "#4078F2",
         "function": "#4078F2",
@@ -66,7 +65,6 @@
         "recordStruct": "#C18401",
         "struct": "#C18401",
         "typeParameter": "#C18401",
-        
         //
         "field": "#E45649",
         "property": "#E45649",
@@ -82,9 +80,7 @@
             }
         },
         {
-            "scope": [
-                "punctuation.definition.tag",
-            ],
+            "scope": [],
             "settings": {
                 "foreground": "#383A42"
             }
