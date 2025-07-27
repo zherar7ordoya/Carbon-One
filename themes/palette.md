@@ -21,3 +21,4 @@
 | atom-one-light-gray     | #EDEDED |
 | atom-one-light-silver   | #AAAAAA |
 | atom-one-light-black    | #0F1011 |
+| background              | #A6A6A6 |
