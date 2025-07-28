@@ -27,6 +27,7 @@ function func(param) {
 
 //******************************************************************************
 
+
 class Rectangle {
 
     // Declare properties

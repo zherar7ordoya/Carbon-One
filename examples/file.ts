@@ -27,13 +27,17 @@ function func(param) {
 
 //******************************************************************************
 
-interface IColorizable {}
+interface IColorizable { }
 
-enum ColorEnum { Red, Green, Blue }
+enum ColorEnum {
+    Red,
+    Green,
+    Blue
+}
 
 type ColorType = string | number;
 
-class BaseClass {}
+class BaseClass { }
 
 class DerivedClass extends BaseClass implements IColorizable {
     static supportVariable: string = "Test";

@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
 SELECT Orders.OrderID, Employees.LastName, Employees.FirstName
 FROM Orders
 RIGHT JOIN Employees

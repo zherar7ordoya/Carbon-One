@@ -14,7 +14,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-
 public record UserRecord(string Name, UserRole Role, Address Address)
 {
     public int Id { get; init; } = new Random().Next(1, 1000);
