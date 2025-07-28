@@ -216,6 +216,8 @@
         {
             "scope": [
                 "entity.name.variable",
+                "keyword.operator.arithmetic",
+                "keyword.operator.relational",
                 "punctuation.curlybrace",
                 "punctuation.definition.tag",
                 "punctuation.definition.typeparameters",
@@ -227,7 +229,7 @@
                 "support.constant",
                 "support.variable",
                 "variable.other.object.property",
-                "variable.other.readwrite",
+                "variable.other.property",
             ],
             "settings": {
                 "foreground": "#2B2D35"
@@ -274,7 +276,8 @@
                 "support.type",
                 "variable.language",
                 "variable.object",
-                
+                "variable.other.razor",
+                "variable.other.readwrite",
             ],
             "settings": {
                 "foreground": "#CC3333"
