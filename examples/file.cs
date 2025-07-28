@@ -18,7 +18,13 @@ public record UserRecord(string Name, UserRole Role, Address Address)
 {
     public int Id { get; init; } = new Random().Next(1, 1000);
     public string Email { get; init; } = $"{Name.ToLower().Replace(" ", ".")}@example.com";
-    public UserRecord() : this("Default Name", UserRole.Viewer, new Address { Street = "Default Street", City = "Default City", ZipCode = "00000" }) { }
+    public UserRecord()
+    : this("Default Name", UserRole.Viewer, new Address
+    {
+        Street = "Default Street",
+        City = "Default City",
+        ZipCode = "00000"
+    }) { }
     public void DisplayInfo()
     {
         Console.WriteLine($"Name: {Name}, Role: {Role}, Address: {Address.Street}, {Address.City}, {Address.ZipCode}");
