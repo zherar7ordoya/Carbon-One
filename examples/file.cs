@@ -9,192 +9,186 @@
 
 
 
+// TestTextMate.cs
+// 🚀 Explorando al máximo TextMate con C#
+
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text.RegularExpressions;
+using System.Diagnostics;
 
-public record UserRecord(string Name, UserRole Role, Address Address)
+// ==== 1. Atributos y Mixins ====
+// En C# los decoradores son atributos
+[AttributeUsage(AttributeTargets.Method)]
+public class LogAttribute : Attribute
 {
-    public int Id { get; init; } = new Random().Next(1, 1000);
-    public string Email { get; init; } = $"{Name.ToLower().Replace(" ", ".")}@example.com";
-    public UserRecord()
-    : this("Default Name", UserRole.Viewer, new Address
+    public void OnMethodExecuting(string methodName, object[] args)
     {
-        Street = "Default Street",
-        City = "Default City",
-        ZipCode = "00000"
-    }) { }
-    public void DisplayInfo()
-    {
-        Console.WriteLine($"Name: {Name}, Role: {Role}, Address: {Address.Street}, {Address.City}, {Address.ZipCode}");
+        Console.WriteLine($"📝 Llamada a {methodName} con {string.Join(", ", args)}");
     }
 }
 
+// Ejemplo de mixin con herencia múltiple es limitado en C#,
+// pero se puede usar interfaces y composición.
 
-/// <summary>
-/// Enum que representa los roles de los usuarios.
-/// </summary>
-public enum UserRole
+// ==== 2. Namespaces y Módulos ====
+
+namespace Utils
 {
-    Admin,
-    Editor,
-    Viewer
-}
-
-/// <summary>
-/// Struct que representa una dirección.
-/// </summary>
-public struct Address
-{
-    public string Street;
-    public string City;
-    public string ZipCode;
-}
-
-/// <summary>
-/// Interfaz que define las propiedades y métodos de un usuario.
-/// </summary>
-public interface IUser
-{
-    string Name { get; set; }
-    UserRole Role { get; set; }
-    Address Address { get; set; }
-    void DisplayInfo();
-}
-
-/// <summary>
-/// Clase que representa a un usuario y implementa la interfaz IUser.
-/// </summary>
-public class User : IUser
-{
-    public string Name { get; set; }
-    public UserRole Role { get; set; }
-    public Address Address { get; set; }
-
-    public void DisplayInfo()
+    public static class Helpers
     {
-        Console.WriteLine($"Name: {Name}, Role: {Role}, Address: {Address.Street}, {Address.City}, {Address.ZipCode}");
+        public static bool IsString(object x) => x is string;
+        public const double PI = 3.1415;
     }
 }
 
-/// <summary>
-/// Clase genérica para manejar una colección de elementos.
-/// </summary>
-/// <typeparam name="T">Tipo de los elementos en la colección.</typeparam>
-public class GenericCollection<T> where T : class
+// ==== 3. Clases, Abstractas, Genéricas y Herencia ====
+
+public abstract class Shape
 {
-    private List<T> _items = new List<T>();
+    public abstract double Area();
+}
 
-    public void Add(T item)
+public class Rectangle : Shape
+{
+    public double Width { get; }
+    public double Height { get; }
+    public Rectangle(double width, double height)
     {
-        _items.Add(item);
+        Width = width;
+        Height = height;
     }
+    public override double Area() => Width * Height;
+}
 
-    public IEnumerable<T> GetItems()
+// Timestamped mixin equivalente: herencia con composición
+public class TimestampedRectangle : Rectangle
+{
+    public long Timestamp { get; } = DateTimeOffset.Now.ToUnixTimeMilliseconds();
+    public TimestampedRectangle(double width, double height) : base(width, height) { }
+}
+
+// ==== 4. Interfaces, Tipos Genéricos y Restricciones ====
+
+public interface IPoint
+{
+    double X { get; }
+    double Y { get; }
+}
+
+// readonly no existe como tal, pero se puede hacer con solo get;
+public struct ReadonlyPoint : IPoint
+{
+    public double X { get; }
+    public double Y { get; }
+    public ReadonlyPoint(double x, double y)
     {
-        return _items;
+        X = x;
+        Y = y;
     }
 }
 
-public class Program
+// Nullable
+public class NullableExample<T> where T : class
 {
-    /// <summary>
-    /// Método que usa LINQ para buscar usuarios por rol.
-    /// </summary>
-    /// <param name="users">Colección de usuarios.</param>
-    /// <param name="role">Rol a buscar.</param>
-    /// <returns>Lista de usuarios con el rol especificado.</returns>
-    public static List<IUser> FindUsersByRole(GenericCollection<IUser> users, UserRole role)
+    public T? Value { get; set; }
+}
+
+// ==== 5. Enums y Constantes ====
+
+public enum Direction { Up, Down, Left, Right }
+public static class Color
+{
+    public const string Red = "#f00";
+    public const string Green = "#0f0";
+    public const string Blue = "#00f";
+}
+
+// ==== 6. Diccionarios, Tuplas, Uniones e Intersecciones ====
+
+public class Examples
+{
+    // Record equivalente: Dictionary con keys fijos no es posible, se usa Dictionary<string,int>
+    public Dictionary<string, int> StringNumberRecord = new() { ["a"] = 1, ["b"] = 2, ["c"] = 3 };
+
+    // Tuplas con longitud fija y resto variable no es posible, pero sí con ValueTuple:
+    public (int, int) PointTuple = (1, 2);
+
+    // Union: C# no tiene directamente, se puede usar herencia o discriminated unions con records (C# 9+)
+    public abstract record ShapeUnion;
+    public record Circle(double Radius) : ShapeUnion;
+    public record Rect(double Width, double Height) : ShapeUnion;
+
+    // Intersection: se puede usar interfaces múltiples o composición
+    public interface IId { string Id { get; } }
+    public interface IMeta { object Meta { get; } }
+    public class IntersectionType : IId, IMeta
     {
-        return users.GetItems().Where(u => u.Role == role).ToList();
+        public string Id { get; set; }
+        public object Meta { get; set; }
     }
+}
 
-    /// <summary>
-    /// Método que usa regex para validar un código postal.
-    /// </summary>
-    /// <param name="zipCode">Código postal a validar.</param>
-    /// <returns>True si el código postal es válido, false en caso contrario.</returns>
-    public static bool ValidateZipCode(string zipCode)
+// ==== 7. Literales, Interpolación y Regex ====
+
+public class Literals
+{
+    public int Binary = 0b1010;
+    public int Hex = 0xdeadbeef;
+    public decimal BigInt = 123m; // No hay BigInt, decimal es cercano
+
+    public string Msg => $"Valor es {Binary} y hex {Hex}";
+
+    public Regex Regex = new(@"^(?<year>\d{4})-(\d{2})-(\d{2})$");
+}
+
+// ==== 8. Sobrecarga de Métodos y Lambdas ====
+
+public class Overloads
+{
+    public string Combine(string a, string b) => a + b;
+    public int Combine(int a, int b) => a + b;
+
+    public T[] Arrow<T>(T x) => new T[] { x };
+}
+
+// ==== 9. Overrides y Casting ====
+
+public class Base
+{
+    public override string ToString() => "base";
+}
+
+public class Sub : Base
+{
+    public override string ToString() => "sub";
+}
+
+// ==== 10. Comentarios y Regiones ====
+
+public class Magic
+{
+    #region Código “mágico”
+    public static T Magical<T>(T obj) where T : class
     {
-        string pattern = @"^\d{5}$"; // Valida un código postal de 5 dígitos
-        return Regex.IsMatch(zipCode, pattern);
+        return obj; // Solo para ejemplo
     }
+    #endregion
+}
 
-    /// <summary>
-    /// Método que demuestra el uso de punteros en código unsafe.
-    /// </summary>
-    public static unsafe void UnsafeMethod()
+// ==== Uso de todo ====
+
+class Program
+{
+    static void Main()
     {
-        int value = 10;
-        int* pointer = &value;
-        Console.WriteLine($"Value: {value}, Pointer: {(int)pointer}, Dereferenced: {*pointer}");
-    }
+        var rect = new TimestampedRectangle(3, 4);
+        Console.WriteLine($"Área: {rect.Area()}, Timestamp: {rect.Timestamp}");
 
-    /// <summary>
-    /// Método que demuestra el uso de labels y goto.
-    /// </summary>
-    public static void GotoExample()
-    {
-        int i = 0;
-    start:
-        if (i < 5)
-        {
-            Console.WriteLine($"Goto iteration: {i}");
-            i++;
-            goto start;
-        }
-    }
+        Console.WriteLine(Utils.Helpers.IsString("hola"));
+        var overload = new Overloads();
+        Console.WriteLine(overload.Combine(5, 10));
 
-    public static void Main(string[] args)
-    {
-        // Crear una colección de usuarios
-        GenericCollection<IUser> users = new GenericCollection<IUser>();
-
-        // Crear algunos usuarios
-        User user1 = new User 
-        { 
-            Name = "Alice", 
-            Role = UserRole.Admin, 
-            Address = new Address { Street = "123 Main St", City = "Anytown", ZipCode = "12345" } 
-        };
-        User user2 = new User 
-        { 
-            Name = "Bob", 
-            Role = UserRole.Editor, 
-            Address = new Address { Street = "456 Elm St", City = "Othertown", ZipCode = "67890" } 
-        };
-
-        // Agregar usuarios a la colección
-        users.Add(user1);
-        users.Add(user2);
-
-        // Mostrar información de los usuarios
-        Console.WriteLine("Todos los usuarios:");
-        foreach (var user in users.GetItems())
-        {
-            user.DisplayInfo();
-        }
-
-        // Buscar usuarios por rol usando LINQ
-        var admins = FindUsersByRole(users, UserRole.Admin);
-        Console.WriteLine("\nAdministradores:");
-        foreach (var admin in admins)
-        {
-            admin.DisplayInfo();
-        }
-
-        // Validar un código postal con regex
-        string zipCode = "12345";
-        bool isValid = ValidateZipCode(zipCode);
-        Console.WriteLine($"\n¿Es {zipCode} un código postal válido? {isValid}");
-
-        // Demostración de código unsafe con punteros
-        Console.WriteLine("\nDemostración de punteros:");
-        UnsafeMethod();
-
-        // Demostración de labels y goto
-        Console.WriteLine("\nDemostración de goto:");
-        GotoExample();
+        Console.WriteLine(new Literals().Msg);
     }
 }
