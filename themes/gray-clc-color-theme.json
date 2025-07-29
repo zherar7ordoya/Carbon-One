@@ -184,19 +184,10 @@
     "tokenColors": [
         {
             "scope": [
-                "entity.name.function",
-                "keyword.operator.arithmetic",
-                "keyword.operator.relational",
-                "punctuation.definition.group",
-                "punctuation.definition.interpolation",
-                "punctuation.definition.string",
-                "punctuation.definition.template-expression",
-                "support.function",
-                "support.type.builtin",
-                "support.type.primitive",
+                "entity.name.variable",
             ],
             "settings": {
-                "foreground": "#3377CC"
+                "fontStyle": "italic"
             }
         },
         {
@@ -221,6 +212,7 @@
                 "punctuation.definition.typeparameters",
                 "punctuation.parenthesis",
                 "punctuation.section",
+                "punctuation.separator",
                 "punctuation.squarebracket",
                 "punctuation.terminator",
                 "source.python",
@@ -239,6 +231,24 @@
         },
         {
             "scope": [
+                "entity.name.function",
+                "keyword.operator.arithmetic",
+                "keyword.operator.assignment",
+                "keyword.operator.relational",
+                "punctuation.definition.group",
+                "punctuation.definition.interpolation",
+                "punctuation.definition.string",
+                "punctuation.definition.template-expression",
+                "support.function",
+                "support.type.builtin",
+                "support.type.primitive",
+            ],
+            "settings": {
+                "foreground": "#3377CC"
+            }
+        },
+        {
+            "scope": [
                 "comment",
                 "punctuation.definition.comment",
             ],
@@ -250,7 +260,6 @@
             "scope": [
                 "constant",
                 "entity.name.type",
-                "keyword.other",
                 "punctuation.decorator",
                 "punctuation.definition.constant",
                 "variable.parameter",
@@ -263,7 +272,10 @@
             "scope": [
                 "keyword.control",
                 "keyword.generator",
+                "keyword.operator.arrow",
+                "keyword.operator.expression",
                 "keyword.operator.new",
+                "keyword.other.directive",
                 "keyword.type",
                 "storage",
             ],
