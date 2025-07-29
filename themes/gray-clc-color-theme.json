@@ -184,7 +184,19 @@
     "tokenColors": [
         {
             "scope": [
+                "keyword.operator.relational",
+                "keyword.operator.arithmetic",
+            ],
+            "settings": {
+                "fontStyle": "",
+            }
+        },
+        {
+            "scope": [
+                "entity.name.tag",
                 "entity.name.variable",
+                "variable.other.readwrite",
+                "variable.parameter",
             ],
             "settings": {
                 "fontStyle": "italic"
@@ -192,9 +204,9 @@
         },
         {
             "scope": [
-                "entity.other",
                 "string.quoted",
                 "string.template",
+                "string.unquoted",
             ],
             "settings": {
                 "foreground": "#006B1E"
@@ -206,24 +218,25 @@
                 "keyword.operator.quantifier",
                 "meta.brace",
                 "punctuation.curlybrace",
+                "punctuation.definition.array",
                 "punctuation.definition.block",
+                "punctuation.definition.dictionary",
                 "punctuation.definition.parameters",
-                "punctuation.definition.tag",
                 "punctuation.definition.typeparameters",
                 "punctuation.parenthesis",
                 "punctuation.section",
                 "punctuation.separator",
                 "punctuation.squarebracket",
                 "punctuation.terminator",
-                "source.python",
-                "source.sql",
                 "support.constant",
+                "support.type.property-name",
                 "support.variable",
+"text",
                 "variable.object",
                 "variable.other.constant",
-                "variable.other.object.property",
-                "variable.other.property",
-                "variable.other.readwrite",
+                
+                "variable.other.readwrite", 
+                "variable.parameter",               
             ],
             "settings": {
                 "foreground": "#2B2D35"
@@ -231,13 +244,17 @@
         },
         {
             "scope": [
+                "constant.other",
                 "entity.name.function",
+                "entity.name.section",
                 "keyword.operator.arithmetic",
                 "keyword.operator.assignment",
                 "keyword.operator.relational",
+                "punctuation.definition.entity",
                 "punctuation.definition.group",
                 "punctuation.definition.interpolation",
                 "punctuation.definition.string",
+                "punctuation.definition.tag",
                 "punctuation.definition.template-expression",
                 "support.function",
                 "support.type.builtin",
@@ -258,11 +275,13 @@
         },
         {
             "scope": [
-                "constant",
+                "constant.language",
+                "constant.numeric",
                 "entity.name.type",
+                "entity.other.attribute-name",
                 "punctuation.decorator",
                 "punctuation.definition.constant",
-                "variable.parameter",
+                
             ],
             "settings": {
                 "foreground": "#8B5A00"
@@ -276,6 +295,7 @@
                 "keyword.operator.expression",
                 "keyword.operator.new",
                 "keyword.other.directive",
+                "keyword.preprocessor",
                 "keyword.type",
                 "storage",
             ],
@@ -286,11 +306,13 @@
         {
             "scope": [
                 "entity.name.tag",
-                "support.type.property-name",
+                "keyword.other.definition",
                 "variable.language",
                 "variable.other.enummember",
                 "variable.other.object",
+                "variable.other.property",
                 "variable.other.razor",
+
                 "variable.other.regexp",
             ],
             "settings": {

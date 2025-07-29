@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+
+
+# Ignore compiled Python files
+*.pyc
+__pycache__/
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore operating system generated files
+.DS_Store
+Thumbs.db
+
+# Ignore build artifacts and output directories
+build/
+dist/
+target/
+
+# Ignore dependency management files and directories
+node_modules/
+vendor/
+composer.lock
+package-lock.json
+
+# Ignore sensitive information or local configuration
+.env
+config.local.php
+
+# Ignore logs and temporary files
+*.log
+tmp/
