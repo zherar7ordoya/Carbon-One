@@ -69,7 +69,7 @@
         // === BASE ARMONIZADA ===
         "focusBorder": "#0066CC80",
         "foreground": "#2B2D35",
-        "editor.background": "#F9F0DF",
+        "editor.background": "#FAF3E0", // "#F9F0DF",
         "editor.foreground": "#226677",
         "scrollbar.shadow": "#EDE5D8",
         
