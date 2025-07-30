@@ -38,19 +38,19 @@
         "xmlDocCommentDelimiter": "#6A6A6A",
         "xmlDocCommentText": "#6A6A6A",
         //
-        "class": "#86654B",
-        "delegate": "#86654B",
-        "enum": "#86654B",
-        "interface": "#86654B",
-        "markupAttribute": "#86654B",
-        "namespace": "#86654B",
-        "number": "#86654B",
-        "recordClass": "#86654B",
-        "recordStruct": "#86654B",
-        "struct": "#86654B",
-        "type": "#86654B",
-        "typeParameter": "#86654B",
-        "xmlDocCommentAttributeName": "#86654B",
+        "class": "#E05500",
+        "delegate": "#E05500",
+        "enum": "#E05500",
+        "interface": "#E05500",
+        "markupAttribute": "#E05500",
+        "namespace": "#E05500",
+        "number": "#E05500",
+        "recordClass": "#E05500",
+        "recordStruct": "#E05500",
+        "struct": "#E05500",
+        "type": "#E05500",
+        "typeParameter": "#E05500",
+        "xmlDocCommentAttributeName": "#E05500",
         //      
         "controlKeyword": "#9020C0",
         "keyword": "#9020C0",
@@ -212,7 +212,7 @@
         },
         {
             "scope": [
-                "entity.name.tag",
+                //"entity.name.tag",
                 "entity.name.variable",
                 "meta.object-literal",
                 "variable.object.property",
@@ -262,6 +262,7 @@
         {
             "scope": [
                 "constant.other.table-name",
+                                "entity.name.tag",
                 "entity.name.variable",
                 "keyword.operator.assignment",
                 "keyword.operator.quantifier",
@@ -288,7 +289,7 @@
                 "punctuation.terminator",
                 "support.constant",
                 "support.variable",
-                "text",
+                //"text",
                 "variable.object",
                 "variable.other.constant",
                 "variable.other.object.property", // Necesario, no tiene mellizo.
@@ -323,7 +324,7 @@
                 "punctuation.definition.constant",
             ],
             "settings": {
-                "foreground": "#86654B"
+                "foreground": "#E05500"
             }
         },
         {
@@ -350,7 +351,7 @@
         {
             "scope": [
                 "constant.other.database-name",
-                "entity.name.tag",
+
                 "keyword.other.definition",
                 "support.type.property-name", // *                
                 "variable.language",
