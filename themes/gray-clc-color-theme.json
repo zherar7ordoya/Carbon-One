@@ -13,16 +13,16 @@
         "regexp": "#000000",
         /* -------------------------- */
         //
-        "xmlDocCommentAttributeQuotes": "#42A8BC",
+        "xmlDocCommentAttributeQuotes": "#006666",
         //
         "extensionMethod": "#0066CC",
         "function": "#0066CC",
         "method": "#0066CC",
         //
-        "markupAttributeValue": "#006B1E",
-        "preprocessorText": "#006B1E",
-        "string": "#006B1E",
-        "stringVerbatim": "#006B1E",
+        "markupAttributeValue": "#207725",
+        "preprocessorText": "#207725",
+        "string": "#207725",
+        "stringVerbatim": "#207725",
         //
         "constant": "#2B2D35",
         "event": "#2B2D35",
@@ -67,7 +67,7 @@
         "focusBorder": "#0066CC80",
         "foreground": "#2B2D35",
         "editor.background": "#F9F0DF",
-        "editor.foreground": "#42A8BC",
+        "editor.foreground": "#006666",
         "scrollbar.shadow": "#EDE5D8",
         // === BARRAS UNIFICADAS (TOP & BOTTOM) ===
         "titleBar.activeBackground": "#f0f0f0",
@@ -148,7 +148,7 @@
         // === BOTONES ===
         "button.background": "#0066CC",
         "button.foreground": "#FFFFFF",
-        "button.hoverBackground": "#42A8BC",
+        "button.hoverBackground": "#006666",
         "button.border": "#00000000",
         "button.secondaryBackground": "#86654B",
         "button.secondaryForeground": "#FFFFFF",
@@ -213,7 +213,7 @@
                 "string.unquoted",
             ],
             "settings": {
-                "foreground": "#006B1E"
+                "foreground": "#207725"
             }
         },
         {
