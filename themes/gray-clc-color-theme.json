@@ -13,11 +13,11 @@
         "regexp": "#000000",
         /* -------------------------- */
         //
-        "xmlDocCommentAttributeQuotes": "#005661",
+        "xmlDocCommentAttributeQuotes": "#1A3A5A",
         //
-        "extensionMethod": "#3377CC",
-        "function": "#3377CC",
-        "method": "#3377CC",
+        "extensionMethod": "#0066CC",
+        "function": "#0066CC",
+        "method": "#0066CC",
         //
         "markupAttributeValue": "#006B1E",
         "preprocessorText": "#006B1E",
@@ -37,22 +37,22 @@
         "xmlDocCommentDelimiter": "#6A6A6A",
         "xmlDocCommentText": "#6A6A6A",
         //
-        "class": "#8B5A00",
-        "delegate": "#8B5A00",
-        "enum": "#8B5A00",
-        "interface": "#8B5A00",
-        "markupAttribute": "#8B5A00",
-        "namespace": "#8B5A00",
-        "number": "#8B5A00",
-        "recordClass": "#8B5A00",
-        "recordStruct": "#8B5A00",
-        "struct": "#8B5A00",
-        "type": "#8B5A00",
-        "typeParameter": "#8B5A00",
-        "xmlDocCommentAttributeName": "#8B5A00",
+        "class": "#805500",
+        "delegate": "#805500",
+        "enum": "#805500",
+        "interface": "#805500",
+        "markupAttribute": "#805500",
+        "namespace": "#805500",
+        "number": "#805500",
+        "recordClass": "#805500",
+        "recordStruct": "#805500",
+        "struct": "#805500",
+        "type": "#805500",
+        "typeParameter": "#805500",
+        "xmlDocCommentAttributeName": "#805500",
         //      
-        "controlKeyword": "#A626A4",
-        "keyword": "#A626A4",
+        "controlKeyword": "#9020C0",
+        "keyword": "#9020C0",
         //
         "enumMember": "#D02040",
         "markupElement": "#D02040",
@@ -64,10 +64,10 @@
     // =================================
     "colors": {
         // === BASE ARMONIZADA ===
-        "focusBorder": "#3377CC80",
+        "focusBorder": "#0066CC80",
         "foreground": "#2B2D35",
         "editor.background": "#F9F0DF",
-        "editor.foreground": "#005661",
+        "editor.foreground": "#1A3A5A",
         "scrollbar.shadow": "#EDE5D8",
         // === BARRAS UNIFICADAS (TOP & BOTTOM) ===
         "titleBar.activeBackground": "#f0f0f0",
@@ -86,7 +86,7 @@
         "activityBar.border": "#EDE5D8",
         "activityBar.background": "#F8F2E5",
         "activityBar.foreground": "#2B2D35",
-        "activityBarBadge.background": "#A626A4",
+        "activityBarBadge.background": "#9020C0",
         "activityBarBadge.foreground": "#FFFFFF",
         // === GRUPOS DE EDITOR ===
         "editorGroup.border": "#EDE5D8",
@@ -96,7 +96,7 @@
         "tab.activeBackground": "#F9F0DF", // Igual al editor
         "tab.inactiveBackground": "#F8F2E5",
         "tab.border": "#EDE5D8",
-        "tab.activeBorder": "#3377CC",
+        "tab.activeBorder": "#0066CC",
         "tab.activeForeground": "#000000",
         "tab.inactiveForeground": "#666666",
         "tab.hoverBackground": "#F8F2E5",
@@ -108,7 +108,7 @@
         "sideBarSectionHeader.foreground": "#2B2D35",
         "sideBarTitle.foreground": "#2B2D35",
         // === LISTAS ===
-        "list.highlightForeground": "#3377CC",
+        "list.highlightForeground": "#0066CC",
         "list.activeSelectionBackground": "#e8e8e8",
         "list.activeSelectionForeground": "#000000",
         "list.inactiveSelectionBackground": "#f0f0f0",
@@ -120,18 +120,18 @@
         // === EDITOR ===
         "editor.lineHighlightBackground": "#F8F2E5",
         "editor.lineHighlightBorder": "#00000000",
-        "editorLineNumber.foreground": "#8B5A00",
+        "editorLineNumber.foreground": "#805500",
         "editorLineNumber.activeForeground": "#000000",
-        "editor.selectionBackground": "#3377CC40",
-        "editor.selectionHighlightBackground": "#3377CC20",
-        "editor.findMatchBackground": "#3377CC40",
-        "editor.findMatchHighlightBackground": "#3377CC20",
+        "editor.selectionBackground": "#0066CC40",
+        "editor.selectionHighlightBackground": "#0066CC20",
+        "editor.findMatchBackground": "#0066CC40",
+        "editor.findMatchHighlightBackground": "#0066CC20",
         // === INPUTS ===
         "input.border": "#D4CBBE",
         "input.background": "#F8F2E5",
         "input.foreground": "#2B2D35",
         "input.placeholderForeground": "#888888",
-        "inputOption.activeBorder": "#3377CC",
+        "inputOption.activeBorder": "#0066CC",
         "inputOption.activeForeground": "#000000",
         "dropdown.border": "#D4CBBE",
         "dropdown.background": "#F8F2E5",
@@ -142,15 +142,15 @@
         "notificationToast.border": "#EDE5D8",
         "notifications.background": "#F8F2E5",
         "notifications.border": "#EDE5D8",
-        "notificationsInfoIcon.foreground": "#3377CC",
-        "notificationsWarningIcon.foreground": "#8B5A00",
+        "notificationsInfoIcon.foreground": "#0066CC",
+        "notificationsWarningIcon.foreground": "#805500",
         "notificationsErrorIcon.foreground": "#D03030", // Rojo ya optimizado
         // === BOTONES ===
-        "button.background": "#3377CC",
+        "button.background": "#0066CC",
         "button.foreground": "#FFFFFF",
-        "button.hoverBackground": "#005661",
+        "button.hoverBackground": "#1A3A5A",
         "button.border": "#00000000",
-        "button.secondaryBackground": "#8B5A00",
+        "button.secondaryBackground": "#805500",
         "button.secondaryForeground": "#FFFFFF",
         "button.secondaryHoverBackground": "#7A4A00",
         // === WIDGETS DEL EDITOR ===
@@ -159,14 +159,14 @@
         "editorSuggestWidget.background": "#F8F2E5",
         "editorSuggestWidget.foreground": "#2B2D35",
         "editorSuggestWidget.selectedBackground": "#e8e8e8",
-        "editorSuggestWidget.highlightForeground": "#3377CC",
+        "editorSuggestWidget.highlightForeground": "#0066CC",
         "editorHoverWidget.background": "#F8F2E5",
         "editorHoverWidget.foreground": "#2B2D35",
         "editorHoverWidget.border": "#D4CBBE",
         // === PANEL ===
         "panel.border": "#EDE5D8",
         "panel.background": "#F8F2E5",
-        "panelTitle.activeBorder": "#3377CC",
+        "panelTitle.activeBorder": "#0066CC",
         "panelTitle.activeForeground": "#000000",
         "panelTitle.inactiveForeground": "#666666",
         // === SCROLLBARS ===
@@ -204,6 +204,7 @@
         },
         {
             "scope": [
+                "entity.other.inherited-class",
                 "string.quoted",
                 "string.template",
                 "string.unquoted",
@@ -214,13 +215,18 @@
         },
         {
             "scope": [
+                "constant.other.table-name",
+                
                 "entity.name.variable",
                 "keyword.operator.quantifier",
+                "meta.attribute",
                 "meta.brace",
+                "meta.function-call",
                 "punctuation.curlybrace",
                 "punctuation.definition.array",
                 "punctuation.definition.block",
                 "punctuation.definition.dictionary",
+                "punctuation.definition.inheritance",
                 "punctuation.definition.parameters",
                 "punctuation.definition.typeparameters",
                 "punctuation.parenthesis",
@@ -234,7 +240,7 @@
 "text",
                 "variable.object",
                 "variable.other.constant",
-                
+                "variable.other.object.property", // Necesario, no tiene mellizo.
                 "variable.other.readwrite", 
                 "variable.parameter",               
             ],
@@ -244,14 +250,17 @@
         },
         {
             "scope": [
-                "constant.other",
+
                 "entity.name.function",
                 "entity.name.section",
                 "keyword.operator.arithmetic",
                 "keyword.operator.assignment",
+                "keyword.operator.decrement",
+                "keyword.operator.increment",
                 "keyword.operator.relational",
                 "punctuation.definition.entity",
                 "punctuation.definition.group",
+                "punctuation.definition.heading",
                 "punctuation.definition.interpolation",
                 "punctuation.definition.string",
                 "punctuation.definition.tag",
@@ -259,9 +268,10 @@
                 "support.function",
                 "support.type.builtin",
                 "support.type.primitive",
+                "support.type.python",
             ],
             "settings": {
-                "foreground": "#3377CC"
+                "foreground": "#0066CC"
             }
         },
         {
@@ -277,14 +287,17 @@
             "scope": [
                 "constant.language",
                 "constant.numeric",
+                "constant.other.caps",
                 "entity.name.type",
                 "entity.other.attribute-name",
+                "markup.bold",
                 "punctuation.decorator",
+                "punctuation.definition.bold",
                 "punctuation.definition.constant",
                 
             ],
             "settings": {
-                "foreground": "#8B5A00"
+                "foreground": "#805500"
             }
         },
         {
@@ -295,21 +308,26 @@
                 "keyword.operator.expression",
                 "keyword.operator.new",
                 "keyword.other.directive",
+                "keyword.other.DDL",
+                "keyword.other.DML",
                 "keyword.preprocessor",
                 "keyword.type",
+                "markup.italic",
+                "punctuation.definition.italic",
                 "storage",
             ],
             "settings": {
-                "foreground": "#A626A4"
+                "foreground": "#9020C0"
             }
         },
         {
             "scope": [
+                "constant.other.database-name",
                 "entity.name.tag",
                 "keyword.other.definition",
                 "variable.language",
                 "variable.other.enummember",
-                "variable.other.object",
+                "variable.other.object", // Necesario, sin más especializaciones.
                 "variable.other.property",
                 "variable.other.razor",
 
