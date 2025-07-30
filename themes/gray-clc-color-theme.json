@@ -13,7 +13,7 @@
         "regexp": "#000000",
         /* -------------------------- */
         //
-        "xmlDocCommentAttributeQuotes": "#1A3A5A",
+        "xmlDocCommentAttributeQuotes": "#42A8BC",
         //
         "extensionMethod": "#0066CC",
         "function": "#0066CC",
@@ -37,19 +37,19 @@
         "xmlDocCommentDelimiter": "#6A6A6A",
         "xmlDocCommentText": "#6A6A6A",
         //
-        "class": "#805500",
-        "delegate": "#805500",
-        "enum": "#805500",
-        "interface": "#805500",
-        "markupAttribute": "#805500",
-        "namespace": "#805500",
-        "number": "#805500",
-        "recordClass": "#805500",
-        "recordStruct": "#805500",
-        "struct": "#805500",
-        "type": "#805500",
-        "typeParameter": "#805500",
-        "xmlDocCommentAttributeName": "#805500",
+        "class": "#86654B",
+        "delegate": "#86654B",
+        "enum": "#86654B",
+        "interface": "#86654B",
+        "markupAttribute": "#86654B",
+        "namespace": "#86654B",
+        "number": "#86654B",
+        "recordClass": "#86654B",
+        "recordStruct": "#86654B",
+        "struct": "#86654B",
+        "type": "#86654B",
+        "typeParameter": "#86654B",
+        "xmlDocCommentAttributeName": "#86654B",
         //      
         "controlKeyword": "#9020C0",
         "keyword": "#9020C0",
@@ -67,7 +67,7 @@
         "focusBorder": "#0066CC80",
         "foreground": "#2B2D35",
         "editor.background": "#F9F0DF",
-        "editor.foreground": "#1A3A5A",
+        "editor.foreground": "#42A8BC",
         "scrollbar.shadow": "#EDE5D8",
         // === BARRAS UNIFICADAS (TOP & BOTTOM) ===
         "titleBar.activeBackground": "#f0f0f0",
@@ -120,7 +120,7 @@
         // === EDITOR ===
         "editor.lineHighlightBackground": "#F8F2E5",
         "editor.lineHighlightBorder": "#00000000",
-        "editorLineNumber.foreground": "#805500",
+        "editorLineNumber.foreground": "#86654B",
         "editorLineNumber.activeForeground": "#000000",
         "editor.selectionBackground": "#0066CC40",
         "editor.selectionHighlightBackground": "#0066CC20",
@@ -143,14 +143,14 @@
         "notifications.background": "#F8F2E5",
         "notifications.border": "#EDE5D8",
         "notificationsInfoIcon.foreground": "#0066CC",
-        "notificationsWarningIcon.foreground": "#805500",
+        "notificationsWarningIcon.foreground": "#86654B",
         "notificationsErrorIcon.foreground": "#D03030", // Rojo ya optimizado
         // === BOTONES ===
         "button.background": "#0066CC",
         "button.foreground": "#FFFFFF",
-        "button.hoverBackground": "#1A3A5A",
+        "button.hoverBackground": "#42A8BC",
         "button.border": "#00000000",
-        "button.secondaryBackground": "#805500",
+        "button.secondaryBackground": "#86654B",
         "button.secondaryForeground": "#FFFFFF",
         "button.secondaryHoverBackground": "#7A4A00",
         // === WIDGETS DEL EDITOR ===
@@ -195,6 +195,9 @@
             "scope": [
                 "entity.name.tag",
                 "entity.name.variable",
+                "meta.object-literal",
+                "variable.object.property",
+                "variable.other.constant",
                 "variable.other.readwrite",
                 "variable.parameter",
             ],
@@ -216,12 +219,17 @@
         {
             "scope": [
                 "constant.other.table-name",
-                
                 "entity.name.variable",
+                                "keyword.operator.assignment",
                 "keyword.operator.quantifier",
+                "keyword.operator.rest",
+                "keyword.operator.spread",
+                "keyword.operator.type",
                 "meta.attribute",
                 "meta.brace",
                 "meta.function-call",
+                "meta.object-literal",
+                "punctuation.accessor",
                 "punctuation.curlybrace",
                 "punctuation.definition.array",
                 "punctuation.definition.block",
@@ -235,14 +243,14 @@
                 "punctuation.squarebracket",
                 "punctuation.terminator",
                 "support.constant",
-                "support.type.property-name",
                 "support.variable",
-"text",
+                "text",
                 "variable.object",
                 "variable.other.constant",
                 "variable.other.object.property", // Necesario, no tiene mellizo.
-                "variable.other.readwrite", 
-                "variable.parameter",               
+                "variable.other.property",
+                "variable.other.readwrite",
+                "variable.parameter",
             ],
             "settings": {
                 "foreground": "#2B2D35"
@@ -250,14 +258,14 @@
         },
         {
             "scope": [
-
                 "entity.name.function",
                 "entity.name.section",
                 "keyword.operator.arithmetic",
-                "keyword.operator.assignment",
+
                 "keyword.operator.decrement",
                 "keyword.operator.increment",
                 "keyword.operator.relational",
+                
                 "punctuation.definition.entity",
                 "punctuation.definition.group",
                 "punctuation.definition.heading",
@@ -288,16 +296,16 @@
                 "constant.language",
                 "constant.numeric",
                 "constant.other.caps",
+                "constant.other.character-class",
                 "entity.name.type",
                 "entity.other.attribute-name",
                 "markup.bold",
                 "punctuation.decorator",
                 "punctuation.definition.bold",
                 "punctuation.definition.constant",
-                
             ],
             "settings": {
-                "foreground": "#805500"
+                "foreground": "#86654B"
             }
         },
         {
@@ -307,6 +315,7 @@
                 "keyword.operator.arrow",
                 "keyword.operator.expression",
                 "keyword.operator.new",
+                "keyword.other", // Necesario, sin más especialización conocida.
                 "keyword.other.directive",
                 "keyword.other.DDL",
                 "keyword.other.DML",
@@ -325,12 +334,11 @@
                 "constant.other.database-name",
                 "entity.name.tag",
                 "keyword.other.definition",
+                "support.type.property-name", // *                
                 "variable.language",
                 "variable.other.enummember",
                 "variable.other.object", // Necesario, sin más especializaciones.
-                "variable.other.property",
                 "variable.other.razor",
-
                 "variable.other.regexp",
             ],
             "settings": {

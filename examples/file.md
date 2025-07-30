@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 # My Awesome Project
 
 This is a **simple example** of a Markdown file. It showcases common formatting elements.
@@ -19,11 +8,11 @@ Markdown is a lightweight markup language that allows you to add formatting elem
 
 ### Features
 
-*   **Headings**: Use `#` for different levels of headings.
-*   **Emphasis**: Use `*` or `_` for *italics* and `**` or `__` for **bold**.
-*   **Lists**: Create ordered and unordered lists.
-*   **Links**: Embed clickable links.
-*   **Code Blocks**: Display code snippets.
+* **Headings**: Use `#` for different levels of headings.
+* **Emphasis**: Use `*` or `_` for *italics* and `**` or `__` for **bold**.
+* **Lists**: Create ordered and unordered lists.
+* **Links**: Embed clickable links.
+* **Code Blocks**: Display code snippets.
 
 ## Usage Example
 

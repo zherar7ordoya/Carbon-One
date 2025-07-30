@@ -183,12 +183,13 @@ class Program
     static void Main()
     {
         var rect = new TimestampedRectangle(3, 4);
+        
         Console.WriteLine($"Área: {rect.Area()}, Timestamp: {rect.Timestamp}");
-
         Console.WriteLine(Utils.Helpers.IsString("hola"));
-        var overload = new Overloads();
-        Console.WriteLine(overload.Combine(5, 10));
 
+        var overload = new Overloads();
+
+        Console.WriteLine(overload.Combine(5, 10));
         Console.WriteLine(new Literals().Msg);
     }
 }
