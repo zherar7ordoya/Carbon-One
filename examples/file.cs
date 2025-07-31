@@ -180,10 +180,14 @@ public class Magic
 
 class Program
 {
-    static void Main()
+    /// <summary>
+    /// Ejemplo de uso de las características de C# y TextMate.
+    /// </summary>
+    /// <param name="args"></param>
+    static void Main(string[] args)
     {
         var rect = new TimestampedRectangle(3, 4);
-        
+
         Console.WriteLine($"Área: {rect.Area()}, Timestamp: {rect.Timestamp}");
         Console.WriteLine(Utils.Helpers.IsString("hola"));
 
