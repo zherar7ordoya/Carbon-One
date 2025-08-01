@@ -63,33 +63,33 @@
     },
     // =================================
     "colors": {
-        "activityBar.background": "#f0f0f0",
-        "activityBar.border": "#f0f0f0",
+        "activityBar.background": "#efefef",
+        "activityBar.border": "#efefef",
         "activityBar.foreground": "#000000",
         "activityBarBadge.background": "#d73a49",
         "button.background": "#d73a49",
-        "button.foreground": "#f0f0f0",
-        "dropdown.background": "#f0f0f0",
+        "button.foreground": "#efefef",
+        "dropdown.background": "#efefef",
         "dropdown.border": "#b2b2b2",
-        "dropdown.listBackground": "#f0f0f0",
-        "editor.background": "#f0f0f0",
+        "dropdown.listBackground": "#efefef",
+        "editor.background": "#efefef",
         "editor.foreground": "#000000",
         "editor.lineHighlightBackground": "#f0ecd0",
         "editor.lineHighlightBorder": "#f0ecd0",
         "editor.selectionBackground": "#fed442",
-        "editorGroup.border": "#f0f0f0",
-        "editorGroupHeader.noTabsBackground": "#f0f0f0",
-        "editorGroupHeader.tabsBackground": "#f0f0f0",
-        "editorGroupHeader.tabsBorder": "#f0f0f0",
+        "editorGroup.border": "#efefef",
+        "editorGroupHeader.noTabsBackground": "#efefef",
+        "editorGroupHeader.tabsBackground": "#efefef",
+        "editorGroupHeader.tabsBorder": "#efefef",
         "editorLineNumber.activeForeground": "#000000",
         "editorLineNumber.foreground": "#babbbc",
         "editorSuggestWidget.highlightForeground": "#d73a49",
         "editorSuggestWidget.selectedBackground": "#e1e1e1",
-        "editorWidget.background": "#f0f0f0",
+        "editorWidget.background": "#efefef",
         "editorWidget.border": "#000000",
-        "focusBorder": "#f0f0f000",
+        "focusBorder": "#efefef00",
         "foreground": "#000000",
-        "input.background": "#f0f0f0",
+        "input.background": "#efefef",
         "input.border": "#b2b2b2",
         "inputOption.activeBorder": "#000000",
         "inputOption.activeForeground": "#000000",
@@ -102,38 +102,38 @@
         "list.hoverForeground": "#d73a49",
         "list.inactiveSelectionBackground": "#dfdfdf",
         "list.inactiveSelectionForeground": "#d73a49",
-        "notificationCenter.border": "#f0f0f0",
-        "notificationCenterHeader.background": "#f0f0f0",
-        "notificationToast.border": "#f0f0f0",
-        "notifications.background": "#f0f0f0",
-        "notifications.border": "#f0f0f0",
+        "notificationCenter.border": "#efefef",
+        "notificationCenterHeader.background": "#efefef",
+        "notificationToast.border": "#efefef",
+        "notifications.background": "#efefef",
+        "notifications.border": "#efefef",
         "panel.border": "#d73a49",
-        "scrollbar.shadow": "#f0f0f0",
-        "sideBar.background": "#f0f0f0",
-        "sideBar.border": "#f0f0f0",
+        "scrollbar.shadow": "#efefef",
+        "sideBar.background": "#efefef",
+        "sideBar.border": "#efefef",
         "sideBar.foreground": "#000000",
-        "sideBarSectionHeader.background": "#f0f0f0",
-        "statusBar.background": "#f0f0f0",
-        "statusBar.border": "#f0f0f0",
-        "statusBar.debuggingBackground": "#f0f0f0",
+        "sideBarSectionHeader.background": "#efefef",
+        "statusBar.background": "#efefef",
+        "statusBar.border": "#efefef",
+        "statusBar.debuggingBackground": "#efefef",
         "statusBar.debuggingForeground": "#000000",
         "statusBar.foreground": "#000000",
-        "statusBar.noFolderBackground": "#f0f0f0",
+        "statusBar.noFolderBackground": "#efefef",
         "statusBar.noFolderForeground": "#000000",
-        "tab.activeBackground": "#f0f0f0",
+        "tab.activeBackground": "#efefef",
         "tab.activeBorder": "#d73a49",
-        "tab.border": "#f0f0f0",
-        "tab.inactiveBackground": "#f0f0f0",
-        "titleBar.activeBackground": "#f0f0f0",
+        "tab.border": "#efefef",
+        "tab.inactiveBackground": "#efefef",
+        "titleBar.activeBackground": "#efefef",
         "titleBar.activeForeground": "#000000",
-        "titleBar.border": "#f0f0f0",
-        "titleBar.inactiveBackground": "#f0f0f0",
+        "titleBar.border": "#efefef",
+        "titleBar.inactiveBackground": "#efefef",
         "titleBar.inactiveForeground": "#000000"
     },
     // =================================
     "tokenColors": [
         //
-// Red.-------------------------
+        // Red.-------------------------
         {
             "scope": [
                 "constant.other.database-name",
@@ -141,13 +141,12 @@
                 "keyword.other.definition",
                 "punctuation.definition.template-expression",
                 "support.type.property-name",
+                "support.variable",
                 "variable.language",
                 "variable.other.enummember",
                 "variable.other.property",
                 "variable.other.razor",
                 "variable.other.regexp",
-                
-
             ],
             "settings": {
                 "foreground": "#d12828"
@@ -157,9 +156,9 @@
         // Blue.------------------------
         {
             "scope": [
+                "constant.other.color",
                 "entity.name.function",
                 "entity.name.section",
-                
                 "keyword.operator.decrement",
                 "keyword.operator.expression.keyof",
                 "keyword.operator.expression.typeof",
@@ -169,9 +168,6 @@
                 "punctuation.definition.group",
                 "punctuation.definition.heading",
                 "punctuation.definition.interpolation",
-                
-                
-                
                 "support.function",
                 "support.type.builtin",
                 "support.type.primitive",
@@ -185,11 +181,8 @@
         // Green.-----------------------
         {
             "scope": [
-                
                 "entity.name.type.module",
-
                 "punctuation.definition.string",
-                
                 "string.quoted",
                 "string.template",
                 "string.unquoted",
@@ -198,7 +191,7 @@
                 "foreground": "#187c18"
             }
         },
-                //
+        //
         // Orange.----------------------
         {
             "scope": [
@@ -206,11 +199,10 @@
                 "constant.numeric",
                 "constant.other.caps",
                 "constant.other.character-class",
-
                 "entity.name.type",
-                
                 "entity.other.attribute-name",
                 "entity.other.inherited-class",
+                "keyword.other.unit",
                 "markup.bold",
                 "punctuation.decorator",
                 "punctuation.definition.bold",
@@ -220,11 +212,9 @@
                 "foreground": "#8e6101"
             }
         },
-
-
         //
         // Purple.----------------------
-         {
+        {
             "scope": [
                 "keyword.control",
                 "keyword.generator",
@@ -246,16 +236,11 @@
                 "foreground": "#b72ab5"
             }
         },
-
-
-
-
         //
         // Black.-----------------------
         {
             "scope": [
                 "constant.other.table-name",
-                
                 "entity.name.variable",
                 "keyword.operator.arithmetic",
                 "keyword.operator.assignment",
@@ -284,12 +269,10 @@
                 "punctuation.squarebracket",
                 "punctuation.terminator",
                 "support.constant",
-                "support.variable",
                 "variable.object",
                 "variable.other.constant",
                 "variable.other.object",
                 "variable.other.object.property",
-                
                 "variable.other.readwrite",
                 "variable.parameter",
             ],
@@ -297,8 +280,6 @@
                 "foreground": "#303030"
             }
         },
-
-
         // Gray.------------------------
         {
             "scope": [
@@ -309,14 +290,6 @@
                 "foreground": "#6b6b6b"
             }
         },
-
-
-
-       
-        
-
-
-
         // Styles.----------------------
         {
             "scope": [
