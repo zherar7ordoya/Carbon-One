@@ -54,11 +54,11 @@
         "controlKeyword": "#b72ab5",
         "keyword": "#b72ab5",
         //
-        "enumMember": "#d12828",
-        "markupElement": "#d12828",
-        "parameter": "#d12828",
-        "property": "#d12828",
-        "xmlDocCommentName": "#d12828",
+        "enumMember": "#c82626",
+        "markupElement": "#c82626",
+        "parameter": "#c82626",
+        "property": "#c82626",
+        "xmlDocCommentName": "#c82626",
         //
     },
     // =================================
@@ -149,7 +149,7 @@
                 "variable.other.regexp",
             ],
             "settings": {
-                "foreground": "#d12828"
+                "foreground": "#c82626"
             }
         },
         //
