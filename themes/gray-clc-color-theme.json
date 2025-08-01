@@ -15,9 +15,9 @@
         //
         "xmlDocCommentAttributeQuotes": "#7d663c",
         //
-        "extensionMethod": "#4848fb",
-        "function": "#4848fb",
-        "method": "#4848fb",
+        "extensionMethod": "#3767d0",
+        "function": "#3767d0",
+        "method": "#3767d0",
         //
         "markupAttributeValue": "#187c18",
         "preprocessorText": "#187c18",
@@ -137,13 +137,16 @@
         {
             "scope": [
                 "constant.other.database-name",
+                "entity.name.tag",
                 "keyword.other.definition",
+                "punctuation.definition.template-expression",
                 "support.type.property-name",
                 "variable.language",
                 "variable.other.enummember",
-                "variable.other.object",
+                "variable.other.property",
                 "variable.other.razor",
                 "variable.other.regexp",
+                
 
             ],
             "settings": {
@@ -156,32 +159,37 @@
             "scope": [
                 "entity.name.function",
                 "entity.name.section",
-                "keyword.operator.arithmetic",
+                
                 "keyword.operator.decrement",
+                "keyword.operator.expression.keyof",
+                "keyword.operator.expression.typeof",
                 "keyword.operator.increment",
                 "keyword.operator.relational",
                 "punctuation.definition.entity",
                 "punctuation.definition.group",
                 "punctuation.definition.heading",
                 "punctuation.definition.interpolation",
-                "punctuation.definition.string",
-                "punctuation.definition.tag",
-                "punctuation.definition.template-expression",
+                
+                
+                
                 "support.function",
                 "support.type.builtin",
                 "support.type.primitive",
                 "support.type.python",
-
             ],
             "settings": {
-                "foreground": "#4848fb"
+                "foreground": "#3767d0"
             }
         },
         //
         // Green.-----------------------
         {
             "scope": [
-                "entity.other.inherited-class",
+                
+                "entity.name.type.module",
+
+                "punctuation.definition.string",
+                
                 "string.quoted",
                 "string.template",
                 "string.unquoted",
@@ -198,8 +206,11 @@
                 "constant.numeric",
                 "constant.other.caps",
                 "constant.other.character-class",
+
                 "entity.name.type",
+                
                 "entity.other.attribute-name",
+                "entity.other.inherited-class",
                 "markup.bold",
                 "punctuation.decorator",
                 "punctuation.definition.bold",
@@ -218,7 +229,8 @@
                 "keyword.control",
                 "keyword.generator",
                 "keyword.operator.arrow",
-                "keyword.operator.expression",
+                "keyword.operator.expression.in",
+                "keyword.operator.expression.is",
                 "keyword.operator.new",
                 "keyword.other",
                 "keyword.other.directive",
@@ -243,8 +255,9 @@
         {
             "scope": [
                 "constant.other.table-name",
-                "entity.name.tag",
+                
                 "entity.name.variable",
+                "keyword.operator.arithmetic",
                 "keyword.operator.assignment",
                 "keyword.operator.comparison",
                 "keyword.operator.quantifier",
@@ -263,6 +276,7 @@
                 "punctuation.definition.dictionary",
                 "punctuation.definition.inheritance",
                 "punctuation.definition.parameters",
+                "punctuation.definition.tag",
                 "punctuation.definition.typeparameters",
                 "punctuation.parenthesis",
                 "punctuation.section",
@@ -273,8 +287,9 @@
                 "support.variable",
                 "variable.object",
                 "variable.other.constant",
+                "variable.other.object",
                 "variable.other.object.property",
-                "variable.other.property",
+                
                 "variable.other.readwrite",
                 "variable.parameter",
             ],
@@ -307,6 +322,7 @@
             "scope": [
                 "keyword.operator.relational",
                 "keyword.operator.arithmetic",
+                "punctuation.separator",
             ],
             "settings": {
                 "fontStyle": "",
