@@ -37,22 +37,22 @@
         "xmlDocCommentDelimiter": "#6b6b6b",
         "xmlDocCommentText": "#6b6b6b",
         //
-        "class": "#8d651b",
-        "delegate": "#8d651b",
-        "enum": "#8d651b",
-        "interface": "#8d651b",
-        "markupAttribute": "#8d651b",
-        "namespace": "#8d651b",
-        "number": "#8d651b",
-        "recordClass": "#8d651b",
-        "recordStruct": "#8d651b",
-        "struct": "#8d651b",
-        "type": "#8d651b",
-        "typeParameter": "#8d651b",
-        "xmlDocCommentAttributeName": "#8d651b",
+        "class": "#8e6101",
+        "delegate": "#8e6101",
+        "enum": "#8e6101",
+        "interface": "#8e6101",
+        "markupAttribute": "#8e6101",
+        "namespace": "#8e6101",
+        "number": "#8e6101",
+        "recordClass": "#8e6101",
+        "recordStruct": "#8e6101",
+        "struct": "#8e6101",
+        "type": "#8e6101",
+        "typeParameter": "#8e6101",
+        "xmlDocCommentAttributeName": "#8e6101",
         //      
-        "controlKeyword": "#a248a2",
-        "keyword": "#a248a2",
+        "controlKeyword": "#b72ab5",
+        "keyword": "#b72ab5",
         //
         "enumMember": "#d12828",
         "markupElement": "#d12828",
@@ -206,7 +206,7 @@
                 "punctuation.definition.constant",
             ],
             "settings": {
-                "foreground": "#8d651b"
+                "foreground": "#8e6101"
             }
         },
 
@@ -231,7 +231,7 @@
                 "storage",
             ],
             "settings": {
-                "foreground": "#a248a2"
+                "foreground": "#b72ab5"
             }
         },
 
