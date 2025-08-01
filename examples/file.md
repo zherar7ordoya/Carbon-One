@@ -1,3 +1,16 @@
+<!---
+
+Hi!
+
+your comment goes here
+and here
+
+...and it seems that corrector also like it.
+
+So, now you know.
+
+-->
+
 # My Awesome Project
 
 This is a **simple example** of a Markdown file. It showcases common formatting elements.
