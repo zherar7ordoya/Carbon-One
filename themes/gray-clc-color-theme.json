@@ -63,72 +63,99 @@
     },
     // =================================
     "colors": {
-        "activityBar.background": "#eeeeee",
-        "activityBar.border": "#eeeeee",
-        "activityBar.foreground": "#000000",
-        "activityBarBadge.background": "#d73a49",
-        "button.background": "#d73a49",
-        "button.foreground": "#eeeeee",
+        //
+        // === Base ===
+        "focusBorder": "#eeeeee00",
+        "foreground": "#167474",
+        "editor.background": "#eeeeee",
+        "editor.foreground": "#167474",
+        //
+        // === Editor ===
+        "editor.lineHighlightBackground": "#f5f5dd", // más suave que #f0ecd0
+        "editor.lineHighlightBorder": "#f5f5dd",
+        "editor.selectionBackground": "#fed442", // bien definido, no tocar
+        "editorLineNumber.foreground": "#babbbc",
+        "editorLineNumber.activeForeground": "#303030", // tono "negro" del tema
+        //
+        "editorSuggestWidget.highlightForeground": "#c82626", // coincide con token rojo
+        "editorSuggestWidget.selectedBackground": "#e1e1e1",
+        "editorWidget.background": "#eeeeee",
+        "editorWidget.border": "#b2b2b2", // más suave que #167474
+        //
+        // === Input y Dropdown ===
+        "input.background": "#eeeeee",
+        "input.border": "#b2b2b2",
+        "inputOption.activeBorder": "#303030",
+        "inputOption.activeForeground": "#167474",
         "dropdown.background": "#eeeeee",
         "dropdown.border": "#b2b2b2",
         "dropdown.listBackground": "#eeeeee",
-        "editor.background": "#eeeeee",
-        "editor.foreground": "#000000",
-        "editor.lineHighlightBackground": "#f0ecd0",
-        "editor.lineHighlightBorder": "#f0ecd0",
-        "editor.selectionBackground": "#fed442",
-        "editorGroup.border": "#eeeeee",
-        "editorGroupHeader.noTabsBackground": "#eeeeee",
-        "editorGroupHeader.tabsBackground": "#eeeeee",
-        "editorGroupHeader.tabsBorder": "#eeeeee",
-        "editorLineNumber.activeForeground": "#000000",
-        "editorLineNumber.foreground": "#babbbc",
-        "editorSuggestWidget.highlightForeground": "#d73a49",
-        "editorSuggestWidget.selectedBackground": "#e1e1e1",
-        "editorWidget.background": "#eeeeee",
-        "editorWidget.border": "#000000",
-        "focusBorder": "#eeeeee00",
-        "foreground": "#000000",
-        "input.background": "#eeeeee",
-        "input.border": "#b2b2b2",
-        "inputOption.activeBorder": "#000000",
-        "inputOption.activeForeground": "#000000",
+        //
+        // === Botones ===
+        "button.background": "#c82626", // token rojo
+        "button.foreground": "#eeeeee",
+        //
+        // === Lists ===
         "list.activeSelectionBackground": "#dfdfdf",
-        "list.activeSelectionForeground": "#d73a49",
+        "list.activeSelectionForeground": "#c82626", // rojo tokens
         "list.focusBackground": "#dfdfdf",
-        "list.focusForeground": "#d73a49",
-        "list.highlightForeground": "#d73a49",
+        "list.focusForeground": "#c82626",
         "list.hoverBackground": "#dfdfdf",
-        "list.hoverForeground": "#d73a49",
+        "list.hoverForeground": "#c82626",
         "list.inactiveSelectionBackground": "#dfdfdf",
-        "list.inactiveSelectionForeground": "#d73a49",
+        "list.inactiveSelectionForeground": "#c82626",
+        "list.highlightForeground": "#c82626",
+        //
+        // === Tabs y Panel ===
+        "tab.activeBackground": "#eeeeee",
+        "tab.activeBorder": "#8e6101", // naranja tokens
+        "tab.border": "#eeeeee",
+        "tab.inactiveBackground": "#eeeeee",
+        "panel.border": "#8e6101",
+        //
+        // === Activity Bar ===
+        "activityBar.background": "#eeeeee",
+        "activityBar.border": "#eeeeee",
+        "activityBar.foreground": "#167474",
+        "activityBarBadge.background": "#c82626",
+        //
+        // === Side Bar ===
+        "sideBar.background": "#eeeeee",
+        "sideBar.border": "#eeeeee",
+        "sideBar.foreground": "#167474",
+        "sideBarSectionHeader.background": "#eeeeee",
+        //
+        // === Status Bar ===
+        "statusBar.background": "#eeeeee",
+        "statusBar.border": "#eeeeee",
+        "statusBar.foreground": "#167474",
+        "statusBar.debuggingBackground": "#eeeeee",
+        "statusBar.debuggingForeground": "#167474",
+        "statusBar.noFolderBackground": "#eeeeee",
+        "statusBar.noFolderForeground": "#167474",
+        //
+        // === Title Bar ===
+        "titleBar.activeBackground": "#eeeeee",
+        "titleBar.activeForeground": "#167474",
+        "titleBar.inactiveBackground": "#eeeeee",
+        "titleBar.inactiveForeground": "#167474",
+        "titleBar.border": "#eeeeee",
+        //
+        // === Notificaciones ===
         "notificationCenter.border": "#eeeeee",
         "notificationCenterHeader.background": "#eeeeee",
         "notificationToast.border": "#eeeeee",
         "notifications.background": "#eeeeee",
         "notifications.border": "#eeeeee",
-        "panel.border": "#d73a49",
-        "scrollbar.shadow": "#eeeeee",
-        "sideBar.background": "#eeeeee",
-        "sideBar.border": "#eeeeee",
-        "sideBar.foreground": "#000000",
-        "sideBarSectionHeader.background": "#eeeeee",
-        "statusBar.background": "#eeeeee",
-        "statusBar.border": "#eeeeee",
-        "statusBar.debuggingBackground": "#eeeeee",
-        "statusBar.debuggingForeground": "#000000",
-        "statusBar.foreground": "#000000",
-        "statusBar.noFolderBackground": "#eeeeee",
-        "statusBar.noFolderForeground": "#000000",
-        "tab.activeBackground": "#eeeeee",
-        "tab.activeBorder": "#d73a49",
-        "tab.border": "#eeeeee",
-        "tab.inactiveBackground": "#eeeeee",
-        "titleBar.activeBackground": "#eeeeee",
-        "titleBar.activeForeground": "#000000",
-        "titleBar.border": "#eeeeee",
-        "titleBar.inactiveBackground": "#eeeeee",
-        "titleBar.inactiveForeground": "#000000"
+        //
+        // === Grupos de editor ===
+        "editorGroup.border": "#eeeeee",
+        "editorGroupHeader.noTabsBackground": "#eeeeee",
+        "editorGroupHeader.tabsBackground": "#eeeeee",
+        "editorGroupHeader.tabsBorder": "#eeeeee",
+        //
+        // === Scrollbar y sombreado ===
+        "scrollbar.shadow": "#eeeeee"
     },
     // =================================
     "tokenColors": [
