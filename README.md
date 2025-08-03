@@ -7,6 +7,10 @@ A carefully tuned light theme based on Atom One Light. **Albedo 0.93** explores 
 ![Screenshot](./assets/images/Capture.PNG)  
 *Example using Fira Code*
 
+> ℹ️ The name *Albedo 0.93* refers to the estimated reflectance of the theme’s background color (`#eeeeee`, or RGB 238, 238, 238), calculated using WCAG relative luminance.  
+> While exploring names, the term *albedo* led to a recollection of *Albedo 0.39*, the 1976 album by Vangelis. Coincidentally, the reflectance value 0.93 turned out to be its inverse — a meaningful echo.  
+> The theme icon, taken from that album cover, was chosen to reflect this symbolic symmetry rather than any direct conceptual link.
+
 ---
 
 ## 🔧 Installation
