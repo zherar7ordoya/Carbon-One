@@ -1,88 +1,45 @@
-# Gray CLC
+# Albedo 0.93
 
-# Color Theme for Complex Lighting Conditions
+> **Pre-release** — subject to refinements.
 
-**Gray CLC** is a light color theme for Visual Studio Code designed for **maximum clarity** in **complex lighting environments** (e.g., overexposed monitors, shared workspaces, or sunlight conditions). It combines muted backgrounds with high-contrast syntax colors for excellent readability — especially in languages like **C#**, **JavaScript**, and **JSON**.
+A carefully tuned light theme based on Atom One Light. **Albedo 0.93** explores the lower limit of background brightness while preserving clarity, contrast, and color accuracy. The name refers to the approximate reflectance of its background color (`#eeeeee`), chosen as a compromise between readability and visual comfort during long coding sessions. WCAG-compliant and thoughtfully restrained.
 
-![Screenshot](./assets/images/screenshot-csharp.png)
-
-*Example: C# syntax highlighting*
-
----
-
-## ✨ Features
-
-- Balanced gray background for eye comfort.
-- High-contrast token coloring.
-- Carefully tuned for:
-  - **C#**
-  - **JSON**
-  - **HTML/CSS**
-  - **JavaScript / TypeScript**
-- Strong support for:
-  - Keywords
-  - Strings
-  - Comments
-  - Class names
-  - Function calls
-  - JSON keys and values
+![Screenshot](./assets/images/Capture.PNG)  
+*Example using Fira Code*
 
 ---
 
 ## 🔧 Installation
 
-1. Go to the Extensions tab in Visual Studio Code.
-2. Search for `Gray CLC`.
+1. Open the Extensions tab in Visual Studio Code.
+2. Search for `Albedo 0.93`.
 3. Click **Install**.
 4. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and select:  
-   `Preferences: Color Theme → Gray CLC`.
-
----
-
-## 💡 Why “CLC”?
-
-> CLC stands for **Complex Lighting Conditions** — the kind of visual stress we experience in unpredictable or demanding environments. This theme is designed to reduce that stress.
-
----
-
-## 🖼️ Preview
-
-| Language | Screenshot |
-|---------|------------|
-| C#      | ![C#](./assets/images/screenshot-csharp.png) |
-| JSON    | ![JSON](./assets/images/screenshot-json.png) |
-| HTML    | ![HTML](./assets/images/screenshot-html.png) |
+   `Preferences: Color Theme → Albedo 0.93`.
 
 ---
 
 ## 📁 Repository
 
-You can find the source code here:  
-👉 [github.com/zherar7ordoya/GrayCLC](https://github.com/zherar7ordoya/GrayCLC)
-
----
-
-## 💬 Feedback
-
-Suggestions, improvements, or issue reports are welcome!  
-Just open an issue or start a discussion on the [GitHub repo](https://github.com/zherar7ordoya/GrayCLC/issues).
+Find the source code here:  
+👉 [github.com/zherar7ordoya/Albedo-0.93](https://github.com/zherar7ordoya/Albedo-0.93.git)
 
 ---
 
 ## 🧠 Author
 
 Made with 💙 by **Gerardo Tordoya**  
-Analista Programador — UAI  
-Contact: [Telegram](https://t.me/GerardoTordoya)
+*Analista Programador*  
+📬 [Contact on Telegram](https://t.me/GerardoTordoya)
 
 ---
 
 ## 📜 License
 
-MIT © Gerardo Tordoya
+**MIT** © 2025 Gerardo Tordoya
 
 ---
 
-## 📌 Changelog
+## 📌 Notice
 
 See [CHANGELOG.md](./CHANGELOG.md) for version history.

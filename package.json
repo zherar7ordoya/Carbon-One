@@ -1,21 +1,34 @@
 {
-    "name": "gray-clc-color-theme",
-    "displayName": "Gray CLC",
-    "description": "Color theme for complex lighting conditions.",
-    "version": "1.0.0",
-    "publisher": "GerardoTordoya",
-    "icon": "icon.png",
+    "name": "albedo-0-93",
+    "displayName": "Albedo 0.93",
+    "description": "A carefully tuned light theme based on Atom One Light. Albedo 0.93 explores the lower limit of background brightness while preserving clarity, contrast, and color accuracy. The name refers to the approximate reflectance of its background (#eeeeee), chosen as a compromise between readability and visual comfort during long coding sessions. WCAG-compliant and thoughtfully restrained.",
+    "version": "0.9.0",
+    "publisher": "Gerardo-Tordoya",
+    "icon": "icon.jpg",
     "keywords": [
-        "gray",
+        "theme",
+        "color theme",
         "light theme",
+        "vscode",
+        "accessibility",
+        "wcag",
+        "atom one light",
+        "low contrast",
+        "soft light",
+        "designer-friendly",
+        "minimal",
+        "readability",
+        "ui design",
+        "super silver",
+        "albedo",
         "contrast"
     ],
     "engines": {
-        "vscode": "^1.101.0"
+        "vscode": "^1.102.0"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/zherar7ordoya/GrayCLC.git"
+        "url": "https://github.com/zherar7ordoya/Albedo-0.93.git"
     },
     "categories": [
         "Themes"
@@ -23,11 +36,11 @@
     "contributes": {
         "themes": [
             {
-                "label": "Gray CLC",
+                "label": "Albedo 0.93",
                 "uiTheme": "vs",
-                "path": "./themes/gray-clc-color-theme.json"
+                "path": "./themes/Albedo 0.93-color-theme.json"
             }
         ]
     },
-    "homepage": "https://github.com/zherar7ordoya/GrayCLC#readme"
+    "homepage": "https://github.com/zherar7ordoya/Albedo-0.93.git#readme"
 }
