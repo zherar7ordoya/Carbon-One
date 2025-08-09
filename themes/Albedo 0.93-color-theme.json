@@ -66,7 +66,7 @@
         // === BASE ===
         "focusBorder": "#16747480",
         "foreground": "#2B2D35",
-        "editor.background": "#EEEEEE",
+        "editor.background": "#EDEEEE",
         "editor.foreground": "#167474",
         "scrollbar.shadow": "#DDDDDD",
         //
