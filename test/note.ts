@@ -22,6 +22,7 @@ export class NoteService {
         return Date.now().toString(36) + Math.random().toString(36).slice(2);
     };
 
+    // ¿Qué estilo usar para los atributos?
     updateTitle(id: string, newTitle: string) {
         const note = this.notes.find((note) => note.id === id);
         if (!note) return;

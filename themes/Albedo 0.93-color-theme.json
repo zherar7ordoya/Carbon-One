@@ -66,7 +66,7 @@
         // === BASE ===
         "focusBorder": "#16747480",
         "foreground": "#2B2D35",
-        "editor.background": "#EDEEEE",
+        "editor.background": "#E8E8E8",
         "editor.foreground": "#167474",
         "scrollbar.shadow": "#DDDDDD",
         //
@@ -212,7 +212,7 @@
                 "variable.other.regexp",
             ],
             "settings": {
-                "foreground": "#c82626"
+                "foreground": "#c72525"
             }
         },
         //
@@ -237,7 +237,7 @@
                 "support.type.python",
             ],
             "settings": {
-                "foreground": "#4747fa"
+                "foreground": "#4646f8"
             }
         },
         //
@@ -251,7 +251,7 @@
                 "string.unquoted",
             ],
             "settings": {
-                "foreground": "#177c18"
+                "foreground": "#157215"
             }
         },
         //
@@ -272,7 +272,7 @@
                 "punctuation.definition.constant",
             ],
             "settings": {
-                "foreground": "#8e6101"
+                "foreground": "#835d18"
             }
         },
         //
@@ -296,7 +296,7 @@
                 "storage",
             ],
             "settings": {
-                "foreground": "#942deb"
+                "foreground": "#932be9"
             }
         },
         //
@@ -341,7 +341,7 @@
                 "variable.parameter",
             ],
             "settings": {
-                "foreground": "#303030"
+                "foreground": "#2e2e2e"
             }
         },
         // === GRAY ===
@@ -351,7 +351,7 @@
                 "punctuation.definition.comment",
             ],
             "settings": {
-                "foreground": "#6b6b6b"
+                "foreground": "#626262"
             }
         },
         //
