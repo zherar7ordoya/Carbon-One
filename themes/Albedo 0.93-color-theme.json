@@ -276,7 +276,7 @@
             }
         },
         //
-        // === VIOLET === Updated!
+        // === PURPLE === Updated!
         {
             "scope": [
                 "keyword.control",
@@ -296,7 +296,7 @@
                 "storage",
             ],
             "settings": {
-                "foreground": "#932be9"
+                "foreground": "#952e95"
             }
         },
         //
