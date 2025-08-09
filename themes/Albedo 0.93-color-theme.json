@@ -196,7 +196,7 @@
     // =================================
     "tokenColors": [
         //
-        // === RED ===
+        // === RED === Updated!
         {
             "scope": [
                 "constant.other.database-name",
@@ -216,7 +216,7 @@
             }
         },
         //
-        // === BLUE ===
+        // === BLUE === Updated!
         {
             "scope": [
                 "constant.other.color",
@@ -237,11 +237,11 @@
                 "support.type.python",
             ],
             "settings": {
-                "foreground": "#3767d0"
+                "foreground": "#4747fa"
             }
         },
         //
-        // === GREEN ===
+        // === GREEN === Updated!
         {
             "scope": [
                 "entity.name.type.module",
@@ -251,7 +251,7 @@
                 "string.unquoted",
             ],
             "settings": {
-                "foreground": "#187c18"
+                "foreground": "#177c18"
             }
         },
         //
@@ -276,7 +276,7 @@
             }
         },
         //
-        // === VIOLET === 
+        // === VIOLET === Updated!
         {
             "scope": [
                 "keyword.control",
