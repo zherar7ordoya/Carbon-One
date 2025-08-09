@@ -276,7 +276,7 @@
             }
         },
         //
-        // === PURPLE ===
+        // === VIOLET === 
         {
             "scope": [
                 "keyword.control",
@@ -296,7 +296,7 @@
                 "storage",
             ],
             "settings": {
-                "foreground": "#b72ab5"
+                "foreground": "#942deb"
             }
         },
         //
@@ -374,6 +374,7 @@
                 "meta.object-literal",
                 "variable.object.property",
                 "variable.other.constant",
+                "variable.other.property",
                 "variable.other.readwrite",
                 "variable.parameter",
             ],
