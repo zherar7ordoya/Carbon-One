@@ -332,6 +332,7 @@
                 "punctuation.squarebracket",
                 "punctuation.terminator",
                 "support.constant",
+                "text",
                 "variable.object",
                 "variable.other.constant",
                 "variable.other.object",
