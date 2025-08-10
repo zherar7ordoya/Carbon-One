@@ -64,29 +64,29 @@
     "colors": {
         //
         // === BASE ===
-        "focusBorder": "#16747480",
-        "foreground": "#2B2D35",
-        "editor.background": "#E8E8E8",
-        "editor.foreground": "#167474",
-        "scrollbar.shadow": "#DDDDDD",
+        "focusBorder": "#16747480", // buen foco, traslúcido azul verdoso
+        "foreground": "#2B2D35", // texto principal oscuro neutro
+        "editor.background": "#F4F4F4", // fondo claro neutro (Carbon)
+        "editor.foreground": "#2B2D35", // texto editor igual que principal, legible
+        "scrollbar.shadow": "#CCCCCC", // sombra más suave que #DDDDDD
         //
         // === BARS (TOP & BOTTOM) ===
-        "titleBar.activeBackground": "#E0E0E0",
+        "titleBar.activeBackground": "#E8E8E8", // ligeramente más oscuro que fondo, para separar
         "titleBar.activeForeground": "#2B2D35",
-        "titleBar.inactiveBackground": "#E0E0E0",
-        "titleBar.inactiveForeground": "#666666",
+        "titleBar.inactiveBackground": "#E0E0E0", // más suave para barras inactivas
+        "titleBar.inactiveForeground": "#777777", // gris más cálido y legible que #666666
         "titleBar.border": "#D0D0D0",
-        "statusBar.background": "#E0E0E0",
+        "statusBar.background": "#E8E8E8", // uniforme con titleBar
         "statusBar.foreground": "#2B2D35",
         "statusBar.border": "#D0D0D0",
-        "statusBar.noFolderBackground": "#E0E0E0",
+        "statusBar.noFolderBackground": "#E8E8E8",
         "statusBar.noFolderForeground": "#2B2D35",
-        "statusBar.debuggingBackground": "#E0E0E0",
+        "statusBar.debuggingBackground": "#E8E8E8",
         "statusBar.debuggingForeground": "#2B2D35",
         //
         // === ACTIVITY BAR ===
         "activityBar.border": "#D0D0D0",
-        "activityBar.background": "#E8E8E8",
+        "activityBar.background": "#E0E0E0", // igual que inactive titleBar, para balance
         "activityBar.foreground": "#2B2D35",
         "activityBarBadge.background": "#167474",
         "activityBarBadge.foreground": "#FFFFFF",
@@ -96,13 +96,13 @@
         "editorGroupHeader.tabsBackground": "#E8E8E8",
         "editorGroupHeader.noTabsBackground": "#E8E8E8",
         "editorGroupHeader.tabsBorder": "#D0D0D0",
-        "tab.activeBackground": "#EEEEEE",
+        "tab.activeBackground": "#FFFFFF", // más claro para diferenciar pestaña activa
         "tab.inactiveBackground": "#E8E8E8",
         "tab.border": "#D0D0D0",
         "tab.activeBorder": "#167474",
         "tab.activeForeground": "#2B2D35",
-        "tab.inactiveForeground": "#666666",
-        "tab.hoverBackground": "#E8E8E8",
+        "tab.inactiveForeground": "#777777", // gris cálido para pestañas inactivas
+        "tab.hoverBackground": "#E0E0E0",
         //
         // === SIDE BAR ===
         "sideBar.border": "#D0D0D0",
@@ -114,13 +114,13 @@
         //
         // === LISTS ===
         "list.highlightForeground": "#167474",
-        "list.activeSelectionBackground": "#DDDDDD",
+        "list.activeSelectionBackground": "#D0D0D0", // más neutro que #DDDDDD
         "list.activeSelectionForeground": "#2B2D35",
         "list.inactiveSelectionBackground": "#E0E0E0",
-        "list.inactiveSelectionForeground": "#666666",
+        "list.inactiveSelectionForeground": "#777777",
         "list.hoverBackground": "#E8E8E8",
         "list.hoverForeground": "#2B2D35",
-        "list.focusBackground": "#DDDDDD",
+        "list.focusBackground": "#D0D0D0",
         "list.focusForeground": "#2B2D35",
         //
         // === EDITOR ===
@@ -168,7 +168,7 @@
         "editorWidget.border": "#D0D0D0",
         "editorSuggestWidget.background": "#E8E8E8",
         "editorSuggestWidget.foreground": "#2B2D35",
-        "editorSuggestWidget.selectedBackground": "#DDDDDD",
+        "editorSuggestWidget.selectedBackground": "#D0D0D0",
         "editorSuggestWidget.highlightForeground": "#167474",
         "editorHoverWidget.background": "#E8E8E8",
         "editorHoverWidget.foreground": "#2B2D35",
@@ -179,7 +179,7 @@
         "panel.background": "#E8E8E8",
         "panelTitle.activeBorder": "#167474",
         "panelTitle.activeForeground": "#2B2D35",
-        "panelTitle.inactiveForeground": "#666666",
+        "panelTitle.inactiveForeground": "#777777",
         //
         // === SCROLLBARS ===
         "scrollbarSlider.background": "#00000020",
@@ -189,7 +189,7 @@
         // === MENUS ===
         "menu.background": "#E8E8E8",
         "menu.foreground": "#2B2D35",
-        "menu.selectionBackground": "#DDDDDD",
+        "menu.selectionBackground": "#D0D0D0",
         "menu.selectionForeground": "#2B2D35",
         "menu.border": "#D0D0D0"
     },
@@ -212,7 +212,7 @@
                 "variable.other.regexp",
             ],
             "settings": {
-                "foreground": "#c72525"
+                "foreground": "#d22929"
             }
         },
         //
@@ -237,7 +237,7 @@
                 "support.type.python",
             ],
             "settings": {
-                "foreground": "#4646f8"
+                "foreground": "#3131fd"
             }
         },
         //
@@ -251,7 +251,7 @@
                 "string.unquoted",
             ],
             "settings": {
-                "foreground": "#157215"
+                "foreground": "#187d18"
             }
         },
         //
@@ -272,7 +272,7 @@
                 "punctuation.definition.constant",
             ],
             "settings": {
-                "foreground": "#835d18"
+                "foreground": "#8e661c"
             }
         },
         //
@@ -296,11 +296,12 @@
                 "storage",
             ],
             "settings": {
-                "foreground": "#952e95"
+                "foreground": "#973197"
             }
         },
         //
         // === BLACK ===
+        // https://carbondesignsystem.com/elements/color/overview/
         {
             "scope": [
                 "constant.other.table-name",
@@ -324,7 +325,6 @@
                 "punctuation.definition.dictionary",
                 "punctuation.definition.inheritance",
                 "punctuation.definition.parameters",
-                "punctuation.definition.tag",
                 "punctuation.definition.typeparameters",
                 "punctuation.parenthesis",
                 "punctuation.section",
@@ -341,7 +341,7 @@
                 "variable.parameter",
             ],
             "settings": {
-                "foreground": "#2e2e2e"
+                "foreground": "#161616"
             }
         },
         // === GRAY ===
@@ -349,9 +349,10 @@
             "scope": [
                 "comment",
                 "punctuation.definition.comment",
+                "punctuation.definition.tag",
             ],
             "settings": {
-                "foreground": "#626262"
+                "foreground": "#6c6c6c"
             }
         },
         //

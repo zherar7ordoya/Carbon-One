@@ -1,4 +1,5 @@
-// Example of a complicated SQL script.
+-- Example of a complicated SQL script.
+
 SELECT
     users.id,
     users.name,
@@ -15,3 +16,4 @@ HAVING
     order_count > 5
 ORDER BY
     users.name ASC;
+    
