@@ -389,10 +389,10 @@
         // === UNDERLINE ===
         {
             "scope": [
-                //"entity.name.type",
-                //"entity.other.attribute-name",
-                "entity",
+                "entity.name.type",
+                "entity.other.attribute-name",
                 "keyword",
+                "storage.type",
             ],
             "settings": {
                 "fontStyle": "underline"
