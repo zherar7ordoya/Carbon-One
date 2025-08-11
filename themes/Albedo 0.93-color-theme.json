@@ -196,7 +196,7 @@
     // =================================
     "tokenColors": [
         //
-        // === RED === Updated!
+        // === RED ===
         {
             "scope": [
                 "constant.other.database-name",
@@ -216,7 +216,7 @@
             }
         },
         //
-        // === BLUE === Updated!
+        // === BLUE ===
         {
             "scope": [
                 "constant.other.color",
@@ -241,7 +241,7 @@
             }
         },
         //
-        // === GREEN === Updated!
+        // === GREEN ===
         {
             "scope": [
                 "entity.name.type.module",
@@ -276,7 +276,7 @@
             }
         },
         //
-        // === PURPLE === Updated!
+        // === PURPLE ===
         {
             "scope": [
                 "keyword.control",
@@ -349,6 +349,7 @@
         {
             "scope": [
                 "comment",
+                "meta.paragraph",
                 "punctuation.definition.comment",
                 "punctuation.definition.tag",
             ],
@@ -388,8 +389,10 @@
         // === UNDERLINE ===
         {
             "scope": [
-                "entity.name.type",
-                "entity.other.attribute-name",
+                //"entity.name.type",
+                //"entity.other.attribute-name",
+                "entity",
+                "keyword",
             ],
             "settings": {
                 "fontStyle": "underline"
