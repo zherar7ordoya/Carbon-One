@@ -200,6 +200,7 @@
         {
             "scope": [
                 "constant.other.database-name",
+                "entity.name.section",
                 "entity.name.tag",
                 "keyword.other.definition",
                 "punctuation.definition.template-expression",
@@ -221,7 +222,7 @@
             "scope": [
                 "constant.other.color",
                 "entity.name.function",
-                "entity.name.section",
+                //"entity.name.section",
                 "keyword.operator.decrement",
                 "keyword.operator.expression.keyof",
                 "keyword.operator.expression.typeof",
@@ -229,8 +230,9 @@
                 "keyword.operator.relational",
                 "punctuation.definition.entity",
                 "punctuation.definition.group",
-                "punctuation.definition.heading",
+                //"punctuation.definition.heading",
                 "punctuation.definition.interpolation",
+                "string.other",
                 "support.function",
                 "support.type.builtin",
                 "support.type.primitive",
@@ -245,6 +247,7 @@
         {
             "scope": [
                 "entity.name.type.module",
+                "markup.inline",
                 "punctuation.definition.string",
                 "string.quoted",
                 "string.template",
@@ -270,6 +273,7 @@
                 "punctuation.decorator",
                 "punctuation.definition.bold",
                 "punctuation.definition.constant",
+                //"punctuation.definition.link",
             ],
             "settings": {
                 "foreground": "#8e661c"
@@ -293,6 +297,7 @@
                 "keyword.preprocessor",
                 "keyword.type",
                 "markup.italic",
+                "markup.underline",
                 "punctuation.definition.italic",
                 "storage",
             ],
@@ -319,6 +324,7 @@
                 "meta.function-call",
                 "meta.function.parameters",
                 "meta.object-literal",
+                "meta.paragraph",
                 "punctuation.accessor",
                 "punctuation.curlybrace",
                 "punctuation.definition.array",
@@ -349,7 +355,6 @@
         {
             "scope": [
                 "comment",
-                "meta.paragraph",
                 "punctuation.definition.comment",
                 "punctuation.definition.tag",
             ],
@@ -361,12 +366,25 @@
         // === RESET STYLE ===
         {
             "scope": [
-                "keyword.operator.relational",
-                "keyword.operator.arithmetic",
+                //"keyword.operator.arithmetic",
+                //"keyword.operator.relational",
+                //"keyword.operator.type",
+                "keyword.operator",
                 "punctuation.separator",
+                "storage.type.function",
             ],
             "settings": {
                 "fontStyle": "",
+            }
+        },
+        //
+        // === BOLD ===
+        {
+            "scope": [
+                "markup.bold",
+            ],
+            "settings": {
+                "fontStyle": "bold"
             }
         },
         //
@@ -374,6 +392,7 @@
         {
             "scope": [
                 "entity.name.variable",
+                "markup.quote",
                 "meta.object-literal",
                 "variable.object.property",
                 "variable.other.constant",
@@ -391,7 +410,8 @@
             "scope": [
                 "entity.name.type",
                 "entity.other.attribute-name",
-                "keyword",
+                "keyword.control",
+                "storage.modifier",
                 "storage.type",
             ],
             "settings": {
