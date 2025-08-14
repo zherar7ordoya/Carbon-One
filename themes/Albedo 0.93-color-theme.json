@@ -213,7 +213,7 @@
                 "variable.other.regexp",
             ],
             "settings": {
-                "foreground": "#d22929"
+                "foreground": "#da1e28"
             }
         },
         //
@@ -228,6 +228,7 @@
                 "keyword.operator.expression.typeof",
                 "keyword.operator.increment",
                 "keyword.operator.relational",
+                "punctuation.definition.block",
                 "punctuation.definition.entity",
                 "punctuation.definition.group",
                 //"punctuation.definition.heading",
@@ -239,7 +240,7 @@
                 "support.type.python",
             ],
             "settings": {
-                "foreground": "#3131fd"
+                "foreground": "#0f62fe"
             }
         },
         //
@@ -254,11 +255,11 @@
                 "string.unquoted",
             ],
             "settings": {
-                "foreground": "#187d18"
+                "foreground": "#198038"
             }
         },
         //
-        // === ORANGE ===
+        // === MAROON ===
         {
             "scope": [
                 "constant.language",
@@ -276,7 +277,8 @@
                 //"punctuation.definition.link",
             ],
             "settings": {
-                "foreground": "#8e661c"
+                //"foreground": "#8e661c"
+                "foreground": "#973131"
             }
         },
         //
@@ -302,7 +304,7 @@
                 "storage",
             ],
             "settings": {
-                "foreground": "#973197"
+                "foreground": "#8a3ffc"
             }
         },
         //
@@ -328,7 +330,7 @@
                 "punctuation.accessor",
                 "punctuation.curlybrace",
                 "punctuation.definition.array",
-                "punctuation.definition.block",
+                
                 "punctuation.definition.dictionary",
                 "punctuation.definition.inheritance",
                 "punctuation.definition.parameters",
@@ -409,12 +411,14 @@
         // === UNDERLINE ===
         {
             "scope": [
+                /*
                 "entity.name.type",
                 "entity.other.attribute-name",
                 "keyword.control",
                 "keyword.operator.expression.of",
                 "storage.modifier",
                 "storage.type",
+                */
             ],
             "settings": {
                 "fontStyle": "underline"
