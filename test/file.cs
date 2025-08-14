@@ -60,3 +60,16 @@ public class MiServicio : IMiServicio
         return "Datos del servicio";
     }
 }
+
+public interface INotify
+{
+    SendMessage();
+}
+
+public class Messenger : INotify
+{
+    public SendMessage(string message)
+    {
+        Console.WriteLine(message);
+    }
+}

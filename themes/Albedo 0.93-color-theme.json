@@ -196,7 +196,7 @@
     // =================================
     "tokenColors": [
         //
-        // === RED ===
+        // === RED 60 ===
         {
             "scope": [
                 "constant.other.database-name",
@@ -217,7 +217,7 @@
             }
         },
         //
-        // === BLUE ===
+        // === BLUE 60 ===
         {
             "scope": [
                 "constant.other.color",
@@ -244,25 +244,42 @@
             }
         },
         //
-        // === GREEN ===
+        // === ORANGE 60 ===
         {
             "scope": [
-                "entity.name.type.module",
+                "entity.name.type.interface",
+            ],
+            "settings": {
+                "foreground": "#ba4e00",
+            }
+        },
+        //
+        // === GREEN 60 ===
+        {
+            "scope": [
+
+   "entity.name.type.module",
                 "markup.inline",
                 "punctuation.definition.string",
                 "string.quoted",
                 "string.template",
                 "string.unquoted",
+
+
+              
+
+
             ],
             "settings": {
                 "foreground": "#198038"
             }
         },
         //
-        // === MAROON ===
+        // === YELLOW 60 ===
         {
             "scope": [
-                "constant.language",
+                                
+               "constant.language",
                 "constant.numeric",
                 "constant.other.caps",
                 "constant.other.character-class",
@@ -274,15 +291,14 @@
                 "punctuation.decorator",
                 "punctuation.definition.bold",
                 "punctuation.definition.constant",
-                //"punctuation.definition.link",
+
             ],
             "settings": {
-                //"foreground": "#8e661c"
-                "foreground": "#973131"
+                "foreground": "#8e6a00"
             }
         },
         //
-        // === PURPLE ===
+        // === PURPLE HOVER 60 ===
         {
             "scope": [
                 "keyword.control",
@@ -304,12 +320,11 @@
                 "storage",
             ],
             "settings": {
-                "foreground": "#8a3ffc"
+                "foreground": "#7822fb"
             }
         },
         //
-        // === BLACK ===
-        // https://carbondesignsystem.com/elements/color/overview/
+        // === GRAY 100 ===
         {
             "scope": [
                 "constant.other.table-name",
@@ -330,7 +345,6 @@
                 "punctuation.accessor",
                 "punctuation.curlybrace",
                 "punctuation.definition.array",
-                
                 "punctuation.definition.dictionary",
                 "punctuation.definition.inheritance",
                 "punctuation.definition.parameters",
@@ -353,7 +367,7 @@
                 "foreground": "#161616"
             }
         },
-        // === GRAY ===
+        // === GRAY 60 ===
         {
             "scope": [
                 "comment",
@@ -361,7 +375,7 @@
                 "punctuation.definition.tag",
             ],
             "settings": {
-                "foreground": "#6c6c6c"
+                "foreground": "#6f6f6f"
             }
         },
         //
@@ -405,23 +419,6 @@
             ],
             "settings": {
                 "fontStyle": "italic"
-            }
-        },
-        //
-        // === UNDERLINE ===
-        {
-            "scope": [
-                /*
-                "entity.name.type",
-                "entity.other.attribute-name",
-                "keyword.control",
-                "keyword.operator.expression.of",
-                "storage.modifier",
-                "storage.type",
-                */
-            ],
-            "settings": {
-                "fontStyle": "underline"
             }
         },
     ],
