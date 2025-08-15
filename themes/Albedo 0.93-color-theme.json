@@ -191,7 +191,7 @@
         "menu.foreground": "#2B2D35",
         "menu.selectionBackground": "#D0D0D0",
         "menu.selectionForeground": "#2B2D35",
-        "menu.border": "#D0D0D0"
+        "menu.border": "#D0D0D0",
     },
     // =================================
     "tokenColors": [
@@ -203,6 +203,7 @@
                 "entity.name.section",
                 "entity.name.tag",
                 "keyword.other.definition",
+                "meta.object-literal",
                 "punctuation.definition.template-expression",
                 "support.type.property-name",
                 "support.variable",
@@ -223,16 +224,17 @@
             "scope": [
                 "constant.other.color",
                 "entity.name.function",
-                "entity.name.type",
+
+                "entity.name.type.interface",
                 "keyword.operator.decrement",
                 "keyword.operator.expression.keyof",
                 "keyword.operator.expression.typeof",
                 "keyword.operator.increment",
                 "keyword.operator.relational",
                 "punctuation.definition.block",
-                "punctuation.definition.entity",
                 "punctuation.definition.group",
                 "punctuation.definition.interpolation",
+                "punctuation.section.property-list",
                 "string.other",
                 "support.function",
                 "support.type.builtin",
@@ -241,16 +243,6 @@
             ],
             "settings": {
                 "foreground": "#0f62fe"
-            }
-        },
-        //
-        // === ORANGE 60 ===
-        {
-            "scope": [
-                "entity.name.type.interface",
-            ],
-            "settings": {
-                "foreground": "#ba4e00",
             }
         },
         //
@@ -276,20 +268,22 @@
                 "constant.numeric",
                 "constant.other.caps",
                 "constant.other.character-class",
+                "entity.name.type",
+                "entity.name.type.class",
+                "entity.name.type.namespace",
                 "entity.other.attribute-name",
                 "entity.other.inherited-class",
                 "keyword.other.unit",
                 "markup.bold",
-                "punctuation.decorator",
                 "punctuation.definition.bold",
-                "punctuation.definition.constant",
+                "support.class.promise",
             ],
             "settings": {
                 "foreground": "#8e6a00"
             }
         },
         //
-        // === PURPLE HOVER 60 ===
+        // === PURPLE 60 ===
         {
             "scope": [
                 "keyword.control",
@@ -311,7 +305,7 @@
                 "storage",
             ],
             "settings": {
-                "foreground": "#7822fb"
+                "foreground": "#8a3ffc"
             }
         },
         //
@@ -331,17 +325,20 @@
                 "meta.brace",
                 "meta.function-call",
                 "meta.function.parameters",
-                "meta.object-literal",
                 "meta.paragraph",
                 "punctuation.accessor",
                 "punctuation.curlybrace",
+                "punctuation.decorator",
                 "punctuation.definition.array",
+                "punctuation.definition.constant",
                 "punctuation.definition.dictionary",
+                "punctuation.definition.entity",
                 "punctuation.definition.inheritance",
+                "punctuation.definition.ng-binding-name",
                 "punctuation.definition.parameters",
                 "punctuation.definition.typeparameters",
                 "punctuation.parenthesis",
-                "punctuation.section",
+
                 "punctuation.separator",
                 "punctuation.squarebracket",
                 "punctuation.terminator",
@@ -399,7 +396,6 @@
             "scope": [
                 "entity.name.variable",
                 "markup.quote",
-                "meta.object-literal",
                 "variable.object.property",
                 "variable.other.constant",
                 "variable.other.property",
