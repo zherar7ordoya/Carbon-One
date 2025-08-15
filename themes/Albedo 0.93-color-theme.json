@@ -210,6 +210,7 @@
                 "variable.other.enummember",
                 "variable.other.object",
                 "variable.other.razor",
+                "variable.other.readwrite.alias",
                 "variable.other.regexp",
             ],
             "settings": {
@@ -222,7 +223,7 @@
             "scope": [
                 "constant.other.color",
                 "entity.name.function",
-                //"entity.name.section",
+                "entity.name.type",
                 "keyword.operator.decrement",
                 "keyword.operator.expression.keyof",
                 "keyword.operator.expression.typeof",
@@ -231,7 +232,6 @@
                 "punctuation.definition.block",
                 "punctuation.definition.entity",
                 "punctuation.definition.group",
-                //"punctuation.definition.heading",
                 "punctuation.definition.interpolation",
                 "string.other",
                 "support.function",
@@ -257,18 +257,12 @@
         // === GREEN 60 ===
         {
             "scope": [
-
-   "entity.name.type.module",
+                "entity.name.type.module",
                 "markup.inline",
                 "punctuation.definition.string",
                 "string.quoted",
                 "string.template",
                 "string.unquoted",
-
-
-              
-
-
             ],
             "settings": {
                 "foreground": "#198038"
@@ -278,12 +272,10 @@
         // === YELLOW 60 ===
         {
             "scope": [
-                                
-               "constant.language",
+                "constant.language",
                 "constant.numeric",
                 "constant.other.caps",
                 "constant.other.character-class",
-                "entity.name.type",
                 "entity.other.attribute-name",
                 "entity.other.inherited-class",
                 "keyword.other.unit",
@@ -291,7 +283,6 @@
                 "punctuation.decorator",
                 "punctuation.definition.bold",
                 "punctuation.definition.constant",
-
             ],
             "settings": {
                 "foreground": "#8e6a00"
@@ -382,13 +373,11 @@
         // === RESET STYLE ===
         {
             "scope": [
-                //"keyword.operator.arithmetic",
-                //"keyword.operator.relational",
-                //"keyword.operator.type",
                 "keyword.operator",
                 "punctuation.definition.ng-binding-name",
                 "punctuation.separator",
                 "storage.type.function",
+                "variable.other.readwrite.alias",
             ],
             "settings": {
                 "fontStyle": "",
