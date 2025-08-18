@@ -222,9 +222,9 @@
         // === BLUE 60 ===
         {
             "scope": [
+                "constant.language",
                 "constant.other.color",
                 "entity.name.function",
-
                 "entity.name.type.interface",
                 "keyword.operator.decrement",
                 "keyword.operator.expression.keyof",
@@ -264,7 +264,6 @@
         // === YELLOW 60 ===
         {
             "scope": [
-                "constant.language",
                 "constant.numeric",
                 "constant.other.caps",
                 "constant.other.character-class",
@@ -338,7 +337,6 @@
                 "punctuation.definition.parameters",
                 "punctuation.definition.typeparameters",
                 "punctuation.parenthesis",
-
                 "punctuation.separator",
                 "punctuation.squarebracket",
                 "punctuation.terminator",
