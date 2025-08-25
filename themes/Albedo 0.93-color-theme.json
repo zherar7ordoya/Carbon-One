@@ -5,61 +5,7 @@
     // =================================
     "semanticHighlighting": false,
     // =================================
-    "semanticTokenColors": {
-        //
-        // UNUSED TOKENS
-        "decorator": "#167474",
-        "modifier": "#167474",
-        "regexp": "#167474",
-        //
-        "xmlDocCommentAttributeQuotes": "#7d663c",
-        //
-        "extensionMethod": "#3767d0",
-        "function": "#3767d0",
-        "method": "#3767d0",
-        //
-        "markupAttributeValue": "#187c18",
-        "preprocessorText": "#187c18",
-        "string": "#187c18",
-        "stringVerbatim": "#187c18",
-        //
-        "constant": "#303030",
-        "event": "#303030",
-        "field": "#303030",
-        "label": "#303030",
-        "macro": "#303030",
-        "operator": "#303030",
-        "punctuation": "#303030",
-        "variable": "#303030",
-        //
-        "comment": "#6b6b6b",
-        "xmlDocCommentDelimiter": "#6b6b6b",
-        "xmlDocCommentText": "#6b6b6b",
-        //
-        "class": "#8e6101",
-        "delegate": "#8e6101",
-        "enum": "#8e6101",
-        "interface": "#8e6101",
-        "markupAttribute": "#8e6101",
-        "namespace": "#8e6101",
-        "number": "#8e6101",
-        "recordClass": "#8e6101",
-        "recordStruct": "#8e6101",
-        "struct": "#8e6101",
-        "type": "#8e6101",
-        "typeParameter": "#8e6101",
-        "xmlDocCommentAttributeName": "#8e6101",
-        //      
-        "controlKeyword": "#b72ab5",
-        "keyword": "#b72ab5",
-        //
-        "enumMember": "#c82626",
-        "markupElement": "#c82626",
-        "parameter": "#c82626",
-        "property": "#c82626",
-        "xmlDocCommentName": "#c82626",
-        //
-    },
+    "semanticTokenColors": {    },
     // =================================
     "colors": {
         //
@@ -203,7 +149,9 @@
                 "entity.name.section",
                 "entity.name.tag",
                 "keyword.other.definition",
+                "meta.function.variable",
                 "meta.object-literal",
+                "meta.property-list",
                 "punctuation.definition.template-expression",
                 "support.type.property-name",
                 "support.variable",
