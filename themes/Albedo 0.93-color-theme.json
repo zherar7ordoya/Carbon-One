@@ -293,7 +293,7 @@
                 "variable.object.property",
                 "variable.other.constant",
                 "variable.other.property",
-                "variable.other.readwrite",
+                //"variable.other.readwrite",
                 "variable.parameter",
             ],
             "settings": {
