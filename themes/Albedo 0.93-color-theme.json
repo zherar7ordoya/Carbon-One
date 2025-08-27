@@ -98,6 +98,8 @@
                 "entity.name.tag",
                 "entity.name.type",
                 "keyword.other.definition",
+                "meta.class",
+                "meta.decorator",
                 "meta.function.variable",
                 "meta.object-literal",
                 "meta.property-list",
@@ -109,6 +111,7 @@
                 "variable.other.enummember",
                 "variable.other.object",
                 "variable.other.razor",
+                "variable.other.readwrite",
                 "variable.other.readwrite.alias",
                 "variable.other.regexp",
             ],
@@ -158,7 +161,7 @@
             }
         },
         //
-        // === YELLOW HOVER 60 ===
+        // === YELLOW 60 ===
         {
             "scope": [
                 "constant.numeric",
@@ -177,7 +180,8 @@
                 "support.class.promise",
             ],
             "settings": {
-                "foreground": "#755800"
+                "foreground": "#8e6a00",
+                "fontStyle": "bold",
             }
         },
         //
@@ -245,7 +249,7 @@
                 "variable.other.constant",
                 "variable.other.object.property",
                 "variable.other.property",
-                "variable.other.readwrite",
+                
                 "variable.parameter",
             ],
             "settings": {
@@ -296,7 +300,6 @@
                 "variable.object.property",
                 "variable.other.constant",
                 "variable.other.property",
-                //"variable.other.readwrite",
                 "variable.parameter",
             ],
             "settings": {
