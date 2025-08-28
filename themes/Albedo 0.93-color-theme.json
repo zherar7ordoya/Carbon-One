@@ -22,10 +22,6 @@
         "dropdown.background": "#ECE9D8",
         "dropdown.border": "#2B5480",
         "dropdown.foreground": "#000000",
-        // BASE COLORS =================
-        "editor.background": "#F4F4F4",
-        "editor.foreground": "#2B2D35",
-        // =============================
         "editor.lineHighlightBackground": "#3A6EA533",
         "editor.selectionBackground": "#3A6EA533",
         "editor.selectionForeground": "#FFFFFF",
@@ -85,7 +81,10 @@
         "titleBar.activeForeground": "#FFFFFF",
         "titleBar.border": "#2B5480",
         "titleBar.inactiveBackground": "#D4D0C8",
-        "titleBar.inactiveForeground": "#000000"
+        "titleBar.inactiveForeground": "#000000",
+        // BASE COLORS =================
+        "editor.background": "#f4f4f4", // GRAY 10
+        "editor.foreground": "#161616", // GRAY 100 
     },
     // =================================
     "tokenColors": [
@@ -161,13 +160,12 @@
             }
         },
         //
-        // === YELLOW 60 ===
+        // === YELLOW HOVER 70 ===
         {
             "scope": [
                 "constant.numeric",
                 "constant.other.caps",
                 "constant.other.character-class",
-                
                 "entity.name.type.class",
                 "entity.name.type.interface",
                 "entity.name.type.namespace",
@@ -175,17 +173,15 @@
                 "entity.other.inherited-class",
                 "keyword.other.unit",
                 "markup.bold",
-                
                 "punctuation.definition.bold",
                 "support.class.promise",
             ],
             "settings": {
-                "foreground": "#8e6a00",
-                "fontStyle": "bold",
+                "foreground": "#806000",
             }
         },
         //
-        // === PURPLE HOVER 60 ===
+        // === PURPLE HOVER 70 ===
         {
             "scope": [
                 "keyword.control",
@@ -207,7 +203,7 @@
                 "storage",
             ],
             "settings": {
-                "foreground": "#7822fb"
+                "foreground": "#7c3dd6"
             }
         },
         //
@@ -230,7 +226,6 @@
                 "meta.paragraph",
                 "punctuation.accessor",
                 "punctuation.curlybrace",
-                
                 "punctuation.definition.array",
                 "punctuation.definition.constant",
                 "punctuation.definition.dictionary",
@@ -249,7 +244,6 @@
                 "variable.other.constant",
                 "variable.other.object.property",
                 "variable.other.property",
-                
                 "variable.parameter",
             ],
             "settings": {
