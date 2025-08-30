@@ -97,7 +97,7 @@
                 "entity.name.tag",
                 "entity.name.type",
                 "keyword.other.definition",
-                "meta.class",
+                
                 "meta.decorator",
                 "meta.function.variable",
                 "meta.object-literal",
@@ -110,7 +110,7 @@
                 "variable.other.enummember",
                 "variable.other.object",
                 "variable.other.razor",
-                "variable.other.readwrite",
+                
                 "variable.other.readwrite.alias",
                 "variable.other.regexp",
             ],
@@ -173,6 +173,7 @@
                 "entity.other.inherited-class",
                 "keyword.other.unit",
                 "markup.bold",
+                "meta.class",
                 "punctuation.definition.bold",
                 "support.class.promise",
             ],
@@ -224,6 +225,7 @@
                 "meta.function-call",
                 "meta.function.parameters",
                 "meta.paragraph",
+                "meta.var-single-variable",
                 "punctuation.accessor",
                 "punctuation.curlybrace",
                 "punctuation.definition.array",
@@ -244,6 +246,7 @@
                 "variable.other.constant",
                 "variable.other.object.property",
                 "variable.other.property",
+                "variable.other.readwrite",
                 "variable.parameter",
             ],
             "settings": {
@@ -291,9 +294,11 @@
             "scope": [
                 "entity.name.variable",
                 "markup.quote",
+                "meta.var-single-variable",
                 "variable.object.property",
                 "variable.other.constant",
                 "variable.other.property",
+                "variable.other.readwrite",
                 "variable.parameter",
             ],
             "settings": {
