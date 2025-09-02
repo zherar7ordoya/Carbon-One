@@ -219,6 +219,7 @@
                 "keyword.operator.quantifier",
                 "keyword.operator.rest",
                 "keyword.operator.spread",
+                "keyword.operator.ternary",
                 "keyword.operator.type",
                 "meta.attribute",
                 "meta.brace",
