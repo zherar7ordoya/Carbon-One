@@ -97,12 +97,10 @@
                 "entity.name.tag",
                 "entity.name.type",
                 "keyword.other.definition",
-                
                 "meta.decorator",
                 "meta.function.variable",
                 "meta.object-literal",
                 "meta.property-list",
-                
                 "punctuation.definition.template-expression",
                 "support.type.property-name",
                 "support.variable",
@@ -110,7 +108,6 @@
                 "variable.other.enummember",
                 "variable.other.object",
                 "variable.other.razor",
-                
                 "variable.other.readwrite.alias",
                 "variable.other.regexp",
             ],
@@ -242,7 +239,6 @@
                 "punctuation.separator",
                 "punctuation.squarebracket",
                 "punctuation.terminator",
-                
                 "support.constant",
                 "text",
                 "variable.object",
