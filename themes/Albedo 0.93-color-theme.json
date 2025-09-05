@@ -102,7 +102,7 @@
                 "meta.function.variable",
                 "meta.object-literal",
                 "meta.property-list",
-                "punctuation.decorator",
+                
                 "punctuation.definition.template-expression",
                 "support.type.property-name",
                 "support.variable",
@@ -229,6 +229,7 @@
                 "meta.var-single-variable",
                 "punctuation.accessor",
                 "punctuation.curlybrace",
+                "punctuation.decorator",
                 "punctuation.definition.array",
                 "punctuation.definition.constant",
                 "punctuation.definition.dictionary",
@@ -241,6 +242,7 @@
                 "punctuation.separator",
                 "punctuation.squarebracket",
                 "punctuation.terminator",
+                
                 "support.constant",
                 "text",
                 "variable.object",
