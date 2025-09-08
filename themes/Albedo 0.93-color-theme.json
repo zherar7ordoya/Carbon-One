@@ -1,16 +1,16 @@
 {
+    //
+    // === Metadata ===
     "name": "Albedo 0.93",
-    // =================================
     "type": "light",
-    // =================================
     "semanticHighlighting": false,
-    // =================================
     "semanticTokenColors": {},
-    // =================================
+    //
+    // === Environment Colors ===
     "colors": {
-        "activityBar.background": "#3A6EA5",
-        "activityBar.border": "#2B5480",
-        "activityBar.foreground": "#FFFFFF",
+//        "activityBar.background": "#3A6EA5",
+//        "activityBar.border": "#2B5480",
+//        "activityBar.foreground": "#FFFFFF",
         "activityBarBadge.background": "#ED2C28",
         "activityBarBadge.foreground": "#FFFFFF",
         "badge.background": "#3A6EA5",
@@ -32,7 +32,6 @@
         "editorLineNumber.foreground": "#2B5480",
         "editorWhitespace.foreground": "#D4D0C8",
         "focusBorder": "#3A6EA5",
-        //"icon.foreground": "#FFFFFF",
         "input.background": "#FFFFFF",
         "input.border": "#2B5480",
         "input.foreground": "#000000",
@@ -62,9 +61,9 @@
         "sideBar.foreground": "#000000",
         "sideBarSectionHeader.background": "#3A6EA5",
         "sideBarSectionHeader.foreground": "#FFFFFF",
-        "statusBar.background": "#3A6EA5",
-        "statusBar.border": "#2B5480",
-        "statusBar.foreground": "#FFFFFF",
+//        "statusBar.background": "#3A6EA5",
+//        "statusBar.border": "#2B5480",
+//        "statusBar.foreground": "#FFFFFF",
         "tab.activeBackground": "#E5E5E5",
         "tab.activeBorder": "#65abf6",
         "tab.activeForeground": "#000000",
@@ -75,40 +74,76 @@
         "tab.inactiveModifiedBorder": "#FF6B00",
         "tab.hoverBackground": "#4C8CF5",
         "tab.hoverForeground": "#FFFFFF",
-        "terminal.background": "#FFFFFF",
-        "terminal.foreground": "#000000",
-        "titleBar.activeBackground": "#3A6EA5",
-        "titleBar.activeForeground": "#FFFFFF",
-        "titleBar.border": "#2B5480",
-        "titleBar.inactiveBackground": "#D4D0C8",
-        "titleBar.inactiveForeground": "#000000",
-        // TWEAKS ======================
+//        "titleBar.activeBackground": "#3A6EA5",
+//        "titleBar.activeForeground": "#FFFFFF",
+//        "titleBar.border": "#2B5480",
+//        "titleBar.inactiveBackground": "#D4D0C8",
+//        "titleBar.inactiveForeground": "#000000",
+
+//
+// Lateral: mantiene el peso con azul base
+"activityBar.background": "#3A6EA5",
+"activityBar.foreground": "#FFFFFF",
+"activityBar.border": "#2B5480",
+
+// Superior: pasa al azul claro ya definido
+"titleBar.activeBackground": "#65abf6",
+"titleBar.activeForeground": "#000000",
+"titleBar.inactiveBackground": "#AECFFF", // si querés un tono más suave
+"titleBar.inactiveForeground": "#000000",
+"titleBar.border": "#2B5480",
+
+// Inferior: mismo criterio que la superior
+"statusBar.background": "#65abf6",
+"statusBar.foreground": "#000000",
+"statusBar.border": "#2B5480",
+
+
+
+
+        //
+        // === Tweaks ===
         "editorGutter.foldingControlForeground": "#0f62fe",
-
-"editorWidget.background": "#ECE9D8",
-"editorWidget.foreground": "#000000",
-"editorWidget.border": "#2B5480",
-
-"inputOption.activeForeground": "#000000",
-"inputOption.activeBackground": "#3A6EA5",
-"inputOption.activeBorder": "#2B5480",
-
-"editor.findMatchHighlightBackground": "#ffea00aa", // resaltado de coincidencias
-"editor.findMatchBackground": "#ffcc00aa", // coincidencia actual
-"editor.findMatchBorder": "#2B5480",
-
-"peekViewTitleLabel.foreground": "#000000", // título del panel de búsqueda extendida
-"peekView.border": "#2B5480",
-
-"icon.foreground": "#000000", // este ya lo tenés, pero es global
-"editorWidget.resizeBorder": "#3A6EA5",
-
-
-        // BASE COLORS =================
+        "editorWidget.background": "#ECE9D8",
+        "editorWidget.foreground": "#000000",
+        "editorWidget.border": "#2B5480",
+        "inputOption.activeForeground": "#000000",
+        "inputOption.activeBackground": "#3A6EA5",
+        "inputOption.activeBorder": "#2B5480",
+        "editor.findMatchHighlightBackground": "#ffea00aa", // resaltado de coincidencias
+        "editor.findMatchBackground": "#ffcc00aa", // coincidencia actual
+        "editor.findMatchBorder": "#2B5480",
+        "peekViewTitleLabel.foreground": "#000000", // título del panel de búsqueda extendida
+        "peekView.border": "#2B5480",
+        "icon.foreground": "#000000", // este ya lo tenés, pero es global
+        "editorWidget.resizeBorder": "#3A6EA5",
+        //
+        // === Terminal ===
+        "terminal.background": "#262626", // Gray 90 background
+        "terminal.foreground": "#f4f4f4", // Gray 10 text (alto contraste sobre fondo oscuro)
+        "terminal.ansiBlack": "#161616", // Gray 100 (más oscuro que fondo)
+        "terminal.ansiRed": "#fa4d56", // Red 50
+        "terminal.ansiGreen": "#42be65", // Green 40
+        "terminal.ansiYellow": "#f1c21b", // Yellow 30
+        "terminal.ansiBlue": "#4589ff", // Blue 50
+        "terminal.ansiMagenta": "#be95ff", // Purple 40
+        "terminal.ansiCyan": "#08bdba", // Teal 40
+        "terminal.ansiWhite": "#f4f4f4", // Gray 10
+        "terminal.ansiBrightBlack": "#525252", // Gray 60
+        "terminal.ansiBrightRed": "#ff8389", // Red 40
+        "terminal.ansiBrightGreen": "#6fdc8c", // Green 30
+        "terminal.ansiBrightYellow": "#fddc69", // Yellow 20
+        "terminal.ansiBrightBlue": "#78a9ff", // Blue 40
+        "terminal.ansiBrightMagenta": "#d4bbff", // Purple 30
+        "terminal.ansiBrightCyan": "#3ddbd9", // Teal 30
+        "terminal.ansiBrightWhite": "#ffffff", // Puro blanco,
+        //
+        // === Base ===
         "editor.background": "#f4f4f4",
         "editor.foreground": "#161616"
     },
-    // =================================
+    //
+    // === Syntax Highlighting ===
     "tokenColors": [
         //
         // === RED 60 ===
