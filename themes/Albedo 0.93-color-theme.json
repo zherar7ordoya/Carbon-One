@@ -147,12 +147,16 @@
                 "constant.other.database-name",
                 "entity.name.section",
                 "entity.name.tag",
-                "entity.name.type",
+
                 "keyword.other.definition",
                 "meta.decorator",
                 "meta.function.variable",
                 "meta.object-literal",
                 "meta.property-list",
+
+                //"meta.return.type",
+                "meta.type.parameters",
+                
                 "punctuation.definition.template-expression",
                 "support.type.property-name",
                 "support.variable",
@@ -215,6 +219,9 @@
                 "constant.numeric",
                 "constant.other.caps",
                 "constant.other.character-class",
+
+                //"entity.name.type",
+
                 "entity.name.type.class",
                 "entity.name.type.interface",
                 "entity.name.type.namespace",
@@ -223,6 +230,9 @@
                 "keyword.other.unit",
                 "markup.bold",
                 "meta.class",
+
+                "meta.return.type",
+
                 "punctuation.definition.bold",
                 "support.class.promise",
             ],
