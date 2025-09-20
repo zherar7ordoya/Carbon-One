@@ -108,8 +108,9 @@
         "editor.findMatchBorder": "#2B5480",
         "peekViewTitleLabel.foreground": "#000000", // título del panel de búsqueda extendida
         "peekView.border": "#2B5480",
-        "icon.foreground": "#000000", // este ya lo tenés, pero es global
+        "icon.foreground": "#FFFFFF", // este ya lo tenés, pero es global
         "editorWidget.resizeBorder": "#3A6EA5",
+
         //
         // === Terminal ===
         "terminal.background": "#2B2B2B",
