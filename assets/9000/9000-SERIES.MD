@@ -1,31 +1,33 @@
 # Functional Overview and Comparison
 
-**HAL-9000**: Heuristically programmed ALgorithmic computer  
-**SAL-9000**: Simulated Algorithmic Logic
+## HAL-9000[^1] & SAL-9000[^2] (Common Functions)
 
-## Common Functions (HAL & SAL)
+| Abbreviations | Descriptions                     |
+|:-------------:|----------------------------------|
+|    **ATM**    | Spacecraft Atmosphere Monitoring |
+|    **COM**    | Communications                   |
+|    **CNT**    | Control                          |
+|    **DMG**    | System Damage                    |
+|    **FLX**    | Flight Dynamics                  |
+|    **GDE**    | Guidance Data Extension          |
+|    **HIB**    | Hibernation                      |
+|    **LIF**    | Life Support                     |
+|    **MEM**    | Memory                           |
+|    **NAV**    | Navigation                       |
+|    **NUC**    | Nuclear Reactor Status           |
+|    **TEL**    | Telemetry                        |
+|    **VEH**    | Vehicle Status                   |
 
-- **ATM**: Spacecraft Atmosphere Monitoring  
-- **COM**: Communications  
-- **CNT**: Control  
-- **DMG**: System Damage  
-- **FLX**: Flight Dynamics  
-- **GDE**: Guidance Data Extension  
-- **HIB**: Hibernation  
-- **LIF**: Life Support  
-- **MEM**: Memory  
-- **NAV**: Navigation  
-- **NUC**: Nuclear Reactor Status  
-- **TEL**: Telemetry  
-- **VEH**: Vehicle Status  
+## SAL-9000 (Advanced Functions)
 
-## Advanced Functions (SAL)
-
-- **DMS**: Data Management System  
-- **FLT**: Flight Control  
-- **PRS**: Pressure System Testing  
-- **SRT**: System Redundancy Testing
+| Abbreviations | Descriptions              |
+|:-------------:|---------------------------|
+|    **DMS**    | Data Management System    |
+|    **FLT**    | Flight Control            |
+|    **PRS**    | Pressure System Testing   |
+|    **SRT**    | System Redundancy Testing |
 
 ---
 
-[HAL 9000 Screensaver 4K (16:9 Widescreen)](https://youtu.be/C1U_OXCZ2NE)
+[^1]: **HAL-9000**: Heuristically programmed ALgorithmic computer.
+[^2]: **SAL-9000**: Simulated Algorithmic Logic.
