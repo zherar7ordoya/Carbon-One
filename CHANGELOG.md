@@ -14,7 +14,7 @@ The first formal release.
 Here, the design took on its reflective identity: **Albedo 0.93** explored the relationship between luminance and comfort, naming itself after the calculated reflectance of its base color (`#eeeeee`).
 The palette was refined toward WCAG compliance, and the concept of *measured brightness* became central. This stage established the theoretical foundation for the final work.
 
-# v1.0 — Carbon One (*October 29, 2025*)
+## v1.0 — Carbon One (*October 29, 2025*)
 
 The synthesis.
 Incorporating insights from **IBM's Carbon Design System** and the elegant economy of **Atom's One Light**, *Carbon One* reached its mature form: a light theme defined not by style but by **visual endurance**.
