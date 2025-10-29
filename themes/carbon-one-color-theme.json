@@ -2,7 +2,7 @@
     //
     // THEME METADATA
     //
-    "name": "Albedo 0.93",
+    "name": "Carbon One",
     "type": "light",
     "semanticHighlighting": false,
     "semanticTokenColors": {},
@@ -54,6 +54,8 @@
                 "constant.other.database-name",
                 "entity.name.section",
                 "entity.name.tag",
+                "entity.name.type.instance",
+                "entity.name.type.tsx",
                 "keyword.other.definition",
                 "meta.decorator",
                 "meta.function.variable",
@@ -79,17 +81,18 @@
         //
         {
             "scope": [
-                "constant.language",
                 "constant.other.color",
+                "constant.language.null",
                 "entity.name.function",
                 "keyword.operator.decrement",
                 "keyword.operator.expression.keyof",
                 "keyword.operator.expression.typeof",
                 "keyword.operator.increment",
                 "keyword.operator.relational",
-                "punctuation.definition.block",
+                "punctuation.definition.bracket",
                 "punctuation.definition.group",
                 "punctuation.definition.interpolation",
+                "punctuation.section.embedded",
                 "punctuation.section.property-list",
                 "string.other",
                 "support.function",
@@ -173,6 +176,7 @@
         //
         {
             "scope": [
+                "constant.language.import-export-all",
                 "constant.other.table-name",
                 "entity.name.variable",
                 "keyword.operator.arithmetic",
@@ -193,6 +197,7 @@
                 "punctuation.curlybrace",
                 "punctuation.decorator",
                 "punctuation.definition.array",
+                "punctuation.definition.block",
                 "punctuation.definition.constant",
                 "punctuation.definition.dictionary",
                 "punctuation.definition.entity",
@@ -208,6 +213,7 @@
                 "text",
                 "variable.object",
                 "variable.other.constant",
+                "variable.other.jsdoc",
                 "variable.other.object.property",
                 "variable.other.property",
                 "variable.other.readwrite",
@@ -235,6 +241,7 @@
         //
         {
             "scope": [
+                "entity.name.type.tsx",
                 "keyword.operator",
                 "punctuation.definition.ng-binding-name",
                 "punctuation.separator",
@@ -266,6 +273,7 @@
                 "meta.var-single-variable",
                 "variable.object.property",
                 "variable.other.constant",
+                "variable.other.jsdoc",
                 "variable.other.property",
                 "variable.other.readwrite",
                 "variable.parameter",

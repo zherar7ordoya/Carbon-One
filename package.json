@@ -1,34 +1,38 @@
 {
-    "name": "albedo-0-93",
-    "displayName": "Albedo 0.93",
-    "description": "A carefully tuned light theme based on Atom One Light. Albedo 0.93 explores the lower limit of background brightness while preserving clarity, contrast, and color accuracy. The name refers to the approximate reflectance of its background (#eeeeee), chosen as a compromise between readability and visual comfort during long coding sessions. WCAG-compliant and thoughtfully restrained.",
-    "version": "0.9.0",
-    "publisher": "Gerardo-Tordoya",
+    "name": "carbon-one",
+    "displayName": "Carbon One",
+    "description": "A refined light theme where IBM's Carbon palette meets Atom One Light. Designed for clarity, contrast, and visual comfort in bright or variable workspaces.",
+    "version": "1.0.0",
+    "publisher": "gerardo-tordoya",
     "icon": "icon.png",
     "keywords": [
-        "theme",
-        "color theme",
-        "light theme",
         "vscode",
+        "theme",
+        "light theme",
+        "color theme",
+        "carbon",
+        "ibm carbon",
+        "atom one light",
         "accessibility",
         "wcag",
-        "atom one light",
-        "low contrast",
-        "soft light",
-        "designer-friendly",
-        "minimal",
         "readability",
+        "contrast",
+        "visual comfort",
+        "ergonomic design",
+        "low contrast",
+        "balanced light",
+        "soft light",
+        "minimal",
         "ui design",
-        "super silver",
-        "albedo",
-        "contrast"
+        "human-centered",
+        "albedo"
     ],
     "engines": {
-        "vscode": "^1.102.0"
+        "vscode": "^1.80.0"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/zherar7ordoya/Albedo-0.93.git"
+        "url": "https://github.com/zherar7ordoya/Carbon-One"
     },
     "categories": [
         "Themes"
@@ -36,11 +40,11 @@
     "contributes": {
         "themes": [
             {
-                "label": "Albedo 0.93",
+                "label": "Carbon One",
                 "uiTheme": "vs",
-                "path": "./themes/Albedo 0.93-color-theme.json"
+                "path": "./themes/carbon-one-color-theme.json"
             }
         ]
     },
-    "homepage": "https://github.com/zherar7ordoya/Albedo-0.93.git#readme"
+    "homepage": "https://github.com/zherar7ordoya/Carbon-One#readme"
 }
