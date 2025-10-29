@@ -8,10 +8,6 @@ Tested through months of daily use, it reconciles WCAG contrast standards with p
 
 ![Screenshot](https://github.com/zherar7ordoya/Carbon-One/raw/HEAD/assets/capture.png)
 
-<div style='text-align: center;'>
-Example using JetBrains Mono
-</div>
-
 > ℹ️ The name *Carbon One* honors the work behind IBM’s Carbon Design System and Atom’s One Light theme.
 > This project is not a reinterpretation or a series —it is a single, finished experiment in light, designed to achieve a balanced state between accessibility and visual ease.
 > The HAL-9000 console icon was chosen to echo that sense of precision and restraint.
