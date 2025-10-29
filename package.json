@@ -1,9 +1,9 @@
 {
     "name": "carbon-one",
     "displayName": "Carbon One",
-    "description": "A refined light theme where IBM's Carbon palette meets Atom One Light. Designed for clarity, contrast, and visual comfort in bright or variable workspaces.",
+    "description": "A light theme based designed for clarity, contrast, and visual comfort in bright or variable workspaces.",
     "version": "1.0.0",
-    "publisher": "gerardo-tordoya",
+    "publisher": "Gerardo-Tordoya",
     "icon": "icon.png",
     "keywords": [
         "vscode",
@@ -11,8 +11,8 @@
         "light theme",
         "color theme",
         "carbon",
-        "ibm carbon",
-        "atom one light",
+        "ibm carbon system",
+        "atom one light theme",
         "accessibility",
         "wcag",
         "readability",
@@ -25,6 +25,7 @@
         "minimal",
         "ui design",
         "human-centered",
+        "grey",
         "albedo"
     ],
     "engines": {
