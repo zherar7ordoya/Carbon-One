@@ -6,7 +6,7 @@ A carefully balanced light theme built on the principles of IBM’s Carbon palet
 Tested through months of daily use, it reconciles WCAG contrast standards with perceptual comfort, producing a background that remains stable and legible even in bright conditions.
 
 
-![Screenshot](./assets/capture.png)  
+![Screenshot](https://github.com/zherar7ordoya/Carbon-One/raw/HEAD/assets/capture.png)
 *Example using JetBrains Mono*
 
 > ℹ️ The name *Carbon One* honors the work behind IBM’s Carbon Design System and Atom’s One Light theme.
