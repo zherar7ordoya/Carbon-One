@@ -11,6 +11,24 @@
     //
     "colors": {
         //
+        // Windows 12 Style
+        //
+        "activityBar.background": "#dda5f0",
+        "activityBar.foreground": "#170458",
+        "activityBar.inactiveForeground": "#170458",
+        "activityBar.activeBackground": "#cb5df0",
+        "activityBarBadge.background": "#cdcfec",
+        "activityBarBadge.foreground": "#000000",
+        "statusBar.foreground": "#ffffff",
+        "statusBar.background": "#777bdc",
+        "editorSuggestWidget.selectedIconForeground": "#0ca7ea",
+        "editorSuggestWidget.selectedBackground": "#ccdaf9",
+        "sideBar.background": "#e4e4f2",
+        "sideBar.foreground": "#000000",
+        "sideBarSectionHeader.background": "#cdcffa",
+        "titleBar.activeBackground": "#f5f8ff",
+        "tab.inactiveBackground": "#ebf1ff",
+        //
         // PowerShell Terminal
         //
         "terminal.background": "#012456",
