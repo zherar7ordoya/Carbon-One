@@ -111,6 +111,7 @@
             "scope": [
                 "entity.name.type.module",
                 "markup.inline",
+                "meta.objectliteral",
                 "punctuation.definition.string",
                 "string.quoted",
                 "string.template",
