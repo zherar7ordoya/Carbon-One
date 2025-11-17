@@ -28,21 +28,20 @@
         "editorSuggestWidget.selectedBackground": "#edf5ff",
         //**********************************************************************
 
-// INTELLISENSE SUGGEST WIDGET COLORS
+        // INTELLISENSE SUGGEST WIDGET COLORS
 
-  // Fondo del menú completo
-  "editorSuggestWidget.background": "#ffffff", // o "#f9fbff" (blue-05) si quieres continuidad con sideBar
-  "editorSuggestWidget.border": "#d0e2ff40",   // blue-20 con 25% opacidad → sutil
+        // Fondo del menú completo
+        "editorSuggestWidget.background": "#ffffff", // o "#f9fbff" (blue-05) si quieres continuidad con sideBar
+        "editorSuggestWidget.border": "#d0e2ff40", // blue-20 con 25% opacidad → sutil
 
-  // Texto normal (no seleccionado)
-  "editorSuggestWidget.foreground": "#525252", // text-secondary (Carbon: gray-70)
+        // Texto normal (no seleccionado)
+        "editorSuggestWidget.foreground": "#525252", // text-secondary (Carbon: gray-70)
 
-  // ✅ Item SELECCIONADO — lo crítico:
-  "editorSuggestWidget.selectedForeground": "#161616", // text-primary → alto contraste (7.2:1 sobre blue-10)
+        // ✅ Item SELECCIONADO — lo crítico:
+        "editorSuggestWidget.selectedForeground": "#161616", // text-primary → alto contraste (7.2:1 sobre blue-10)
 
-  // Destacado del match (ej: "use" en "useState")
-  "editorSuggestWidget.highlightForeground": "#0072c3", // cyan-50 → ¡tu nuevo favorito!
-
+        // Destacado del match (ej: "use" en "useState")
+        "editorSuggestWidget.highlightForeground": "#0072c3", // cyan-50 → ¡tu nuevo favorito!
 
         //
         //
@@ -109,8 +108,7 @@
                 "variable.other.object",
                 "variable.other.razor",
                 "variable.other.readwrite.alias",
-                "variable.other.regexp",
-
+                "variable.other.regexp"
             ],
             "settings": {
                 "foreground": "#da1e28"
@@ -174,6 +172,7 @@
                 "entity.name.type.interface",
                 "entity.name.type.model",
                 "entity.name.type.namespace",
+                "entity.name.type.ts",
                 "entity.other.attribute-name",
                 "entity.other.inherited-class",
                 "keyword.other.unit",
@@ -293,6 +292,7 @@
         //
         {
             "scope": [
+                "entity.name.type.ts",
                 "entity.name.type.tsx",
                 "keyword.operator",
                 "punctuation.definition.ng-binding-name",
