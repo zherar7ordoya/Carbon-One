@@ -13,30 +13,52 @@
         //
         // Windows 12 Style
         //
-        "activityBar.background": "#dda5f0",
-        "activityBar.foreground": "#170458",
-        "activityBar.inactiveForeground": "#170458",
-        "activityBar.activeBackground": "#cb5df0",
-        "activityBarBadge.background": "#cdcfec",
-        "activityBarBadge.foreground": "#000000",
+        "activityBar.background": "#d4bbff",
+        "activityBar.foreground": "#161616",
+        "activityBar.inactiveForeground": "#161616",
+        "activityBar.activeBackground": "#be95ff",
+        "activityBarBadge.background": "#d0e2ff",
+        "activityBarBadge.foreground": "#161616",
         "statusBar.foreground": "#ffffff",
-        "statusBar.background": "#777bdc",
-        "editorSuggestWidget.selectedIconForeground": "#0ca7ea",
-        "editorSuggestWidget.selectedBackground": "#ccdaf9",
-        "sideBar.background": "#e4e4f2",
-        "sideBar.foreground": "#000000",
-        "sideBarSectionHeader.background": "#cdcffa",
-        "titleBar.activeBackground": "#f5f8ff",
-        "tab.inactiveBackground": "#ebf1ff",
+        "statusBar.background": "#4589ff",
+        //
+        //
+        //
+        "editorSuggestWidget.selectedIconForeground": "#0f62fe",
+        "editorSuggestWidget.selectedBackground": "#edf5ff",
+        //**********************************************************************
+
+// INTELLISENSE SUGGEST WIDGET COLORS
+
+  // Fondo del menú completo
+  "editorSuggestWidget.background": "#ffffff", // o "#f9fbff" (blue-05) si quieres continuidad con sideBar
+  "editorSuggestWidget.border": "#d0e2ff40",   // blue-20 con 25% opacidad → sutil
+
+  // Texto normal (no seleccionado)
+  "editorSuggestWidget.foreground": "#525252", // text-secondary (Carbon: gray-70)
+
+  // ✅ Item SELECCIONADO — lo crítico:
+  "editorSuggestWidget.selectedForeground": "#161616", // text-primary → alto contraste (7.2:1 sobre blue-10)
+
+  // Destacado del match (ej: "use" en "useState")
+  "editorSuggestWidget.highlightForeground": "#0072c3", // cyan-50 → ¡tu nuevo favorito!
+
+
+        //
+        //
+        //
+        "sideBar.background": "#f9fbff",
+        "sideBar.foreground": "#161616",
+        "sideBarSectionHeader.background": "#d0e2ff",
+        "titleBar.activeBackground": "#f9fbff",
+        "tab.inactiveBackground": "#edf5ff",
         //
         // PowerShell Terminal
         //
         "terminal.background": "#012456",
         "terminal.foreground": "#F5F5F5",
-        //
         "terminalCursor.background": "#FFFFFF",
         "terminalCursor.foreground": "#FFFFFF",
-        //
         "terminal.ansiBlack": "#0C0C0C",
         "terminal.ansiBlue": "#0037DA",
         "terminal.ansiCyan": "#3A96DD",
@@ -45,7 +67,6 @@
         "terminal.ansiRed": "#C50F1F",
         "terminal.ansiWhite": "#CCCCCC",
         "terminal.ansiYellow": "#C19C00",
-        //
         "terminal.ansiBrightBlack": "#767676",
         "terminal.ansiBrightBlue": "#3B78FF",
         "terminal.ansiBrightCyan": "#61D6D6",
@@ -89,6 +110,7 @@
                 "variable.other.razor",
                 "variable.other.readwrite.alias",
                 "variable.other.regexp",
+
             ],
             "settings": {
                 "foreground": "#da1e28"
@@ -100,8 +122,8 @@
         {
             "scope": [
                 "constant.other.color",
+                "entity.name.function.ts",
                 "constant.language.null",
-                "entity.name.function",
                 "keyword.operator.decrement",
                 "keyword.operator.expression.keyof",
                 "keyword.operator.expression.typeof",
@@ -113,10 +135,9 @@
                 "punctuation.section.embedded",
                 "punctuation.section.property-list",
                 "string.other",
-                "support.function",
                 "support.type.builtin",
                 "support.type.primitive",
-                "support.type.python",
+                "support.type.python"
             ],
             "settings": {
                 "foreground": "#0f62fe"
@@ -133,7 +154,7 @@
                 "punctuation.definition.string",
                 "string.quoted",
                 "string.template",
-                "string.unquoted",
+                "string.unquoted"
             ],
             "settings": {
                 "foreground": "#198038"
@@ -147,8 +168,11 @@
                 "constant.numeric",
                 "constant.other.caps",
                 "constant.other.character-class",
+                "entity.name.type.alias",
                 "entity.name.type.class",
+                "entity.name.type.config",
                 "entity.name.type.interface",
+                "entity.name.type.model",
                 "entity.name.type.namespace",
                 "entity.other.attribute-name",
                 "entity.other.inherited-class",
@@ -157,10 +181,10 @@
                 "meta.class",
                 "meta.return.type",
                 "punctuation.definition.bold",
-                "support.class.promise",
+                "support.class.promise"
             ],
             "settings": {
-                "foreground": "#806000",
+                "foreground": "#806000"
             }
         },
         //
@@ -168,6 +192,7 @@
         //
         {
             "scope": [
+                "entity.name.function.attribute",
                 "keyword.control",
                 "keyword.generator",
                 "keyword.operator.arrow",
@@ -184,7 +209,7 @@
                 "markup.italic",
                 "markup.underline",
                 "punctuation.definition.italic",
-                "storage",
+                "storage"
             ],
             "settings": {
                 "foreground": "#7c3dd6"
@@ -223,12 +248,12 @@
                 "punctuation.definition.inheritance",
                 "punctuation.definition.ng-binding-name",
                 "punctuation.definition.parameters",
+                "punctuation.definition.tag",
                 "punctuation.definition.typeparameters",
                 "punctuation.parenthesis",
                 "punctuation.separator",
                 "punctuation.squarebracket",
                 "punctuation.terminator",
-                "support.constant",
                 "text",
                 "variable.object",
                 "variable.other.constant",
@@ -236,7 +261,7 @@
                 "variable.other.object.property",
                 "variable.other.property",
                 "variable.other.readwrite",
-                "variable.parameter",
+                "variable.parameter"
             ],
             "settings": {
                 "foreground": "#161616"
@@ -246,16 +271,24 @@
         // Gray 60
         //
         {
-            "scope": [
-                "comment",
-                "punctuation.definition.comment",
-                "punctuation.definition.tag",
-            ],
+            "scope": ["comment", "punctuation.definition.comment"],
             "settings": {
                 "foreground": "#6f6f6f"
             }
         },
         //
+        // Cyan 60
+        //
+        {
+            "scope": [
+                "support.function",
+                "constant.language.boolean",
+                "support.constant"
+            ],
+            "settings": {
+                "foreground": "#0072c3"
+            }
+        },
         // Reset Style
         //
         {
@@ -265,19 +298,17 @@
                 "punctuation.definition.ng-binding-name",
                 "punctuation.separator",
                 "storage.type.function",
-                "variable.other.readwrite.alias",
+                "variable.other.readwrite.alias"
             ],
             "settings": {
-                "fontStyle": "",
+                "fontStyle": ""
             }
         },
         //
         // Bold
         //
         {
-            "scope": [
-                "markup.bold",
-            ],
+            "scope": ["markup.bold"],
             "settings": {
                 "fontStyle": "bold"
             }
@@ -291,15 +322,16 @@
                 "markup.quote",
                 "meta.var-single-variable",
                 "variable.object.property",
+                "variable.other.assignment",
                 "variable.other.constant",
                 "variable.other.jsdoc",
                 "variable.other.property",
                 "variable.other.readwrite",
-                "variable.parameter",
+                "variable.parameter"
             ],
             "settings": {
                 "fontStyle": "italic"
             }
-        },
-    ],
+        }
+    ]
 }
