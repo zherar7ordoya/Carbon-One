@@ -27,7 +27,6 @@
         "editorSuggestWidget.selectedIconForeground": "#0f62fe",
         "editorSuggestWidget.selectedBackground": "#edf5ff", // TIENE QUE SER MÁS OSCURO QUE EL FONDO GENERAL
 
-
         //**********************************************************************
 
         // INTELLISENSE SUGGEST WIDGET COLORS
@@ -90,7 +89,7 @@
             "scope": [
                 "constant.other.database-name",
                 "entity.name.section",
-                "entity.name.tag",
+                "entity.name.tag.html",
                 "entity.name.type.instance",
                 "entity.name.type.tsx",
                 "keyword.other.definition",
@@ -179,7 +178,8 @@
                 "meta.class",
                 "meta.return.type",
                 "punctuation.definition.bold",
-                "support.class.promise"
+                "support.class.promise",
+                "variable.other.readwrite.ts"
             ],
             "settings": {
                 "foreground": "#806000"
@@ -258,7 +258,6 @@
                 "variable.other.jsdoc",
                 "variable.other.object.property",
                 "variable.other.property",
-                "variable.other.readwrite",
                 "variable.parameter"
             ],
             "settings": {
@@ -317,6 +316,7 @@
         //
         {
             "scope": [
+                "entity.name.tag.css",
                 "entity.name.variable",
                 "markup.quote",
                 "meta.var-single-variable",
@@ -325,7 +325,6 @@
                 "variable.other.constant",
                 "variable.other.jsdoc",
                 "variable.other.property",
-                "variable.other.readwrite",
                 "variable.parameter"
             ],
             "settings": {
