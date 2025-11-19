@@ -10,45 +10,80 @@
     // ENVIRONMENT COLOR
     //
     "colors": {
+        "tab.inactiveBackground": "#edf5ff",
+        "sideBarSectionHeader.background": "#d0e2ff",
         //
-        // Windows 12 Style
+        // Suggest Widget
         //
+        "editorSuggestWidget.background": "#f4eee8",
+        "editorSuggestWidget.border": "#be9cc1",
+        "editorSuggestWidget.foreground": "#27272a",
+        "editorSuggestWidget.highlightForeground": "#be9cc1",
+        "editorSuggestWidget.selectedBackground": "#ec809e40",
+        //
+        // Sidebar
+        //
+
+		"sideBar.background": "#f4dede",
+		"sideBar.border": "#be9cc1",
+		"sideBar.dropBackground": "#ec809e80",
+		"sideBar.foreground": "#615f5f",
+
+
+
+        //"sideBar.background": "#f9fbff",
+        //"sideBar.foreground": "#161616",
+
+        //
+        // Title Bar
+        //
+        "titleBar.activeBackground": "#f7caca",
+        "titleBar.activeForeground": "#27272a",
+
+        "titleBar.border": "#be9cc1",
+        "titleBar.inactiveBackground": "#dddddd",
+        "titleBar.inactiveForeground": "#85677b",
+
+        //
+        // Status Bar
+        //
+        "statusBar.background": "#85677b",
+        "statusBar.border": "#be9cc1",
+        "statusBar.debuggingBackground": "#64bfa4",
+        "statusBar.debuggingBorder": "#be9cc1",
+        "statusBar.debuggingForeground": "#ffffff",
+        "statusBar.foreground": "#ffffff",
+        "statusBar.noFolderBackground": "#a49e9e",
+        "statusBar.noFolderBorder": "#be9cc1",
+        "statusBar.noFolderForeground": "#ffffff",
+        "statusBarItem.activeBackground": "#b565a7",
+        "statusBarItem.errorBackground": "#ec809e",
+        "statusBarItem.errorForeground": "#ffffff",
+        "statusBarItem.hoverBackground": "#be9cc1",
+        "statusBarItem.prominentBackground": "#d2c4d6",
+        "statusBarItem.prominentForeground": "#ffffff",
+        "statusBarItem.prominentHoverBackground": "#be9cc1",
+        "statusBarItem.remoteBackground": "#3CADD4",
+        "statusBarItem.remoteForeground": "#27272a",
+        //
+        // Activity Bar Badge
+        //
+        "activityBarBadge.background": "#f4f4f4",
+        "activityBarBadge.foreground": "#161616",
+        //
+        // Activity Bar
+        //
+
+        "activityBar.activeBorder": "#b565a7",
+        "activityBar.activeFocusBorder": "#d2386c",
+
+        "activityBar.border": "#be9cc1",
+        "activityBar.dropBorder": "#d2c4d6",
+
         "activityBar.background": "#d4bbff",
         "activityBar.foreground": "#161616",
         "activityBar.inactiveForeground": "#161616",
         "activityBar.activeBackground": "#be95ff",
-        "activityBarBadge.background": "#d0e2ff",
-        "activityBarBadge.foreground": "#161616",
-        "statusBar.foreground": "#ffffff",
-        "statusBar.background": "#4589ff",
-        //
-        //
-        //
-        "editorSuggestWidget.selectedIconForeground": "#0f62fe",
-        "editorSuggestWidget.selectedBackground": "#edf5ff", // TIENE QUE SER MÁS OSCURO QUE EL FONDO GENERAL
-
-        //**********************************************************************
-
-        // INTELLISENSE SUGGEST WIDGET COLORS
-
-        // Fondo del menú completo
-        "editorSuggestWidget.background": "#ffffff", // o "#f9fbff" (blue-05) si quieres continuidad con sideBar
-        "editorSuggestWidget.border": "#d0e2ff40", // blue-20 con 25% opacidad → sutil
-        // Texto normal (no seleccionado)
-        "editorSuggestWidget.foreground": "#525252", // text-secondary (Carbon: gray-70)
-        // ✅ Item SELECCIONADO — lo crítico:
-        "editorSuggestWidget.selectedForeground": "#161616", // text-primary → alto contraste (7.2:1 sobre blue-10)
-        // Destacado del match (ej: "use" en "useState")
-        "editorSuggestWidget.highlightForeground": "#0072c3", // cyan-50 → ¡tu nuevo favorito!
-
-        //
-        //
-        //
-        "sideBar.background": "#f9fbff",
-        "sideBar.foreground": "#161616",
-        "sideBarSectionHeader.background": "#d0e2ff",
-        "titleBar.activeBackground": "#f9fbff",
-        "tab.inactiveBackground": "#edf5ff",
         //
         // PowerShell Terminal
         //
