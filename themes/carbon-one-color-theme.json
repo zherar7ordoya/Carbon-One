@@ -91,10 +91,10 @@
                 "entity.name.tag.html",
                 "entity.name.type.instance",
                 "entity.name.type.tsx",
+                "keyword.control.default",
                 "keyword.other.definition",
                 "meta.decorator",
                 "meta.function.variable",
-                "meta.object-literal",
                 "meta.property-list",
                 "meta.type.parameters",
                 "punctuation.definition.template-expression",
@@ -117,8 +117,8 @@
         {
             "scope": [
                 "constant.other.color",
+                "entity.name.function.js",
                 "entity.name.function.ts",
-                "constant.language.null",
                 "keyword.operator.decrement",
                 "keyword.operator.expression.keyof",
                 "keyword.operator.expression.typeof",
@@ -161,6 +161,7 @@
         {
             "scope": [
                 "constant.numeric",
+                "constant.language.null",
                 "constant.other.caps",
                 "constant.other.character-class",
                 "entity.name.type.alias",
@@ -232,6 +233,7 @@
                 "meta.brace",
                 "meta.function-call",
                 "meta.function.parameters",
+                "meta.object-literal",
                 "meta.paragraph",
                 "meta.var-single-variable",
                 "punctuation.accessor",
@@ -318,6 +320,7 @@
                 "entity.name.tag.css",
                 "entity.name.variable",
                 "markup.quote",
+                "meta.object-literal",
                 "meta.var-single-variable",
                 "variable.object.property",
                 "variable.other.assignment",
