@@ -89,6 +89,7 @@
                 "constant.other.database-name",
                 "entity.name.section",
                 "entity.name.tag.html",
+                "entity.name.tag.js",
                 "entity.name.type.instance",
                 "entity.name.type.tsx",
                 "keyword.control.default",
@@ -98,11 +99,11 @@
                 "meta.property-list",
                 "meta.type.parameters",
                 "punctuation.definition.template-expression",
+                "punctuation.section.embedded",
                 "support.type.property-name",
                 "support.variable",
                 "variable.language",
                 "variable.other.enummember",
-                "variable.other.object",
                 "variable.other.razor",
                 "variable.other.readwrite.alias",
                 "variable.other.regexp"
@@ -123,11 +124,12 @@
                 "keyword.operator.expression.keyof",
                 "keyword.operator.expression.typeof",
                 "keyword.operator.increment",
-                "keyword.operator.relational",
+                //"keyword.operator.relational",
+                "meta.brace.round",
                 "punctuation.definition.bracket",
                 "punctuation.definition.group",
                 "punctuation.definition.interpolation",
-                "punctuation.section.embedded",
+                "punctuation.definition.parameters",
                 "punctuation.section.property-list",
                 "string.other",
                 "support.type.builtin",
@@ -161,6 +163,7 @@
         {
             "scope": [
                 "constant.numeric",
+                "constant.language.boolean",
                 "constant.language.null",
                 "constant.other.caps",
                 "constant.other.character-class",
@@ -175,6 +178,7 @@
                 "entity.other.inherited-class",
                 "keyword.other.unit",
                 "markup.bold",
+                "meta.brace.square",
                 "meta.class",
                 "meta.return.type",
                 "punctuation.definition.bold",
@@ -230,8 +234,7 @@
                 "keyword.operator.ternary",
                 "keyword.operator.type",
                 "meta.attribute",
-                "meta.brace",
-                "meta.function-call",
+                //"meta.function-call",
                 "meta.function.parameters",
                 "meta.object-literal",
                 "meta.paragraph",
@@ -246,7 +249,6 @@
                 "punctuation.definition.entity",
                 "punctuation.definition.inheritance",
                 "punctuation.definition.ng-binding-name",
-                "punctuation.definition.parameters",
                 "punctuation.definition.tag",
                 "punctuation.definition.typeparameters",
                 "punctuation.parenthesis",
@@ -259,7 +261,8 @@
                 "variable.other.jsdoc",
                 "variable.other.object.property",
                 "variable.other.property",
-                "variable.parameter"
+                "variable.parameter",
+                "variable.other.readwrite.js"
             ],
             "settings": {
                 "foreground": "#161616"
@@ -278,15 +281,12 @@
         // Cyan 60
         //
         {
-            "scope": [
-                "support.function",
-                "constant.language.boolean",
-                "support.constant"
-            ],
+            "scope": ["support.function", "support.constant"],
             "settings": {
                 "foreground": "#0072c3"
             }
         },
+        //
         // Reset Style
         //
         {
@@ -294,6 +294,7 @@
                 "entity.name.type.ts",
                 "entity.name.type.tsx",
                 "keyword.operator",
+                "meta.function-call",
                 "punctuation.definition.ng-binding-name",
                 "punctuation.separator",
                 "storage.type.function",
@@ -326,7 +327,9 @@
                 "variable.other.assignment",
                 "variable.other.constant",
                 "variable.other.jsdoc",
+                //"variable.other.object",
                 "variable.other.property",
+                "variable.other.readwrite.js",
                 "variable.parameter"
             ],
             "settings": {
