@@ -1,14 +1,12 @@
 {
-    //
-    // THEME METADATA
-    //
+    // =================================
+    // METADATA
     "name": "Carbon One",
     "type": "light",
     "semanticHighlighting": false,
     "semanticTokenColors": {},
-    //
-    // ENVIRONMENT COLOR
-    //
+    // =================================
+    // ENVIRONMENT
     "colors": {
         //
         // Visual Studio 2022
@@ -77,263 +75,87 @@
         "editor.background": "#f4f4f4",
         "editor.foreground": "#161616"
     },
-    //
-    // SYNTAX HIGHLIGHTING
-    //
+    // =================================
+    // SYNTAX
     "tokenColors": [
-        //
-        // Red 60
-        //
+        // -----------------------------
+        // Yellow 60
         {
-            "scope": [
-                "constant.other.database-name",
-                "entity.name.section",
-                "entity.name.tag.html",
-                "entity.name.tag.js",
-                "entity.name.type.instance",
-                "entity.name.type.tsx",
-                "keyword.control.default",
-                "keyword.other.definition",
-                "meta.decorator",
-                "meta.function.variable",
-                "meta.property-list",
-                "meta.type.parameters",
-                "punctuation.definition.template-expression",
-                "punctuation.section.embedded",
-                "support.type.property-name",
-                "support.variable",
-                "variable.language",
-                "variable.other.enummember",
-                "variable.other.razor",
-                "variable.other.readwrite.alias",
-                "variable.other.regexp"
-            ],
+            "scope": [],
+            "settings": {
+                "foreground": "#8e6a00"
+            }
+        },
+        // -----------------------------
+        // Orange 60
+        {
+            "scope": [],
+            "settings": {
+                "foreground": "#ba4e00"
+            }
+        },
+        // -----------------------------
+        // Red 60
+        {
+            "scope": [],
             "settings": {
                 "foreground": "#da1e28"
             }
         },
-        //
-        // Blue 60
-        //
+        // -----------------------------
+        // Magenta 60
         {
-            "scope": [
-                "constant.other.color",
-                "entity.name.function.js",
-                "entity.name.function.ts",
-                "keyword.operator.decrement",
-                "keyword.operator.expression.keyof",
-                "keyword.operator.expression.typeof",
-                "keyword.operator.increment",
-                //"keyword.operator.relational",
-                "meta.brace.round",
-                "punctuation.definition.bracket",
-                "punctuation.definition.group",
-                "punctuation.definition.interpolation",
-                "punctuation.definition.parameters",
-                "punctuation.section.property-list",
-                "string.other",
-                "support.type.builtin",
-                "support.type.primitive",
-                "support.type.python"
-            ],
+            "scope": [],
+            "settings": {
+                "foreground": "#d02670"
+            }
+        },
+        // -----------------------------
+        // Purple 60
+        {
+            "scope": [],
+            "settings": {
+                "foreground": "#8a3ffc"
+            }
+        },
+        // -----------------------------
+        // Blue 60
+        {
+            "scope": [],
             "settings": {
                 "foreground": "#0f62fe"
             }
         },
-        //
-        // Green 60
-        //
-        {
-            "scope": [
-                "entity.name.type.module",
-                "markup.inline",
-                "meta.objectliteral",
-                "punctuation.definition.string",
-                "string.quoted",
-                "string.template",
-                "string.unquoted"
-            ],
-            "settings": {
-                "foreground": "#198038"
-            }
-        },
-        //
-        // Yellow Hover 70
-        //
-        {
-            "scope": [
-                "constant.numeric",
-                "constant.language.boolean",
-                "constant.language.null",
-                "constant.other.caps",
-                "constant.other.character-class",
-                "entity.name.type.alias",
-                "entity.name.type.class",
-                "entity.name.type.config",
-                "entity.name.type.interface",
-                "entity.name.type.model",
-                "entity.name.type.namespace",
-                "entity.name.type.ts",
-                "entity.other.attribute-name",
-                "entity.other.inherited-class",
-                "keyword.other.unit",
-                "markup.bold",
-                "meta.brace.square",
-                "meta.class",
-                "meta.return.type",
-                "punctuation.definition.bold",
-                "support.class.promise",
-                "variable.other.readwrite.ts"
-            ],
-            "settings": {
-                "foreground": "#806000"
-            }
-        },
-        //
-        // Purple Hover 70
-        //
-        {
-            "scope": [
-                "entity.name.function.attribute",
-                "keyword.control",
-                "keyword.generator",
-                "keyword.operator.arrow",
-                "keyword.operator.expression.in",
-                "keyword.operator.expression.is",
-                "keyword.operator.expression.of",
-                "keyword.operator.new",
-                "keyword.other",
-                "keyword.other.directive",
-                "keyword.other.DDL",
-                "keyword.other.DML",
-                "keyword.preprocessor",
-                "keyword.type",
-                "markup.italic",
-                "markup.underline",
-                "punctuation.definition.italic",
-                "storage"
-            ],
-            "settings": {
-                "foreground": "#7c3dd6"
-            }
-        },
-        //
-        // Gray 100
-        //
-        {
-            "scope": [
-                "constant.language.import-export-all",
-                "constant.other.table-name",
-                "entity.name.variable",
-                "keyword.operator.arithmetic",
-                "keyword.operator.assignment",
-                "keyword.operator.comparison",
-                "keyword.operator.quantifier",
-                "keyword.operator.rest",
-                "keyword.operator.spread",
-                "keyword.operator.ternary",
-                "keyword.operator.type",
-                "meta.attribute",
-                //"meta.function-call",
-                "meta.function.parameters",
-                "meta.object-literal",
-                "meta.paragraph",
-                "meta.var-single-variable",
-                "punctuation.accessor",
-                "punctuation.curlybrace",
-                "punctuation.decorator",
-                "punctuation.definition.array",
-                "punctuation.definition.block",
-                "punctuation.definition.constant",
-                "punctuation.definition.dictionary",
-                "punctuation.definition.entity",
-                "punctuation.definition.inheritance",
-                "punctuation.definition.ng-binding-name",
-                "punctuation.definition.tag",
-                "punctuation.definition.typeparameters",
-                "punctuation.parenthesis",
-                "punctuation.separator",
-                "punctuation.squarebracket",
-                "punctuation.terminator",
-                "text",
-                "variable.object",
-                "variable.other.constant",
-                "variable.other.jsdoc",
-                "variable.other.object.property",
-                "variable.other.property",
-                "variable.parameter",
-                "variable.other.readwrite.js"
-            ],
-            "settings": {
-                "foreground": "#161616"
-            }
-        },
-        //
-        // Gray 60
-        //
-        {
-            "scope": ["comment", "punctuation.definition.comment"],
-            "settings": {
-                "foreground": "#6f6f6f"
-            }
-        },
-        //
+        // -----------------------------
         // Cyan 60
-        //
         {
-            "scope": ["support.function", "support.constant"],
+            "scope": [],
             "settings": {
                 "foreground": "#0072c3"
             }
         },
-        //
-        // Reset Style
-        //
+        // -----------------------------
+        // Teal 60
         {
-            "scope": [
-                "entity.name.type.ts",
-                "entity.name.type.tsx",
-                "keyword.operator",
-                "meta.function-call",
-                "punctuation.definition.ng-binding-name",
-                "punctuation.separator",
-                "storage.type.function",
-                "variable.other.readwrite.alias"
-            ],
+            "scope": [],
             "settings": {
-                "fontStyle": ""
+                "foreground": "#007d79"
             }
         },
-        //
-        // Bold
-        //
+        // -----------------------------
+        // Green 60
         {
-            "scope": ["markup.bold"],
+            "scope": [],
             "settings": {
-                "fontStyle": "bold"
+                "foreground": "#198038"
             }
         },
-        //
-        // Italic
-        //
+        // -----------------------------
+        // Gray 60
         {
-            "scope": [
-                "entity.name.tag.css",
-                "entity.name.variable",
-                "markup.quote",
-                "meta.object-literal",
-                "meta.var-single-variable",
-                "variable.object.property",
-                "variable.other.assignment",
-                "variable.other.constant",
-                "variable.other.jsdoc",
-                //"variable.other.object",
-                "variable.other.property",
-                "variable.other.readwrite.js",
-                "variable.parameter"
-            ],
+            "scope": [],
             "settings": {
-                "fontStyle": "italic"
+                "foreground": "#6f6f6f"
             }
         }
     ]

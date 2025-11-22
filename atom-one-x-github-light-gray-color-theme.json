@@ -1,0 +1,359 @@
+{
+    "name": "Atom One X Github - Light Gray",
+    "$schema": "vscode://schemas/color-theme",
+    "type": "light",
+    "colors": {},
+    "tokenColors": [
+        {
+            "scope": [
+                "comment",
+                "comment markup.link",
+                "punctuation.definition.comment",
+                "markup.quote.markdown"
+            ],
+            "settings": {
+                "foreground": "#A0A1A7",
+                "fontStyle": "italic"
+            }
+        },
+
+        {
+            "scope": [
+                "entity.name.type",
+                "entity.other.inherited-class",
+                "string.regexp source.ruby.embedded",
+                "punctuation.definition.bold",
+                "support.class",
+                "entity.name.class",
+                "entity.name.type.class",
+                "meta.class",
+                "source.elixir variable.constant",
+                "source.java storage.type",
+                "source.java storage.modifier.import",
+                "ng.attribute-with-value attribute-name",
+                "meta.array.literal.js variable",
+                "meta.array.literal.jsx variable",
+                "meta.array.literal.ts variable",
+                "meta.array.literal.tsx variable",
+                "storage.type.cs",
+                "storage.type.primitive.array.java"
+            ],
+            "settings": {
+                "foreground": "#C18401"
+            }
+        },
+
+   {
+            "scope": "token.warn-token",
+            "settings": {
+                "foreground": "#CD9731"
+            }
+        },
+
+        {
+            "scope": [
+                "keyword",
+                "keyword.control",
+                "storage",
+                "storage.type.annotation",
+                "storage.type.primitive",
+                "punctuation.definition.italic",
+                "meta.selector",
+                "markup.changed",
+                "markup.italic",
+                "source.c keyword.operator",
+                "source.cpp keyword.operator",
+                "source.cs keyword.operator",
+                "source.elixir variable.definition",
+                "source.elixir variable.anonymous",
+                "source.go storage.type.string",
+                "source.java keyword.operator.instanceof",
+                "source.js keyword.operator.delete",
+                "source.js keyword.operator.in",
+                "source.js keyword.operator.of",
+                "source.js keyword.operator.instanceof",
+                "source.js keyword.operator.new",
+                "source.js keyword.operator.typeof",
+                "source.js keyword.operator.void",
+                "ng.attribute-with-value string",
+                "source.python keyword.operator.logical.python",
+                "keyword.operator.expression.instanceof.js",
+                "keyword.operator.expression.instanceof.ts",
+                "keyword.operator.expression.instanceof.tsx",
+                "keyword.operator.expression.of.js",
+                "keyword.operator.expression.of.ts",
+                "keyword.operator.expression.of.tsx",
+                "keyword.operator.new.ts",
+                "keyword.operator.new.j",
+                "keyword.operator.new.tsx",
+                "keyword.operator.expression.in.js",
+                "keyword.operator.expression.in.jsx",
+                "keyword.operator.expression.in.ts",
+                "keyword.operator.expression.in.tsx",
+                "keyword.other.unsafe.rust",
+                "markup.underline.link.markdown",
+                "markup.underline.link.image.markdown",
+                "punctuation.definition.metadata.markdown"
+            ],
+            "settings": {
+                "foreground": "#A626A4"
+            }
+        },
+
+        {
+            "scope": [
+                "keyword.other.special-method",
+                "punctuation.definition.heading",
+                "punctuation.definition.identity",
+                "entity.name.section",
+                "entity.name.function",
+                "support.function.any-method",
+                "entity.other.attribute-name.id",
+                "meta.require",
+                "markup.heading punctuation.definition.heading",
+                "source.elixir constant.language",
+                "source.elixir constant.numeric",
+                "source.elixir constant.definition",
+                "source.gfm link entity",
+                "ng.interpolation.begin",
+                "ng.interpolation.end",
+                "ng.interpolation function.begin",
+                "ng.interpolation function.end",
+                "entity.name.variable.property.cs",
+                "string.other.link.title.markdown",
+                "string.other.link.description.markdown",
+"token.info-token",
+            ],
+            "settings": {
+                "foreground": "#4078F2"
+            }
+        },
+
+       
+
+        {
+            "scope": [
+                "keyword.other.unit",
+                "constant",
+                "constant.variable",
+                "constant.numeric",
+                "meta.link",
+                "entity.other.attribute-name",
+                "markup.bold",
+                "markup.quote",
+                "source.elixir parameter.variable.function",
+                "source.elixir separator",
+                "source.elixir keyword.operator",
+                "ng.interpolation bool",
+                "support.constant",
+                "source.python variable.parameter",
+                "meta.array-binding-pattern-variable.js variable.other.readwrite.js",
+                "meta.array-binding-pattern-variable.ts variable.other.readwrite.ts",
+                "meta.array-binding-pattern-variable.tsx variable.other.readwrite.tsx",
+                "variable.other.constant.property.js",
+                "variable.other.constant.property.ts",
+                "variable.other.constant.property.tsx",
+                "variable.other.constant.js",
+                "variable.other.constant.ts",
+                "variable.other.constant.jsx",
+                "variable.other.constant.tsx",
+                "variable.other.constant.object.js",
+                "variable.other.constant.object.jsx",
+                "variable.other.constant.object.ts",
+                "variable.other.constant.object.tsx",
+                "constant.character.format.placeholder.other.python storage",
+                "source.python constant",
+                "meta.function.parameters.python",
+                "variable.other.constant.ruby",
+                "punctuation.definition.bold.markdown",
+                "punctuation.definition.constant.scss",
+                "punctuation.definition.constant.css",
+                "meta.attribute.rust",
+                "entity.name.lifetime.rust"
+            ],
+            "settings": {
+                "foreground": "#986801"
+            }
+        },
+
+        {
+            "scope": [
+                "constant.character.escape",
+                "string.regexp",
+                "support.type",
+                "support.function",
+                "markup.link",
+                "source.js keyword.operator",
+                "source.ts keyword.operator",
+                "source.flow keyword.operator",
+                "source.json meta.structure.dictionary.json > constant.language.json",
+                "source.json meta.structure.array.json > constant.language.json",
+                "ng.tag",
+                "punctuation.separator.key-value.ts",
+                "punctuation.separator.key-value.js",
+                "punctuation.separator.key-value.tsx",
+                "source.js.embedded.html keyword.operator",
+                "source.ts.embedded.html keyword.operator",
+                "source.ts keyword.operator",
+                "source.tsx keyword.operator",
+                "constant.language.import-export-all.jsx",
+                "constant.language.import-export-all.tsx",
+                "constant.language.json",
+                "storage.type.property.js",
+                "storage.type.property.jsx",
+                "storage.type.property.ts",
+                "storage.type.property.tsx",
+                "entity.name.type.rust",
+                "storage.type.core.rust",
+                "storage.class.std.rust",
+                "constant.other.color",
+                "constant.other.symbol"
+            ],
+            "settings": {
+                "foreground": "#0184BC"
+            }
+        },
+
+        {
+            "scope": [
+                "variable",
+                "entity.name.tag",
+                "string.other.link",
+                "meta.definition.variable",
+                "markup.deleted",
+                "markup.heading",
+                "source.elixir keyword.special-method",
+                "source.elixir embedded.section",
+                "source.elixir embedded.source.empty",
+                "source.elixir readwrite.module punctuation",
+                "source.json meta.structure.dictionary.json > string.quoted.json > punctuation.string",
+                "source.json meta.structure.dictionary.json > string.quoted.json",
+                "source.java-properties meta.key-pair",
+                "source.ini keyword.other.definition.ini",
+                "ng.interpolation",
+                "ng.interpolation function",
+                "support.type.property-name.json",
+                "support.type.property-name.json punctuation",
+                "support.variable.dom.js",
+                "support.variable.dom.ts",
+                "support.variable.property.dom.js",
+                "support.variable.property.dom.ts",
+                "support.variable.property.js",
+                "support.variable.property.ts",
+                "support.variable.property.tsx",
+                "keyword.control.default.js",
+                "keyword.control.default.ts",
+                "keyword.control.default.tsx",
+                "source.js support.variable",
+                "source.ts support.variable",
+                "source.tsx support.variable",
+                "constant.language.import-export-all.js",
+                "constant.language.import-export-all.ts",
+                "variable.other.readwrite.alias.js",
+                "variable.other.readwrite.alias.ts",
+                "variable.other.readwrite.alias.jsx",
+                "variable.other.readwrite.alias.tsx",
+                "meta.export.default.js variable.other.readwrite.js",
+                "meta.export.default.ts variable.other.readwrite.ts",
+                "support.type.object.module.js",
+                "support.type.object.module.jsx",
+                "support.type.object.module.ts",
+                "support.type.object.module.tsx",
+                "meta.object-literal.key.js",
+                "meta.object-literal.key.ts",
+                "support.variable.magic.python",
+                "entity.name.variable.field.cs",
+                "punctuation.definition.variable.shell",
+                "punctuation.separator.key-value.scss",
+                "entity.name.section.markdown",
+                "punctuation.definition.heading.markdown",
+
+                "beginning.punctuation.definition.list.markdown",
+                "punctuation.separator.variable.ruby",
+                "punctuation.definition.variable.php"
+            ],
+            "settings": {
+                "foreground": "#E45649"
+            }
+        },
+
+        {
+            "scope": [
+                "variable.interpolation",
+
+                "punctuation.section.embedded",
+                "source.elixir regexp.section",
+                "source.elixir regexp.string",
+                "meta.template.expression.js punctuation.definition",
+                "meta.template.expression.ts punctuation.definition"
+            ],
+            "settings": {
+                "foreground": "#CA1243"
+            }
+        },
+
+        {
+            "scope": [
+                "string",
+                "markup.inserted",
+                "markup.raw",
+
+                "source.elixir quoted",
+                "source.json meta.structure.dictionary.json > value.json > string.quoted.json",
+                "source.json meta.structure.array.json > value.json > string.quoted.json",
+                "source.json meta.structure.dictionary.json > value.json > string.quoted.json > punctuation",
+                "source.json meta.structure.array.json > value.json > string.quoted.json > punctuation",
+
+                "string.quoted.double punctuation",
+                "source.js meta.template.expression.js punctuation.accessor",
+                "source.ts meta.template.expression.ts punctuation.accessor",
+                "source.tsx meta.template.expression.tsx punctuation.accessor",
+                "entity.name.type.module.js,entity.name.type.module.ts,entity.name.type.module.jsx,entity.name.type.module.tsx",
+                "meta.template.expression.js string.quoted punctuation.definition",
+                "meta.template.expression.jsx string.quoted punctuation.definition",
+                "meta.template.expression.ts string.quoted punctuation.definition",
+                "meta.template.expression.tsx string.quoted punctuation.definition",
+                "meta.template.expression.js string.template punctuation.definition.string.template",
+                "meta.template.expression.jsx string.template punctuation.definition.string.template",
+                "meta.template.expression.ts string.template punctuation.definition.string.template",
+                "meta.template.expression.tsx string.template punctuation.definition.string.template",
+                "markup.inline.raw.markdown",
+                "keyword.operator.other.ruby"
+            ],
+            "settings": {
+                "foreground": "#50A14F"
+            }
+        },
+
+        {
+            "scope": [
+                "source.css property-name",
+                "source.css property-value",
+
+                "source.elixir array",
+                "source.elixir scope",
+                "source.elixir section"
+            ],
+            "settings": {
+                "foreground": "#696C77"
+            }
+        },
+
+        /* ******************************************************************************** */
+
+        
+     
+        {
+            "scope": "token.error-token",
+            "settings": {
+                "foreground": "#CD3131"
+            }
+        },
+        {
+            "scope": "token.debug-token",
+            "settings": {
+                "foreground": "#800080"
+            }
+        }
+    ]
+}
