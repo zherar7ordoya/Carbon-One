@@ -17,8 +17,7 @@ The palette was refined toward WCAG compliance, and the concept of _measured bri
 ## v1.0 — Carbon One (_October 29, 2025_)
 
 The synthesis.
-Incorporating insights from **IBM's Carbon Design System** and the elegant economy of **Atom's One Light**, _Carbon One_ reached its mature form: a light theme defined not by style but by **visual endurance**.
-With _JetBrains Mono_ as its typographic core and **subjective legibility** as its guiding principle, it completes a cycle of experimentation that began with a simple gray square and ended as a study in human perception.
+Incorporating insights from **IBM's Carbon Design System** and the elegant economy of **Atom's One Light**, _Carbon One_ reached its mature form: a light theme defined not by style but by **visual endurance**. With _JetBrains Mono_ as its typographic core and **subjective legibility** as its guiding principle, it completes a cycle of experimentation that began with a simple gray square.
 
 ## v2.0 - Carbon One (_November 23, 2025_)
 
