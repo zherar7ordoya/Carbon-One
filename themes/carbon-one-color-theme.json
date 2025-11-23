@@ -9,41 +9,23 @@
     // ENVIRONMENT
     "colors": {
         //
-        // Visual Studio 2022
+        // Windows 12
         //
-        "activityBar.background": "#e8e8ec",
-        "activityBar.border": "#bdc4d1",
-        "activityBar.foreground": "#000000",
-        "breadcrumb.background": "#5d6b99",
-        "breadcrumb.foreground": "#ffffff",
-        "dropdown.background": "#ffffff",
-        "editorGroupHeader.tabsBackground": "#ccd5f0",
-        "list.activeSelectionBackground": "#00a2ff36",
-        "list.activeSelectionForeground": "#000000c2",
-        "list.hoverBackground": "#00a2ff2a",
-        "list.inactiveSelectionBackground": "#00a2ff1e",
-        "notificationCenterHeader.background": "#40568d",
-        "notificationCenterHeader.foreground": "#ffffff",
-        "notifications.background": "#40568d",
-        "notifications.foreground": "#ffffff",
-        "panel.background": "#f7f9fe",
-        "panel.border": "#5d6b99",
-        "panelTitle.activeBorder": "#5d6b99",
-        "panelTitle.activeForeground": "#5d6b99",
-        "panelTitle.inactiveForeground": "#5d6b99",
-        "scrollbarSlider.background": "#c2c3c9",
-        "sideBar.background": "#f7f9fe",
-        "sideBar.border": "#adb4bd",
-        "sideBarSectionHeader.background": "#f7f9fe",
-        "sideBarSectionHeader.border": "#adb4bd",
-        "statusBar.background": "#40508d",
-        "tab.activeBackground": "#f5cc84",
-        "tab.activeBorder": "#f5cc84",
-        "tab.border": "#ccd5f0",
-        "tab.hoverBackground": "#ccd5f0",
-        "tab.inactiveBackground": "#3b4f81",
-        "tab.inactiveForeground": "#ffffff",
-        "titleBar.activeBackground": "#ccd5f0",
+		"activityBar.background": "#b5bbe7",
+		"activityBar.foreground": "#262734",
+		"activityBar.inactiveForeground": "#262734",
+        "activityBar.activeBackground": "#969fe0",
+		"activityBarBadge.background": "#cdcfec",
+		"activityBarBadge.foreground": "#000000",
+		"statusBar.foreground": "#ffffff",
+		"statusBar.background": "#7378d6",
+		"editorSuggestWidget.selectedIconForeground": "#0ca7ea",
+		"editorSuggestWidget.selectedBackground": "#ccdaf9",
+		"sideBar.background": "#fafafa",
+		"sideBar.foreground": "#000000",
+		"sideBarSectionHeader.background": "#cdcffa",
+		"titleBar.activeBackground": "#f5f8ff",
+		"tab.inactiveBackground": "#ebf1ff",
         //
         // Campbell PowerShell
         //
@@ -81,7 +63,26 @@
         // -----------------------------
         // Yellow 60
         {
-            "scope": [],
+            "scope": [
+                "entity.name.class",
+                "entity.name.type",
+                "entity.name.type.class",
+                "entity.other.inherited-class",
+                "meta.array.literal.js variable",
+                "meta.array.literal.jsx variable",
+                "meta.array.literal.ts variable",
+                "meta.array.literal.tsx variable",
+                "meta.class",
+                "ng.attribute-with-value attribute-name",
+                "punctuation.definition.bold",
+                "source.elixir variable.constant",
+                "source.java storage.modifier.import",
+                "source.java storage.type",
+                "storage.type.cs",
+                "storage.type.primitive.array.java",
+                "string.regexp source.ruby.embedded",
+                "support.class"
+            ],
             "settings": {
                 "foreground": "#8e6a00"
             }
@@ -89,7 +90,46 @@
         // -----------------------------
         // Orange 60
         {
-            "scope": [],
+            "scope": [
+                "constant",
+                "constant.character.format.placeholder.other.python storage",
+                "constant.numeric",
+                "constant.variable",
+                "entity.name.lifetime.rust",
+                "entity.other.attribute-name",
+                "keyword.other.unit",
+                "markup.bold",
+                "markup.quote",
+                "meta.array-binding-pattern-variable.js variable.other.readwrite.js",
+                "meta.array-binding-pattern-variable.ts variable.other.readwrite.ts",
+                "meta.array-binding-pattern-variable.tsx variable.other.readwrite.tsx",
+                "meta.attribute.rust",
+                "meta.function.parameters.python",
+                "meta.link",
+                "ng.interpolation bool",
+                "punctuation.definition.bold.markdown",
+                "punctuation.definition.constant.css",
+                "punctuation.definition.constant.scss",
+                "source.elixir keyword.operator",
+                "source.elixir parameter.variable.function",
+                "source.elixir separator",
+                "source.python constant",
+                "source.python variable.parameter",
+                "support.constant",
+                "token.warn-token",
+                "variable.other.constant.js",
+                "variable.other.constant.jsx",
+                "variable.other.constant.object.js",
+                "variable.other.constant.object.jsx",
+                "variable.other.constant.object.ts",
+                "variable.other.constant.object.tsx",
+                "variable.other.constant.property.js",
+                "variable.other.constant.property.ts",
+                "variable.other.constant.property.tsx",
+                "variable.other.constant.ruby",
+                "variable.other.constant.ts",
+                "variable.other.constant.tsx"
+            ],
             "settings": {
                 "foreground": "#ba4e00"
             }
@@ -97,7 +137,62 @@
         // -----------------------------
         // Red 60
         {
-            "scope": [],
+            "scope": [
+                "beginning.punctuation.definition.list.markdown",
+                "constant.language.import-export-all.js",
+                "constant.language.import-export-all.ts",
+                "entity.name.section.markdown",
+                "entity.name.tag",
+                "entity.name.variable.field.cs",
+                "keyword.control.default.js",
+                "keyword.control.default.ts",
+                "keyword.control.default.tsx",
+                "markup.deleted",
+                "markup.heading",
+                "meta.definition.variable",
+                "meta.export.default.js variable.other.readwrite.js",
+                "meta.export.default.ts variable.other.readwrite.ts",
+                "meta.object-literal.key.js",
+                "meta.object-literal.key.ts",
+                "ng.interpolation function",
+                "ng.interpolation",
+                "punctuation.definition.heading.markdown",
+                "punctuation.definition.variable.php",
+                "punctuation.definition.variable.shell",
+                "punctuation.separator.key-value.scss",
+                "punctuation.separator.variable.ruby",
+                "source.elixir embedded.section",
+                "source.elixir embedded.source.empty",
+                "source.elixir keyword.special-method",
+                "source.elixir readwrite.module punctuation",
+                "source.ini keyword.other.definition.ini",
+                "source.java-properties meta.key-pair",
+                "source.js support.variable",
+                "source.json meta.structure.dictionary.json > string.quoted.json > punctuation.string",
+                "source.json meta.structure.dictionary.json > string.quoted.json",
+                "source.ts support.variable",
+                "source.tsx support.variable",
+                "string.other.link",
+                "support.type.object.module.js",
+                "support.type.object.module.jsx",
+                "support.type.object.module.ts",
+                "support.type.object.module.tsx",
+                "support.type.property-name.json punctuation",
+                "support.type.property-name.json",
+                "support.variable.dom.js",
+                "support.variable.dom.ts",
+                "support.variable.magic.python",
+                "support.variable.property.dom.js",
+                "support.variable.property.dom.ts",
+                "support.variable.property.js",
+                "support.variable.property.ts",
+                "support.variable.property.tsx",
+                "variable",
+                "variable.other.readwrite.alias.js",
+                "variable.other.readwrite.alias.jsx",
+                "variable.other.readwrite.alias.ts",
+                "variable.other.readwrite.alias.tsx"
+            ],
             "settings": {
                 "foreground": "#da1e28"
             }
@@ -105,7 +200,16 @@
         // -----------------------------
         // Magenta 60
         {
-            "scope": [],
+            "scope": [
+                "meta.template.expression.js punctuation.definition",
+                "meta.template.expression.ts punctuation.definition",
+                "punctuation.section.embedded",
+                "source.elixir regexp.section",
+                "source.elixir regexp.string",
+                "token.debug-token",
+                "token.error-token",
+                "variable.interpolation"
+            ],
             "settings": {
                 "foreground": "#d02670"
             }
@@ -113,7 +217,50 @@
         // -----------------------------
         // Purple 60
         {
-            "scope": [],
+            "scope": [
+                "keyword",
+                "keyword.control",
+                "keyword.operator.expression.in.js",
+                "keyword.operator.expression.in.jsx",
+                "keyword.operator.expression.in.ts",
+                "keyword.operator.expression.in.tsx",
+                "keyword.operator.expression.instanceof.js",
+                "keyword.operator.expression.instanceof.ts",
+                "keyword.operator.expression.instanceof.tsx",
+                "keyword.operator.expression.of.js",
+                "keyword.operator.expression.of.ts",
+                "keyword.operator.expression.of.tsx",
+                "keyword.operator.new.j",
+                "keyword.operator.new.ts",
+                "keyword.operator.new.tsx",
+                "keyword.other.unsafe.rust",
+                "markup.changed",
+                "markup.italic",
+                "markup.underline.link.image.markdown",
+                "markup.underline.link.markdown",
+                "meta.selector",
+                "ng.attribute-with-value string",
+                "punctuation.definition.italic",
+                "punctuation.definition.metadata.markdown",
+                "source.c keyword.operator",
+                "source.cpp keyword.operator",
+                "source.cs keyword.operator",
+                "source.elixir variable.anonymous",
+                "source.elixir variable.definition",
+                "source.go storage.type.string",
+                "source.java keyword.operator.instanceof",
+                "source.js keyword.operator.delete",
+                "source.js keyword.operator.in",
+                "source.js keyword.operator.instanceof",
+                "source.js keyword.operator.new",
+                "source.js keyword.operator.of",
+                "source.js keyword.operator.typeof",
+                "source.js keyword.operator.void",
+                "source.python keyword.operator.logical.python",
+                "storage",
+                "storage.type.annotation",
+                "storage.type.primitive"
+            ],
             "settings": {
                 "foreground": "#8a3ffc"
             }
@@ -121,7 +268,29 @@
         // -----------------------------
         // Blue 60
         {
-            "scope": [],
+            "scope": [
+                "entity.name.function",
+                "entity.name.section",
+                "entity.name.variable.property.cs",
+                "entity.other.attribute-name.id",
+                "keyword.other.special-method",
+                "markup.heading punctuation.definition.heading",
+                "meta.require",
+                "ng.interpolation function.begin",
+                "ng.interpolation function.end",
+                "ng.interpolation.begin",
+                "ng.interpolation.end",
+                "punctuation.definition.heading",
+                "punctuation.definition.identity",
+                "source.elixir constant.definition",
+                "source.elixir constant.language",
+                "source.elixir constant.numeric",
+                "source.gfm link entity",
+                "string.other.link.description.markdown",
+                "string.other.link.title.markdown",
+                "support.function.any-method",
+                "token.info-token"
+            ],
             "settings": {
                 "foreground": "#0f62fe"
             }
@@ -129,7 +298,38 @@
         // -----------------------------
         // Cyan 60
         {
-            "scope": [],
+            "scope": [
+                "constant.character.escape",
+                "constant.language.import-export-all.jsx",
+                "constant.language.import-export-all.tsx",
+                "constant.language.json",
+                "constant.other.color",
+                "constant.other.symbol",
+                "entity.name.type.rust",
+                "markup.link",
+                "ng.tag",
+                "punctuation.separator.key-value.js",
+                "punctuation.separator.key-value.ts",
+                "punctuation.separator.key-value.tsx",
+                "source.flow keyword.operator",
+                "source.js keyword.operator",
+                "source.js.embedded.html keyword.operator",
+                "source.json meta.structure.array.json > constant.language.json",
+                "source.json meta.structure.dictionary.json > constant.language.json",
+                "source.ts keyword.operator",
+                "source.ts keyword.operator",
+                "source.ts.embedded.html keyword.operator",
+                "source.tsx keyword.operator",
+                "storage.class.std.rust",
+                "storage.type.core.rust",
+                "storage.type.property.js",
+                "storage.type.property.jsx",
+                "storage.type.property.ts",
+                "storage.type.property.tsx",
+                "string.regexp",
+                "support.function",
+                "support.type"
+            ],
             "settings": {
                 "foreground": "#0072c3"
             }
@@ -137,7 +337,14 @@
         // -----------------------------
         // Teal 60
         {
-            "scope": [],
+            "scope": [
+                "source.css property-name",
+                "source.css property-value",
+                "source.elixir array",
+                "source.elixir scope",
+                "source.elixir section",
+                "source.gfm markup"
+            ],
             "settings": {
                 "foreground": "#007d79"
             }
@@ -145,7 +352,31 @@
         // -----------------------------
         // Green 60
         {
-            "scope": [],
+            "scope": [
+                "entity.name.type.module.js,entity.name.type.module.ts,entity.name.type.module.jsx,entity.name.type.module.tsx",
+                "keyword.operator.other.ruby",
+                "markup.inline.raw.markdown",
+                "markup.inserted",
+                "markup.raw",
+                "meta.template.expression.js string.quoted punctuation.definition",
+                "meta.template.expression.js string.template punctuation.definition.string.template",
+                "meta.template.expression.jsx string.quoted punctuation.definition",
+                "meta.template.expression.jsx string.template punctuation.definition.string.template",
+                "meta.template.expression.ts string.quoted punctuation.definition",
+                "meta.template.expression.ts string.template punctuation.definition.string.template",
+                "meta.template.expression.tsx string.quoted punctuation.definition",
+                "meta.template.expression.tsx string.template punctuation.definition.string.template",
+                "source.elixir quoted",
+                "source.js meta.template.expression.js punctuation.accessor",
+                "source.json meta.structure.array.json > value.json > string.quoted.json > punctuation",
+                "source.json meta.structure.array.json > value.json > string.quoted.json",
+                "source.json meta.structure.dictionary.json > value.json > string.quoted.json > punctuation",
+                "source.json meta.structure.dictionary.json > value.json > string.quoted.json",
+                "source.ts meta.template.expression.ts punctuation.accessor",
+                "source.tsx meta.template.expression.tsx punctuation.accessor",
+                "string",
+                "string.quoted.double punctuation"
+            ],
             "settings": {
                 "foreground": "#198038"
             }
@@ -153,7 +384,12 @@
         // -----------------------------
         // Gray 60
         {
-            "scope": [],
+            "scope": [
+                "comment markup.link",
+                "comment",
+                "markup.quote.markdown",
+                "punctuation.definition.comment"
+            ],
             "settings": {
                 "foreground": "#6f6f6f"
             }
